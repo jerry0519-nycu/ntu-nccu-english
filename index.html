@@ -1488,7 +1488,8 @@
     const STORAGE_KEY_FLASH_UNFAMILIAR = 'nccu_ntu_flash_unfamiliar';
     const STORAGE_KEY_FLASH_STARRED = 'nccu_ntu_flash_starred';
     const STORAGE_KEY_FLASH_KNOWN = 'nccu_ntu_flash_known';
-
+    const STORAGE_KEY_ANSWERED_QUIZ = 'nccu_ntu_quiz_answered';
+    
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -1597,11 +1598,12 @@
 
         fullBank = data;
         allWordCards = extractWordCards(fullBank);
+        showToast(` 成功載入題庫（共 ${fullBank.length} 題，單字卡共 ${allWordCards.length} 個）`, 'success');
               } catch (err) {
         console.warn("無法載入外部 data.json，啟用備用題庫：", err);
         fullBank = mockData;
         allWordCards = extractWordCards(fullBank);
-        showToast(`💡 目前使用內建精選真題（共 ${fullBank.length} 題）。部署至 GitHub Pages 即啟用全題庫！`, 'warning');
+        showToast(` 目前使用內建精選真題（共 ${fullBank.length} 題）`, 'warning');
       }
       updateMenuBadges();
     }
@@ -1715,28 +1717,42 @@
     function startQuiz(mode) {
       lastActiveQuizMode = mode;
       sessionMistakes = [];
-
-      let pool = [...fullBank];
+    
+      // 1. 取得過往已做過的題目 ID 清單
+      const doneIds = getStoredList(STORAGE_KEY_ANSWERED_QUIZ);
+    
+      // 2. 優先過濾掉已經做過的題目
+      let pool = fullBank.filter(q => !doneIds.includes(q.id));
+    
+      // 3. 全數做完時的自動重置與提示
+      if (pool.length === 0 && fullBank.length > 0) {
+        if (confirm("🎉 恭喜你！題庫中的所有題目你已經全部刷完一遍了！\n是否要自動重置進度，開啟新一輪刷題？")) {
+          saveStoredList(STORAGE_KEY_ANSWERED_QUIZ, []);
+          pool = [...fullBank];
+        } else {
+          return;
+        }
+      }
+    
       if (mode !== 'all') pool = pool.filter(q => q.type === mode);
       if (filterSchool !== 'all') pool = pool.filter(q => q.id && q.id.startsWith(filterSchool));
-
+    
       if (pool.length === 0) {
-        alert("此條件下目前無題目，請嘗試放寬篩選條件！");
+        alert("此條件下目前已無未做過的題目，請嘗試放寬篩選條件或重置紀錄！");
         return;
       }
-
-      // 替換為 Fisher-Yates 洗牌
+    
       shuffleArray(pool);
-
+    
       if (filterLength > 0 && pool.length > filterLength) {
         currentQuizList = pool.slice(0, filterLength);
       } else {
         currentQuizList = pool;
       }
-
+    
       currentIndex = 0;
       correctCount = 0;
-
+    
       hideAllViews();
       document.getElementById('quiz-view').style.display = 'flex';
       renderQuestion();
@@ -1856,6 +1872,9 @@
       const optButtons = document.querySelectorAll('.opt-btn');
       optButtons.forEach(btn => btn.disabled = true);
 
+      // 紀錄該題已做過（不論對錯均記錄，確保跨輪次不重複）
+      addToStorage(STORAGE_KEY_ANSWERED_QUIZ, q.id);
+
       const isCorrect = (selectedIndex === q.answer);
 
       if (isCorrect) {
@@ -1893,7 +1912,7 @@
       }
       nextBtn.style.display = 'inline-flex';
     }
-
+    
     function formatExplanation(text) {
       if (!text) return '暫無詳細解析';
       let formatted = text.replace(/【(.*?)】/g, '<span class="point-badge">🎯 $1</span><br/>');
