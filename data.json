@@ -1,0 +1,3112 @@
+[
+  {
+    "id": "NTU_111_B_01",
+    "type": "vocabulary",
+    "question": "The omicron ______ first identified late last month in southern Africa, has sent infections soaring to levels not seen since last winter.",
+    "options": [
+      "variance",
+      "difference",
+      "variant",
+      "deviation"
+    ],
+    "answer": 2,
+    "explanation": "variant (變異株)；variance (變異/分歧)；difference (差異)；deviation (偏差)。病毒變異株的固定字彙為 variant。"
+  },
+  {
+    "id": "NTU_111_B_02",
+    "type": "vocabulary",
+    "question": "Just ______ everyone knows what Tetris is. It was created in 1984 by a Russian computer programmer, Alexey Pajitnov.",
+    "options": [
+      "about",
+      "between",
+      "with",
+      "on"
+    ],
+    "answer": 0,
+    "explanation": "about (幾乎/大約)。「Just about」是常見片語，等同於 almost，Just about everyone 就是幾乎每個人。"
+  },
+  {
+    "id": "NTU_111_B_03",
+    "type": "vocabulary",
+    "question": "Myanmar has been in chaos since the ______ in February, with more than 1,300 people killed in a crackdown by security forces, according to a local monitoring group.",
+    "options": [
+      "cup",
+      "coup",
+      "cap",
+      "cop"
+    ],
+    "answer": 1,
+    "explanation": "coup (政變)；cup (杯子)；cap (上限/帽子)；cop (警察)。緬甸因軍方武裝鎮壓引發混亂，此處指軍事政變 (military coup)。"
+  },
+  {
+    "id": "NTU_111_B_04",
+    "type": "vocabulary",
+    "question": "Flight ______ triggered by weather and coronavirus-related staffing shortages eased slightly Tuesday.",
+    "options": [
+      "destructions",
+      "disruptions",
+      "devotion",
+      "detention"
+    ],
+    "answer": 1,
+    "explanation": "disruptions (中斷/干擾)；destructions (破壞)；devotion (奉獻)；detention (拘留)。航班因天氣或人力短缺而受到干擾中斷。"
+  },
+  {
+    "id": "NTU_111_B_05",
+    "type": "vocabulary",
+    "question": "The ample animal bones found in the ruins prove that the people living there were ______ hunters, and there are signs of massive feasts.",
+    "options": [
+      "distinguished",
+      "lousy",
+      "hallucinating",
+      "fascinating"
+    ],
+    "answer": 0,
+    "explanation": "distinguished (卓越的/著名的)；lousy (糟糕的)；hallucinating (產生幻覺的)；fascinating (迷人的)。大量的獸骨遺跡證明他們是技術高超(卓越)的獵人。"
+  },
+  {
+    "id": "NTU_111_B_06",
+    "type": "vocabulary",
+    "question": "Those experiments were a ______ stone towards two of the most important and profitable vaccines in history: the mRNA-based COVID-19 vaccines given to hundreds of millions of people around the world.",
+    "options": [
+      "obstructing",
+      "moving",
+      "putting",
+      "stepping"
+    ],
+    "answer": 3,
+    "explanation": "stepping (踩/踏)。stepping stone 為固定名詞片語，意指「墊腳石/跳板」，表示這些實驗是成功開發疫苗的基礎。"
+  },
+  {
+    "id": "NTU_111_B_07",
+    "type": "vocabulary",
+    "question": "Producing food generates so much greenhouse-gas pollution that at the current rate, even if nations cut all non-food ______ to zero, they still wouldn't be able to limit temperature rise to 1.5°C.",
+    "options": [
+      "creations",
+      "disillusions",
+      "emissions",
+      "missions"
+    ],
+    "answer": 2,
+    "explanation": "emissions (排放)；creations (創造)；disillusions (幻滅)；missions (任務)。討論溫室氣體污染，故選 emissions (氣體排放)。"
+  },
+  {
+    "id": "NTU_111_B_08",
+    "type": "vocabulary",
+    "question": "Archaeologists have long suggested that the placement of human ______ in tombs during the Stone Age of northwestern Europe reflects one of the ways in which kinship was created and negotiated.",
+    "options": [
+      "remains",
+      "returns",
+      "reimbursements",
+      "recessions"
+    ],
+    "answer": 0,
+    "explanation": "remains (遺骸)；returns (回報)；reimbursements (核銷/退款)；recessions (衰退)。考古學家在墳墓中發現的自然是 human remains (人類遺骸)。"
+  },
+  {
+    "id": "NTU_111_B_09",
+    "type": "vocabulary",
+    "question": "Sci-Hub, the popular website that offers access to millions of pirated research papers and books, is no stranger to ______ action.",
+    "options": [
+      "fungal",
+      "conjugal",
+      "regal",
+      "legal"
+    ],
+    "answer": 3,
+    "explanation": "legal (法律的)；fungal (真菌的)；conjugal (婚姻的)；regal (帝王的)。提供盜版論文的網站對「法律行動 (legal action)」並不陌生。"
+  },
+  {
+    "id": "NTU_111_B_10",
+    "type": "vocabulary",
+    "question": "During the twentieth century, our knowledge of the past was ______ by the introduction of radiocarbon dating.",
+    "options": [
+      "immunize",
+      "organize",
+      "demonize",
+      "revolutionized"
+    ],
+    "answer": 3,
+    "explanation": "revolutionized (使發生革命性劇變)；immunize (使免疫)；organize (組織)；demonize (妖魔化)。放射性碳定年法的引入「徹底改變/顛覆」了我們對過去的認識。"
+  },
+  {
+    "id": "NTU_111_B_11",
+    "type": "grammar",
+    "question": "A ______ of covid-19 cases in China prompts a citywide lockdown.",
+    "options": [
+      "cluster",
+      "few",
+      "team",
+      "collective"
+    ],
+    "answer": 0,
+    "explanation": "名詞搭配考點：醫學與公衛上指「群聚感染」固定用法為 a cluster of cases。"
+  },
+  {
+    "id": "NTU_111_B_12",
+    "type": "grammar",
+    "question": "______ a third year of the pandemic loomed, the seven-day average of U.S. cases topped 267,000 on Tuesday.",
+    "options": [
+      "Through",
+      "As",
+      "Since",
+      "In"
+    ],
+    "answer": 1,
+    "explanation": "連接詞考點：這裡需要一個能連接子句的連接詞。As 在此表「隨著」，「隨著大流行第三年逼近...」。Through 和 In 是介系詞。"
+  },
+  {
+    "id": "NTU_111_B_13",
+    "type": "grammar",
+    "question": "The Charles Lieber case reveals America's scientific rivalry ______ China.",
+    "options": [
+      "toward",
+      "in",
+      "about",
+      "with"
+    ],
+    "answer": 3,
+    "explanation": "介系詞搭配考點：rivalry (競爭關係) 後面固定搭配 with，表示「與...的競爭 (rivalry with someone)」。"
+  },
+  {
+    "id": "NTU_111_B_14",
+    "type": "grammar",
+    "question": "Chile rewrites its constitution, ______ climate change head on.",
+    "options": [
+      "confrontation",
+      "confronts",
+      "confronting",
+      "confronted"
+    ],
+    "answer": 2,
+    "explanation": "分詞構句考點：前半句是完整子句，逗號後方省略主詞 Chile 且為主動面對氣候變遷，故改為現在分詞 confronting (直面/迎擊)。"
+  },
+  {
+    "id": "NTU_111_B_15",
+    "type": "grammar",
+    "question": "Joan Didion, who died on Thursday, at ______ of 87, from complications related to Parkinson's disease, was a model and trailblazer in many ways.",
+    "options": [
+      "the age",
+      "an age",
+      "the year",
+      "years"
+    ],
+    "answer": 0,
+    "explanation": "片語考點：表達「在...歲時」，英文固定用法為 at the age of + 數字。"
+  },
+  {
+    "id": "NTU_111_B_16",
+    "type": "grammar",
+    "question": "If it ______ easy to care for elderly people with significant health, memory and behavior problems, more of us would be keeping our frail parents at home with us.",
+    "options": [
+      "was",
+      "has been",
+      "were",
+      "is going to be"
+    ],
+    "answer": 2,
+    "explanation": "假設語氣考點：與現在事實相反，If 子句的動詞必須退一步用過去式，且 be 動詞不論人稱一律使用 were。後方搭配 would + V。"
+  },
+  {
+    "id": "NTU_111_B_17",
+    "type": "grammar",
+    "question": "As allegations piled up against President Donald J. Trump with no apparent consequences, many politicians concluded that ethical behavior ______ mattered and decided to stop cooperating with congressional investigations.",
+    "options": [
+      "no longer",
+      "of course",
+      "as with",
+      "about to"
+    ],
+    "answer": 0,
+    "explanation": "語意考點：指控堆積卻無後果，政客們得出結論認為道德行為「不再 (no longer)」重要。"
+  },
+  {
+    "id": "NTU_111_B_18",
+    "type": "grammar",
+    "question": "Putin has amassed ______ 175,000 troops and a formidable arsenal of combat hardware in the area.",
+    "options": [
+      "down to",
+      "up to",
+      "into",
+      "onto"
+    ],
+    "answer": 1,
+    "explanation": "片語考點：搭配數字，表示「高達 / 多達」，固定用法為 up to。"
+  },
+  {
+    "id": "NTU_111_B_19",
+    "type": "grammar",
+    "question": "Leftist media outlets such as MSNBC spent 2020 treating COVID like it was easily fixable ______ voters simply put Democrats in charge.",
+    "options": [
+      "whether",
+      "regarding",
+      "since",
+      "if"
+    ],
+    "answer": 3,
+    "explanation": "連接詞考點：根據語意為條件句，「只要/如果 (if) 選民讓民主黨掌權，新冠疫情就能輕易解決」。"
+  },
+  {
+    "id": "NTU_111_B_20",
+    "type": "grammar",
+    "question": "Early ______ human embryos form a structure called the blastocyst.",
+    "options": [
+      "in developing",
+      "developing",
+      "in development",
+      "development"
+    ],
+    "answer": 2,
+    "explanation": "片語與詞性考點：early in development 指「在發育早期」。in 加上名詞 development 作為副詞片語修飾整句話。"
+  },
+  {
+    "id": "NCCU_111_A_01",
+    "type": "vocabulary",
+    "question": "Whereas there are recent reports of declines in movie violence and fewer portrayals of violence as ______, media portraits of crime greatly overemphasize individual acts of violence.",
+    "options": [
+      "graphic",
+      "annexed",
+      "negative",
+      "damaging"
+    ],
+    "answer": 0,
+    "explanation": "graphic (生動的/寫實的/露骨的)；annexed (附加的)；negative (負面的)；damaging (破壞性的)。graphic violence 指「露骨/血腥暴力的畫面」。"
+  },
+  {
+    "id": "NCCU_111_A_02",
+    "type": "vocabulary",
+    "question": "She writes across generational lines, and thus makes the past so vivid that our belief that the present is the true locus of experience is ______.",
+    "options": [
+      "enhanced",
+      "strengthened",
+      "ridiculed",
+      "undermined"
+    ],
+    "answer": 3,
+    "explanation": "undermine (逐漸削弱/破壞)；enhance (提升)；strengthen (加強)；ridicule (嘲笑)。文字讓過去過於生動，因而「削弱了」當下才是唯一真實體驗的信念。"
+  },
+  {
+    "id": "NCCU_111_A_03",
+    "type": "vocabulary",
+    "question": "Functioning as a filter in the stratosphere, the ozone layer ______ the Earth's surface from much ultraviolet radiation.",
+    "options": [
+      "shields",
+      "damages",
+      "condenses",
+      "permeates"
+    ],
+    "answer": 0,
+    "explanation": "shield (保護/屏蔽)；damage (損害)；condense (凝結)；permeate (滲透)。臭氧層能「保護」地球表面免受紫外線輻射傷害。"
+  },
+  {
+    "id": "NCCU_111_A_04",
+    "type": "vocabulary",
+    "question": "Unfortunately, his damaging attacks on the ramifications of the economic policy have been questioned by his wholehearted ______ of that policy's underlying assumptions.",
+    "options": [
+      "refusal",
+      "challenge",
+      "acceptance",
+      "elimination"
+    ],
+    "answer": 2,
+    "explanation": "acceptance (接受/認同)；refusal (拒絕)；challenge (挑戰)；elimination (消除)。他對政策後果的攻擊受到質疑，因為他全盤「接受」了該政策的底層假設。"
+  },
+  {
+    "id": "NCCU_111_A_05",
+    "type": "vocabulary",
+    "question": "My uncle has a big beautiful house, which has twenty rooms crowded with delicate ______.",
+    "options": [
+      "longitudes",
+      "ornaments",
+      "boundaries",
+      "guidelines"
+    ],
+    "answer": 1,
+    "explanation": "ornaments (裝飾品)；longitudes (經度)；boundaries (邊界)；guidelines (指導方針)。房間擺滿精緻的裝飾品。"
+  },
+  {
+    "id": "NCCU_111_A_06",
+    "type": "vocabulary",
+    "question": "This topic appears hopeless because there are no ______ ways of comparing the urban economy of one region with that of another.",
+    "options": [
+      "feasible",
+      "lucrative",
+      "blemished",
+      "disruptive"
+    ],
+    "answer": 0,
+    "explanation": "feasible (可行的)；lucrative (獲利的)；blemished (有瑕疵的)；disruptive (顛覆性的)。沒有「可行的」方法來比較不同區域的城市經濟。"
+  },
+  {
+    "id": "NCCU_111_A_07",
+    "type": "vocabulary",
+    "question": "This world-renowned restaurant, one of the most luxurious in the city, charges ______ prices only the rich and famous can afford.",
+    "options": [
+      "ingrained",
+      "redundant",
+      "consecutive",
+      "exorbitant"
+    ],
+    "answer": 3,
+    "explanation": "exorbitant (過高的/昂貴的)；ingrained (根深蒂固的)；redundant (多餘的)；consecutive (連續的)。收取只有富豪負擔得起的「昂貴/天價」費用。"
+  },
+  {
+    "id": "NCCU_111_A_08",
+    "type": "vocabulary",
+    "question": "Psychologists have always stressed that learning is best ______ by capturing the learner's interest in the subject matter.",
+    "options": [
+      "frosted",
+      "fostered",
+      "sensitized",
+      "sensualized"
+    ],
+    "answer": 1,
+    "explanation": "foster (促進/培養)；frost (結霜)；sensitize (使敏感)。透過引發學習者的興趣來「促進」學習效果。"
+  },
+  {
+    "id": "NCCU_111_A_09",
+    "type": "vocabulary",
+    "question": "Bacteria have ______ a variety of sensory and motor adaptations called tactic responses, by means of which they interact with their environment.",
+    "options": [
+      "induced",
+      "evolved",
+      "deduced",
+      "revolved"
+    ],
+    "answer": 1,
+    "explanation": "evolve (演化出)；induce (引導/導致)；deduce (演繹/推論)；revolve (旋轉)。細菌「演化出」各種感官與運動適應機制。"
+  },
+  {
+    "id": "NCCU_111_A_10",
+    "type": "vocabulary",
+    "question": "While some parents believe that their children, mostly in elite schools, are being pushed too hard in a hypercompetitive atmosphere, some complain of a ______ in programs for gifted children.",
+    "options": [
+      "decline",
+      "decree",
+      "disguise",
+      "closure"
+    ],
+    "answer": 0,
+    "explanation": "decline (減少/下降)；decree (法令)；disguise (偽裝)；closure (關閉)。有些家長抱怨資優計畫的「減少/衰退」。"
+  },
+  {
+    "id": "NCCU_111_A_11",
+    "type": "vocabulary",
+    "question": "The result of the careless storage and disposal of wastes is the ______ of vectors of disease.",
+    "options": [
+      "delaying",
+      "breeding",
+      "composing",
+      "polluting"
+    ],
+    "answer": 1,
+    "explanation": "breeding (滋生/繁殖)；delaying (延誤)；composing (組成)；polluting (污染)。隨意堆放廢棄物的後果是「滋生」疾病媒介。"
+  },
+  {
+    "id": "NCCU_111_A_12",
+    "type": "vocabulary",
+    "question": "When made fast and unnaturally, raisins may not be so high in iron and some other ______.",
+    "options": [
+      "products",
+      "produces",
+      "minerals",
+      "minimums"
+    ],
+    "answer": 2,
+    "explanation": "minerals (礦物質)；products (產品)；produces (農產品)；minimums (最小值)。葡萄乾可能含有較少的鐵與其他「礦物質」。"
+  },
+  {
+    "id": "NCCU_111_A_13",
+    "type": "vocabulary",
+    "question": "Her ______ should not be confused with miserliness; as long as I have known her, she has always been willing to assist those who are in need.",
+    "options": [
+      "frugality",
+      "geniality",
+      "stinginess",
+      "prodigality"
+    ],
+    "answer": 0,
+    "explanation": "frugality (節儉)；geniality (親切)；stinginess (小氣)；prodigality (揮霍)。她的「節儉」不該與吝嗇混淆。"
+  },
+  {
+    "id": "NCCU_111_A_14",
+    "type": "vocabulary",
+    "question": "Clothes oftentimes reflect society's values. For instance, in Victorian times, when women were expected to be ______, they wore clothing that limited their movements.",
+    "options": [
+      "prolific",
+      "inactive",
+      "energetic",
+      "suggestive"
+    ],
+    "answer": 1,
+    "explanation": "inactive (不活躍的/靜態的)；prolific (多產的)；energetic (精力充沛的)。維多利亞時代期望女性是「靜態不活躍的」。"
+  },
+  {
+    "id": "NCCU_111_A_15",
+    "type": "vocabulary",
+    "question": "The speaker made so much use of ______ in her speech that her lecture was difficult to follow.",
+    "options": [
+      "disparity",
+      "allocation",
+      "consensus",
+      "euphemism"
+    ],
+    "answer": 3,
+    "explanation": "euphemism (委婉語)；disparity (差距)；allocation (分配)；consensus (共識)。演講者使用了太多「委婉語」，導致演講內容難以理解。"
+  },
+  {
+    "id": "NCCU_111_B_01",
+    "type": "vocabulary",
+    "question": "When stevia first ______ the U.S. market in 2008, many in the nutritional community were over the moon about the health potential of this new sugar substitute.",
+    "options": [
+      "crashed",
+      "listed",
+      "hit",
+      "fractured"
+    ],
+    "answer": 2,
+    "explanation": "hit (進入/上市)；crash (碰撞)；list (列出)；fracture (骨折/破裂)。hit the market 為固定搭配，表示「產品上市/打入市場」。"
+  },
+  {
+    "id": "NCCU_111_B_02",
+    "type": "vocabulary",
+    "question": "Advent is celebrated on four ______ Sundays, beginning on the Sunday closest to November 30 and ending on December 24, Christmas Eve.",
+    "options": [
+      "intermittent",
+      "consecutive",
+      "followed",
+      "chronological"
+    ],
+    "answer": 1,
+    "explanation": "consecutive (連續的)；intermittent (間歇的)；chronological (按時間順序的)。將臨期於「連續」四個星期日慶祝。"
+  },
+  {
+    "id": "NCCU_111_B_03",
+    "type": "vocabulary",
+    "question": "Procrastination is an urge many of us give in to even when the ______ are high. That is, even if we know there will be a high price to pay, we still put off doing things.",
+    "options": [
+      "stables",
+      "shares",
+      "stakes",
+      "stocks"
+    ],
+    "answer": 2,
+    "explanation": "stakes (賭註/風險)；stables (馬廄)；shares (股份)；stocks (股票)。the stakes are high 指「風險極高/代價高昂」。"
+  },
+  {
+    "id": "NCCU_111_B_04",
+    "type": "vocabulary",
+    "question": "She is an outspoken ______ of a variety of health-related causes, trying her best to promote the health of the general public.",
+    "options": [
+      "advocate",
+      "adversary",
+      "antagonist",
+      "autocrat"
+    ],
+    "answer": 0,
+    "explanation": "advocate (倡導者/支持者)；adversary (對手)；antagonist (反派)；autocrat (獨裁者)。她是促進大眾健康的直言不諱的「倡導者」。"
+  },
+  {
+    "id": "NCCU_111_B_05",
+    "type": "vocabulary",
+    "question": "If the local company wants to increase market share and profits, it must seize this ______ opportunity to sell products overseas by cooperating with the international enterprise.",
+    "options": [
+      "sign",
+      "indicator",
+      "symbol",
+      "landmark"
+    ],
+    "answer": 3,
+    "explanation": "landmark (里程碑式的/劃時代的/重大突破的)；sign (標誌)；indicator (指標)；symbol (象徵)。landmark opportunity 指「重大/難得的良機」。"
+  },
+  {
+    "id": "NCCU_111_B_06",
+    "type": "vocabulary",
+    "question": "The judges had no ______ to refer to before making their decision on the controversial case.",
+    "options": [
+      "articulation",
+      "precedent",
+      "configuration",
+      "alignment"
+    ],
+    "answer": 1,
+    "explanation": "precedent (先例/判例)；articulation (關節/清晰發音)；configuration (結構配置)；alignment (對齊)。法官在判決爭議案件前沒有「先例」可循。"
+  },
+  {
+    "id": "NCCU_111_B_07",
+    "type": "vocabulary",
+    "question": "The ______ of your solution is about whether or not you are able to implement your plan to solve the problem in an effective manner.",
+    "options": [
+      "feasibility",
+      "convenience",
+      "seriousness",
+      "uniformity"
+    ],
+    "answer": 0,
+    "explanation": "feasibility (可行性)；convenience (便利)；seriousness (嚴重性)；uniformity (一致性)。方案的「可行性」取決於能否有效執行計畫。"
+  },
+  {
+    "id": "NCCU_111_B_08",
+    "type": "vocabulary",
+    "question": "John has been trying to ______ Sue's reputation by spreading rumors about her.",
+    "options": [
+      "underestimate",
+      "undertake",
+      "underline",
+      "undermine"
+    ],
+    "answer": 3,
+    "explanation": "undermine (暗中破壞/削弱)；underestimate (低估)；undertake (承擔)；underline (強調)。透過散佈謠言來「暗中破壞/損害」名譽。"
+  },
+  {
+    "id": "NCCU_111_B_09",
+    "type": "vocabulary",
+    "question": "A rich merchant ______ the famous artist to paint her portrait at a price of six figures.",
+    "options": [
+      "prescribed",
+      "commissioned",
+      "annihilated",
+      "imparted"
+    ],
+    "answer": 1,
+    "explanation": "commissioned (委託)；prescribed (開處方/規定)；annihilated (殲滅)；imparted (傳授)。富商以六位數的價格「委託」畫家繪製肖像畫。"
+  },
+  {
+    "id": "NCCU_111_B_10",
+    "type": "vocabulary",
+    "question": "It was ______ of him to open a store at that part of the city. He should have conducted a thorough market analysis beforehand.",
+    "options": [
+      "rash",
+      "anxious",
+      "provocative",
+      "invasive"
+    ],
+    "answer": 0,
+    "explanation": "rash (輕率的/魯莽的)；anxious (焦慮的)；provocative (挑釁的)；invasive (侵入性的)。未事前做市場分析就開店是「輕率魯莽的」行為。"
+  },
+  {
+    "id": "NCCU_111_B_11",
+    "type": "vocabulary",
+    "question": "I didn't get a wink of sleep the whole night last night because of the dog's ______ barking.",
+    "options": [
+      "enlightened",
+      "ultimate",
+      "incessant",
+      "extraneous"
+    ],
+    "answer": 2,
+    "explanation": "incessant (不停的/連續不斷的)；enlightened (開明的)；ultimate (最終的)；extraneous (無關的)。因為狗「不停的」吠叫而徹夜未眠。"
+  },
+  {
+    "id": "NCCU_111_B_12",
+    "type": "vocabulary",
+    "question": "A sauce can enhance and ______ ingredients through flavor, texture and moisture.",
+    "options": [
+      "complement",
+      "compliment",
+      "comprise",
+      "compose"
+    ],
+    "answer": 0,
+    "explanation": "complement (補足/襯托)；compliment (讚美)；comprise (包含)；compose (組成)。醬汁可以提升並「襯托/相輔相成」食材。"
+  },
+  {
+    "id": "NCCU_111_B_13",
+    "type": "vocabulary",
+    "question": "The prevalence of excessive purchasing is on the rise, thanks to society's focus on everything material. The word \"prevalence\" is closest in meaning to ______.",
+    "options": [
+      "popularity",
+      "generality",
+      "phenomenon",
+      "sensation"
+    ],
+    "answer": 0,
+    "explanation": "prevalence (流行/普及) 同義字為 popularity (普及/流行)。"
+  },
+  {
+    "id": "NCCU_111_B_14",
+    "type": "vocabulary",
+    "question": "One audience refuted the speaker's claim by referring to opposing arguments from a recent study. The word \"refute\" means ______.",
+    "options": [
+      "to get a second opinion",
+      "to prove to be false or incorrect",
+      "to support with examples",
+      "to humiliate publicly"
+    ],
+    "answer": 1,
+    "explanation": "refute (反駁/駁斥)，意思是「證明其為錯誤或不真實 (to prove to be false or incorrect)」。"
+  },
+  {
+    "id": "NCCU_111_B_15",
+    "type": "vocabulary",
+    "question": "Students are required to write an essay based on a prompt. The word \"prompt\" means ______.",
+    "options": [
+      "an organization of resources",
+      "a reminder to complete a task on time",
+      "a recap of important points",
+      "a cue to begin something"
+    ],
+    "answer": 3,
+    "explanation": "prompt (提示/題幹)，意思是「引導或開始某事的提示 (a cue to begin something)」。"
+  },
+  {
+    "id": "NTU_112_B_01",
+    "type": "vocabulary",
+    "question": "Although the rising tide of joblessness is beginning to ______ in some major economies, overall, unemployment levels continue to be high.",
+    "options": [
+      "ebb",
+      "rise",
+      "surge",
+      "roam"
+    ],
+    "answer": 0,
+    "explanation": "ebb (退潮/衰退)；rise (上升)；surge (激增)；roam (漫遊)。失業浪潮開始「退潮/減退」。"
+  },
+  {
+    "id": "NTU_112_B_02",
+    "type": "vocabulary",
+    "question": "Even though the war-torn country is in ______, it still refuses to bow down to the evil power.",
+    "options": [
+      "trample",
+      "shambles",
+      "ripples",
+      "arable"
+    ],
+    "answer": 1,
+    "explanation": "shambles (混亂/廢墟)；trample (踐踏)；ripples (漣漪)；arable (可耕種的)。in shambles 表示處於「混亂/混亂廢墟狀態」。"
+  },
+  {
+    "id": "NTU_112_B_03",
+    "type": "vocabulary",
+    "question": "Tomorrow's meeting between the two leaders is expected to break a diplomatic ______ that has lasted for ten years.",
+    "options": [
+      "stakeout",
+      "starlet",
+      "stallholder",
+      "stalemate"
+    ],
+    "answer": 3,
+    "explanation": "stalemate (僵局)；stakeout (監視)；starlet (小明星)；stallholder (攤主)。打破打破持續十年的外交「僵局」。"
+  },
+  {
+    "id": "NTU_112_B_04",
+    "type": "vocabulary",
+    "question": "These four countries are ______ on the brink of humanitarian catastrophe, with skyrocketing poverty and an economic implosion.",
+    "options": [
+      "teetering",
+      "truncating",
+      "taunting",
+      "tallying"
+    ],
+    "answer": 0,
+    "explanation": "teetering (搖搖欲墜/踉蹌)；truncating (縮短)；taunting (嘲弄)；tallying (計算)。teetering on the brink of... 表示「在...邊緣搖搖欲墜」。"
+  },
+  {
+    "id": "NTU_112_B_05",
+    "type": "vocabulary",
+    "question": "The Olympics involve ______ and triumphs for spectators as well as the participants.",
+    "options": [
+      "triplets",
+      "tramps",
+      "tyros",
+      "travails"
+    ],
+    "answer": 3,
+    "explanation": "travails (艱辛/痛苦)；triplets (三胞胎)；tramps (流浪漢)；tyros (新手)。奧運包含了「艱辛」與勝利。"
+  },
+  {
+    "id": "NTU_112_B_06",
+    "type": "vocabulary",
+    "question": "Thanks to rapid vaccination and media promotion, the disease was quickly ______.",
+    "options": [
+      "contributed",
+      "contained",
+      "conjectured",
+      "confounded"
+    ],
+    "answer": 1,
+    "explanation": "contained (控制/遏制)；contributed (貢獻)；conjectured (推測)；confounded (使困惑)。疾病迅速被「控制住」。"
+  },
+  {
+    "id": "NTU_112_B_07",
+    "type": "vocabulary",
+    "question": "According to the manager, our protocol is poorly designed, and must be ______ from the bottom up, rethinking all assumptions that we have made.",
+    "options": [
+      "overdrawn",
+      "overstretched",
+      "overhauled",
+      "overwhelmed"
+    ],
+    "answer": 2,
+    "explanation": "overhauled (徹底檢修/改造)；overdrawn (透支)；overstretched (過度拉伸)；overwhelmed (壓倒)。必須從頭「徹底改造」。"
+  },
+  {
+    "id": "NTU_112_B_08",
+    "type": "vocabulary",
+    "question": "This YouTube channel has ______ to airing anime, comedy and talk shows because they attract more viewers.",
+    "options": [
+      "boarded",
+      "expunged",
+      "pivoted",
+      "curtailed"
+    ],
+    "answer": 2,
+    "explanation": "pivoted (轉向/改變策略)；boarded (登載)；expunged (刪除)；curtailed (縮減)。頻道「轉向」播放動畫與喜劇。"
+  },
+  {
+    "id": "NTU_112_B_09",
+    "type": "vocabulary",
+    "question": "Last year... a new five-year contract was finalized that restored a 52-week work schedule in this theater, but with significant wage ______ in light of the economic fallout.",
+    "options": [
+      "condolences",
+      "conclaves",
+      "considerations",
+      "concessions"
+    ],
+    "answer": 3,
+    "explanation": "concessions (讓步/妥協)；condolences (哀悼)；conclaves (秘密會議)；considerations (考慮)。考量經濟不佳而做出薪資上的「讓步」。"
+  },
+  {
+    "id": "NTU_112_B_10",
+    "type": "vocabulary",
+    "question": "The two men were longtime friends, united by their political affinities, including a bone-deep ______ to a certain political party.",
+    "options": [
+      "antipathy",
+      "antiquity",
+      "antidote",
+      "anterior"
+    ],
+    "answer": 0,
+    "explanation": "antipathy (反感/厭惡)；antiquity (古代)；antidote (解毒劑)；anterior (前面的)。對特定政黨刻骨銘心的「反感」。"
+  },
+  {
+    "id": "NTU_112_B_11",
+    "type": "vocabulary",
+    "question": "Student demonstrations against corruption in 1990 included opposition to single-party rule, on the grounds that it would ______ the problem of corruption.",
+    "options": [
+      "extricate",
+      "excoriate",
+      "exonerate",
+      "exacerbate"
+    ],
+    "answer": 3,
+    "explanation": "exacerbate (使加劇/使惡化)；extricate (使解脫)；excoriate (嚴厲指責)；exonerate (免除罪責)。單黨執政會「加劇」腐敗問題。"
+  },
+  {
+    "id": "NTU_112_B_12",
+    "type": "vocabulary",
+    "question": "Her husband died in the car accident but she, amazingly, escaped ______.",
+    "options": [
+      "unrivaled",
+      "unblemished",
+      "unscathed",
+      "undulated"
+    ],
+    "answer": 2,
+    "explanation": "unscathed (未受傷的/毫發無損的)；unrivaled (無與倫比的)；unblemished (無瑕疵的)；undulated (波動的)。奇蹟般地「毫髮無傷」逃過一劫。"
+  },
+  {
+    "id": "NTU_112_B_13",
+    "type": "vocabulary",
+    "question": "The book critic found the new novel ______ because the characters were only two-dimensional and the plot lacks in qualities to interest, simulate or challenge readers.",
+    "options": [
+      "insipid",
+      "palatable",
+      "unanimous",
+      "imperious"
+    ],
+    "answer": 0,
+    "explanation": "insipid (枯燥無味的/乏味的)；palatable (美味的)；unanimous (一致的)；imperious (專橫的)。角色扁平且情節缺乏吸引力，故評論家認為小說「枯燥乏味」。"
+  },
+  {
+    "id": "NTU_112_B_14",
+    "type": "vocabulary",
+    "question": "The royal family has recently been engulfed by a series of ______ and scandals but the whole country still appears to project strength.",
+    "options": [
+      "rafts",
+      "rifts",
+      "sifts",
+      "reeds"
+    ],
+    "answer": 1,
+    "explanation": "rifts (裂痕/不和)；rafts (木筏)；sifts (篩選)；reeds (蘆葦)。王室近來被一連串的「裂痕」與醜聞籠罩。"
+  },
+  {
+    "id": "NTU_112_B_15",
+    "type": "vocabulary",
+    "question": "Now, remember, viruses ______ all the time, so the trick is to find a stable part of the virus a part that doesn't really change from one variant to the next.",
+    "options": [
+      "maim",
+      "mince",
+      "mitigate",
+      "mutate"
+    ],
+    "answer": 3,
+    "explanation": "mutate (變異/突變)；maim (殘害)；mince (絞碎)；mitigate (減輕)。病毒時刻都在「突變」。"
+  },
+  {
+    "id": "NTU_112_B_31",
+    "type": "grammar",
+    "question": "Families of incarcerated persons were usually poor and powerless, with ______ to address the issue of rights.",
+    "options": [
+      "either the means or the know-how",
+      "neither the means or the know-how",
+      "neither the means nor the know-how",
+      "either the means nor the know-how"
+    ],
+    "answer": 2,
+    "explanation": "對應連詞考點：「既沒有...也沒有...」固定結構為 neither A nor B。"
+  },
+  {
+    "id": "NTU_112_B_32",
+    "type": "grammar",
+    "question": "______ the Louvre, the Hermitage is Russia's homage to the great culture that found its home here in the 18th century.",
+    "options": [
+      "Second only to in size",
+      "Second in size only to",
+      "In second size to only",
+      "In size second only to"
+    ],
+    "answer": 1,
+    "explanation": "形容詞片語修飾考點：表達「規模僅次於...」，正確順序為 Second in size only to...。"
+  },
+  {
+    "id": "NTU_112_B_33",
+    "type": "grammar",
+    "question": "I'm starting to see that indulgence and opulence of an earlier era is ______ in Saint Petersburg.",
+    "options": [
+      "very much living still",
+      "still very much live",
+      "very much still live",
+      "still very much alive"
+    ],
+    "answer": 3,
+    "explanation": "形容詞與程度副詞考點：alive 作表語表示「活著的/依然存在的」，配合修飾語仍然很生動：still very much alive。"
+  },
+  {
+    "id": "NTU_112_B_34",
+    "type": "grammar",
+    "question": "His achievements as a political reformer have been ______ miraculous.",
+    "options": [
+      "everything short of",
+      "anything short of",
+      "nothing short of",
+      "something short of"
+    ],
+    "answer": 2,
+    "explanation": "雙重否定/強調片語：nothing short of... 表示「簡直是/完全是 (nothing less than)」。"
+  },
+  {
+    "id": "NTU_112_B_35",
+    "type": "grammar",
+    "question": "______ by Charles Dickens' works and by her own mother's kindness to the poor, Jane Addams decided to become a doctor.",
+    "options": [
+      "Inspired",
+      "Inspiring",
+      "Inspire",
+      "Inspires"
+    ],
+    "answer": 0,
+    "explanation": "分詞構句考點：主詞 Jane Addams 是「受靈感啟發 (被動)」，故用過去分詞 Inspired 開頭。"
+  },
+  {
+    "id": "NTU_112_B_36",
+    "type": "grammar",
+    "question": "Those with poor outcome accounted for 57.7% of the sample ______ the remaining 42.4% were rated as having good outcome with hypnosis.",
+    "options": [
+      "whereas",
+      "where",
+      "however",
+      "meanwhile"
+    ],
+    "answer": 0,
+    "explanation": "連接詞考點：whereas 用於連接兩個句子表強烈對比（然而/而）。"
+  },
+  {
+    "id": "NTU_112_B_37",
+    "type": "grammar",
+    "question": "In a language ______ all words must begin with a consonant, a word which is underlyingly vowel-initial will fail to become a word.",
+    "options": [
+      "which",
+      "what",
+      "whom",
+      "where"
+    ],
+    "answer": 3,
+    "explanation": "關係副詞考點：先行詞為 language，在其語言環境「中」使用關係副詞 where (= in which)。"
+  },
+  {
+    "id": "NTU_112_B_38",
+    "type": "grammar",
+    "question": "Life is a tragedy ______ in close-up, but a comedy in long-shot.",
+    "options": [
+      "when seeing",
+      "seen when",
+      "when seen",
+      "when is seen"
+    ],
+    "answer": 2,
+    "explanation": "狀語從句省略/分詞考點：Life (人生) 被觀看，when (it is) seen 省略成 when seen。"
+  },
+  {
+    "id": "NTU_112_B_39",
+    "type": "grammar",
+    "question": "The committee ______ to undertake a visit to another city to obtain first-hand information on its experience in noise control.",
+    "options": [
+      "considered it worth",
+      "considered worthwhile",
+      "worth considered it",
+      "considered it worthwhile"
+    ],
+    "answer": 3,
+    "explanation": "形式受詞句型：consider + it (形式受詞) + worthwhile (補語) + to V (真受詞)。"
+  },
+  {
+    "id": "NTU_112_B_40",
+    "type": "grammar",
+    "question": "At the southern tip of the peninsula ______ the busiest place in the world in terms of tourism.",
+    "options": [
+      "lying a big city",
+      "lies a big city",
+      "does a big city lie",
+      "where a big city"
+    ],
+    "answer": 1,
+    "explanation": "介系詞片語置於句首之完全倒裝：介系詞短語 + 動詞 (lies) + 主詞 (a big city)。"
+  },
+  {
+    "id": "NTU_112_B_41",
+    "type": "grammar",
+    "question": "In her face ______ the delicate features of her mother, a Coast aristocrat of French descent, and the heavy ones of her florid Irish father.",
+    "options": [
+      "was too sharply blended",
+      "were blended too sharp",
+      "was blended too sharp",
+      "were too sharply blended"
+    ],
+    "answer": 3,
+    "explanation": "完全倒裝與主謂一致：主詞是複數名詞組 (the delicate features... and the heavy ones...)，動詞需用複數 were，且搭配副詞 sharply 修飾動詞 blended。"
+  },
+  {
+    "id": "NTU_112_B_42",
+    "type": "grammar",
+    "question": "Our exploration of the space has dual purposes, one of ______ is to get energy and resources and the other of which is to migrate people if necessary.",
+    "options": [
+      "which",
+      "where",
+      "what",
+      "whom"
+    ],
+    "answer": 0,
+    "explanation": "關係代名詞考點：先行詞為 dual purposes (非人)，搭配介系詞後使用 one of which。"
+  },
+  {
+    "id": "NTU_112_B_43",
+    "type": "grammar",
+    "question": "This unique species, ______ by scientists as Homo floresiensis, reached a maximum height of only 3.5 feet.",
+    "options": [
+      "know",
+      "knowing",
+      "known",
+      "was known"
+    ],
+    "answer": 2,
+    "explanation": "非限定同位語/分詞考點：物種被科學家所熟知，用過去分詞 known as... 作修飾。"
+  },
+  {
+    "id": "NTU_112_B_44",
+    "type": "grammar",
+    "question": "Would ancient Sapiens have been more tolerant towards an entirely different human species? It ______ Sapiens encountered Neanderthals, the result was the first... ethnic-cleansing campaign.",
+    "options": [
+      "may well be that",
+      "be that",
+      "will be that",
+      "would well be that"
+    ],
+    "answer": 0,
+    "explanation": "固定推測句型：It may well be that... 表示「很可能是/相當可能...」。"
+  },
+  {
+    "id": "NTU_112_B_45",
+    "type": "grammar",
+    "question": "This ______ tradition was put on hold by the new president.",
+    "options": [
+      "long-stand",
+      "longly-stood",
+      "long-standing",
+      "longly-standing"
+    ],
+    "answer": 2,
+    "explanation": "複合形容詞考點：「源遠流長的/由來已久的」固定複合形容詞為 long-standing。"
+  },
+  {
+    "id": "NCCU_114_A_01",
+    "type": "vocabulary",
+    "question": "Bicycles are ______ in this town. Wherever you go, you can see one riding a bicycle.",
+    "options": [
+      "ubiquitous",
+      "anonymous",
+      "dangerous",
+      "preposterous"
+    ],
+    "answer": 0,
+    "explanation": "ubiquitous (無所不在的)；anonymous (匿名的)；dangerous (危險的)；preposterous (荒謬的)。到處可見單車，說明單車「無所不在」。"
+  },
+  {
+    "id": "NCCU_114_A_02",
+    "type": "vocabulary",
+    "question": "The website of this school is under ______. Computer engineers are working on it.",
+    "options": [
+      "destruction",
+      "construction",
+      "depletion",
+      "destitution"
+    ],
+    "answer": 1,
+    "explanation": "construction (建設/施工)；destruction (破壞)；depletion (耗盡)；destitution (貧困)。under construction 表示「建置中/施工中」。"
+  },
+  {
+    "id": "NCCU_114_A_03",
+    "type": "vocabulary",
+    "question": "Samuel is a ______ salesperson. He can easily persuade customers to buy clothes in his store.",
+    "options": [
+      "pitiable",
+      "dishonest",
+      "skillful",
+      "abandoned"
+    ],
+    "answer": 2,
+    "explanation": "skillful (熟練的/巧妙的)；pitiable (可憐的)；dishonest (不誠實的)；abandoned (被拋棄的)。能輕鬆說服顧客說明是「巧妙/有技巧的」銷售員。"
+  },
+  {
+    "id": "NCCU_114_A_04",
+    "type": "vocabulary",
+    "question": "She has been working ______ for three months, because she needs to take a potentially life-changing exam in March.",
+    "options": [
+      "haphazardly",
+      "angrily",
+      "carelessly",
+      "diligently"
+    ],
+    "answer": 3,
+    "explanation": "diligently (勤奮地)；haphazardly (隨意地)；angrily (生氣地)；carelessly (粗心地)。為了重要考試而「勤奮地」工作/準備。"
+  },
+  {
+    "id": "NCCU_114_A_05",
+    "type": "vocabulary",
+    "question": "The actor tries to ______ difficult questions during a press conference. He does not answer the questions directly.",
+    "options": [
+      "promote",
+      "evade",
+      "congratulate",
+      "consist"
+    ],
+    "answer": 1,
+    "explanation": "evade (逃避/規避)；promote (推廣)；congratulate (祝賀)；consist (組成)。不直接回答代表試圖「規避」難題。"
+  },
+  {
+    "id": "NCCU_114_A_06",
+    "type": "vocabulary",
+    "question": "This paragraph appears ______ in your essay. It is unnecessary to put this paragraph in your essay. I suggest that you delete it.",
+    "options": [
+      "transparent",
+      "brilliant",
+      "redundant",
+      "wealthy"
+    ],
+    "answer": 2,
+    "explanation": "redundant (多餘的/累贅的)；transparent (透明的)；brilliant (優秀的)；wealthy (富有的)。建議刪除因為該段落顯得「多餘累贅」。"
+  },
+  {
+    "id": "NCCU_114_A_07",
+    "type": "vocabulary",
+    "question": "In this country, nursing used to be a profession ______ by women. Almost all nurses were women. But now we can see many male nurses.",
+    "options": [
+      "revised",
+      "transported",
+      "reduced",
+      "dominated"
+    ],
+    "answer": 3,
+    "explanation": "dominated (主導/佔優勢)；revised (修訂)；transported (運輸)；reduced (減少)。過去幾乎全是女性，代表被女性「主導」。"
+  },
+  {
+    "id": "NCCU_114_A_08",
+    "type": "vocabulary",
+    "question": "This high school is very ______. Believing that they can benefit a lot from studying there, many students consider it their top choice.",
+    "options": [
+      "disgraceful",
+      "prestigious",
+      "immoral",
+      "administrative"
+    ],
+    "answer": 1,
+    "explanation": "prestigious (聲譽良好的/著名的)；disgraceful (不光彩的)；immoral (不道德的)；administrative (行政的)。學生當作首選說明是「聲名陵替/名校」。"
+  },
+  {
+    "id": "NCCU_114_A_09",
+    "type": "vocabulary",
+    "question": "Rubbish is ______. It makes an otherwise beautiful place look very ugly.",
+    "options": [
+      "underdeveloped",
+      "unfair",
+      "unanimous",
+      "unsightly"
+    ],
+    "answer": 3,
+    "explanation": "unsightly (難看的/不美觀的)；underdeveloped (低開發的)；unfair (不公平的)；unanimous (一致的)。垃圾使地方變醜，說明垃圾「難看/礙眼」。"
+  },
+  {
+    "id": "NCCU_114_A_10",
+    "type": "vocabulary",
+    "question": "We have been lagging behind our competitors. But if we work harder, we can ______ and outperform them in due course.",
+    "options": [
+      "overtake",
+      "overestimate",
+      "overdose",
+      "overdraw"
+    ],
+    "answer": 0,
+    "explanation": "overtake (超越/趕上)；overestimate (高估)；overdose (過量)；overdraw (透支)。努力工作就能「趕上」並超越競爭對手。"
+  },
+  {
+    "id": "NCCU_114_A_11",
+    "type": "vocabulary",
+    "question": "Extreme weather has created a humanitarian ______ in this region. Many people have no food to eat and no clean water to drink.",
+    "options": [
+      "coalition",
+      "alliance",
+      "crisis",
+      "duration"
+    ],
+    "answer": 2,
+    "explanation": "crisis (危機)；coalition (聯盟)；alliance (同盟)；duration (持續時間)。缺糧缺水造成人道主義「危機」。"
+  },
+  {
+    "id": "NCCU_114_A_12",
+    "type": "vocabulary",
+    "question": "She is always ready to ______ new technology. She is never afraid of learning how to operate new machines.",
+    "options": [
+      "ridicule",
+      "stew",
+      "displace",
+      "embrace"
+    ],
+    "answer": 3,
+    "explanation": "embrace (擁抱/樂於接受)；ridicule (嘲笑)；stew (燉煮)；displace (移位)。不害怕學習新機器，代表樂於「接受/擁抱」新科技。"
+  },
+  {
+    "id": "NCCU_114_A_13",
+    "type": "vocabulary",
+    "question": "Workers in this factory go on ______ to protest against unfair treatment. They decide not to work until their complaint is properly addressed.",
+    "options": [
+      "stroke",
+      "despise",
+      "strike",
+      "strict"
+    ],
+    "answer": 2,
+    "explanation": "strike (罷工)；stroke (中風/撫摸)；despise (輕視)；strict (嚴格的)。go on strike 為固定片語，表示「發動罷工」。"
+  },
+  {
+    "id": "NCCU_114_A_14",
+    "type": "vocabulary",
+    "question": "These two countries have signed a ______ peace treaty. They both agree that they should put an end to the devastating war.",
+    "options": [
+      "unilateral",
+      "bilateral",
+      "crippling",
+      "irrelevant"
+    ],
+    "answer": 1,
+    "explanation": "bilateral (雙邊的)；unilateral (單邊的)；crippling (殘害的)；irrelevant (無關的)。兩國共同簽署，故為「雙邊的」和平條約。"
+  },
+  {
+    "id": "NCCU_114_A_15",
+    "type": "vocabulary",
+    "question": "Children are especially ______ to this disease. Their immune systems are not strong enough to protect them from this disease.",
+    "options": [
+      "persistent",
+      "deplorable",
+      "edible",
+      "vulnerable"
+    ],
+    "answer": 3,
+    "explanation": "vulnerable (脆弱的/易受傷害的)；persistent (堅持的)；deplorable (悲慘的)；edible (可食用的)。免疫系統不夠強，對疾病特別「脆弱/易感染 (vulnerable to)」。"
+  },
+  {
+    "id": "NCCU_114_B_01",
+    "type": "vocabulary",
+    "question": "I can't believe you ______ all your free time playing video games.",
+    "options": [
+      "smash",
+      "banish",
+      "squander",
+      "efface"
+    ],
+    "answer": 2,
+    "explanation": "squander (浪費/揮霍)；smash (打碎)；banish (流放)；efface (抹去)。squander time 表示「浪費時間」。"
+  },
+  {
+    "id": "NCCU_114_B_02",
+    "type": "vocabulary",
+    "question": "The government of Pakistan voted to make education ______ for every child in that country.",
+    "options": [
+      "commissary",
+      "confidential",
+      "concealed",
+      "compulsory"
+    ],
+    "answer": 3,
+    "explanation": "compulsory (強制的/義務的)；commissary (軍需官)；confidential (機密的)；concealed (隱蔽的)。make education compulsory 指「將教育訂為義務教育」。"
+  },
+  {
+    "id": "NCCU_114_B_03",
+    "type": "vocabulary",
+    "question": "The days became ______; there was absolutely nothing to do in the village.",
+    "options": [
+      "ferocious",
+      "monotonous",
+      "disposable",
+      "ephemeral"
+    ],
+    "answer": 1,
+    "explanation": "monotonous (單調乏味的)；ferocious (兇猛的)；disposable (一次性的)；ephemeral (短暫的)。村莊沒事可做，日子變得「單調乏味」。"
+  },
+  {
+    "id": "NCCU_114_B_04",
+    "type": "vocabulary",
+    "question": "Thousands of well-wishers from around the world ______ to London to witness the spectacle and pageantry of the royal wedding.",
+    "options": [
+      "deterred",
+      "flocked",
+      "conformed",
+      "crashed"
+    ],
+    "answer": 1,
+    "explanation": "flock (湧入/聚集)；deter (嚇阻)；conform (符合)；crash (碰撞)。flock to London 表示成群結隊「湧入倫敦」。"
+  },
+  {
+    "id": "NCCU_114_B_05",
+    "type": "vocabulary",
+    "question": "A foul smell of stale beer ______ the whole building.",
+    "options": [
+      "permeated",
+      "discriminated",
+      "ratified",
+      "designated"
+    ],
+    "answer": 0,
+    "explanation": "permeate (瀰漫/滲透)；discriminate (歧視)；ratify (批准)；designated (指定)。臭味「瀰漫」整棟建築物。"
+  },
+  {
+    "id": "NCCU_114_B_06",
+    "type": "vocabulary",
+    "question": "Many of the remains are contaminated with ______ materials such as mercury.",
+    "options": [
+      "ephemeral",
+      "annual",
+      "deluded",
+      "hazardous"
+    ],
+    "answer": 3,
+    "explanation": "hazardous (危險的/有害的)；ephemeral (短暫的)；annual (每年的)；deluded (受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受受詞：受騙的)。水銀屬於「危險/有害 (hazardous)」物質。"
+  },
+  {
+    "id": "NCCU_114_B_07",
+    "type": "vocabulary",
+    "question": "With so many areas of woodland being cut down, a lot of wildlife is losing its natural ______.",
+    "options": [
+      "habitat",
+      "infrastructure",
+      "bliss",
+      "trait"
+    ],
+    "answer": 0,
+    "explanation": "habitat (棲息地)；infrastructure (基礎設施)；bliss (極樂)；trait (特徵)。森林砍伐導致野生動物失去自然「棲息地」。"
+  },
+  {
+    "id": "NCCU_114_B_08",
+    "type": "vocabulary",
+    "question": "What surprises a lot people is the ______ of bat species around the world, from fruit bats in Australia to tiny pipistrelles in the UK.",
+    "options": [
+      "mortgage",
+      "accomplices",
+      "diversity",
+      "haven"
+    ],
+    "answer": 2,
+    "explanation": "diversity (多樣性)；mortgage (房貸)；accomplices (共犯)；haven (避風港)。全球蝙蝠物種的「多樣性」令人驚訝。"
+  },
+  {
+    "id": "NCCU_114_B_09",
+    "type": "vocabulary",
+    "question": "The region is ______ for its outstanding natural beauty.",
+    "options": [
+      "mimicked",
+      "decomposed",
+      "pledged",
+      "renowned"
+    ],
+    "answer": 3,
+    "explanation": "renowned (著名的/著名的)；mimicked (模仿)；decomposed (分解)；pledged (發誓)。be renowned for... 表示「以...聞名」。"
+  },
+  {
+    "id": "NCCU_114_B_10",
+    "type": "vocabulary",
+    "question": "Joshua's allergy to peanuts is very severe, even getting close to peanut butter can ______ a bad reaction if he's not careful.",
+    "options": [
+      "trigger",
+      "erupt",
+      "deploy",
+      "transmit"
+    ],
+    "answer": 0,
+    "explanation": "trigger (引發/觸發)；erupt (爆發)；deploy (部署)；transmit (傳送)。靠近花生醬可能「引發」嚴重過敏反應。"
+  },
+  {
+    "id": "NCCU_114_B_11",
+    "type": "vocabulary",
+    "question": "To achieve continuous ______ improvement, we focused primarily on strengthening incentives for quality, performance, and affordability.",
+    "options": [
+      "flagging",
+      "protruding",
+      "strengthening",
+      "tormenting"
+    ],
+    "answer": 2,
+    "explanation": "strengthening (加強/鞏固)；flagging (衰退的)；protruding (突出)；tormenting (折磨)。持續進行「加強/改善」。"
+  },
+  {
+    "id": "NCCU_114_B_12",
+    "type": "vocabulary",
+    "question": "Hewlett Packard is a ______ example of Silicon Valley startups: two guys revolutionized the printing business out of their small garage.",
+    "options": [
+      "quintessential",
+      "forgery",
+      "looming",
+      "disclosed"
+    ],
+    "answer": 0,
+    "explanation": "quintessential (最典型的/精髓的)；forgery (偽造)；looming (逼近的)；disclosed (公開的)。HP 是矽谷初創公司「最典型 (quintessential)」的例子。"
+  },
+  {
+    "id": "NCCU_114_B_13",
+    "type": "vocabulary",
+    "question": "The Europeans are therefore trying to create an economic mechanism that can ______ the dollar.",
+    "options": [
+      "doubt",
+      "bypass",
+      "invade",
+      "obscure"
+    ],
+    "answer": 1,
+    "explanation": "bypass (繞過/規避)；doubt (懷疑)；invade (入侵)；obscure (遮蔽)。建立可「繞過/規避」美元的經濟機制。"
+  },
+  {
+    "id": "NCCU_114_B_14",
+    "type": "vocabulary",
+    "question": "The latest release of ownCloud has introduced a versioning system that allows you to recover old versions of a file if it gets ______ deleted.",
+    "options": [
+      "gracefully",
+      "publicly",
+      "allegedly",
+      "accidentally"
+    ],
+    "answer": 3,
+    "explanation": "accidentally (不小心/意外地)；gracefully (優雅地)；publicly (公開地)；allegedly (宣稱)。檔案若被「不小心/意外」刪除可進行復原。"
+  },
+  {
+    "id": "NCCU_114_B_15",
+    "type": "vocabulary",
+    "question": "Some economists argue that when countries develop, it is ______ that they initially become more unequal.",
+    "options": [
+      "inevitable",
+      "infectious",
+      "reckless",
+      "escalating"
+    ],
+    "answer": 0,
+    "explanation": "inevitable (不可避免的)；infectious (傳染性的)；reckless (魯莽的)；escalating (加劇的)。國家發展初期不平等加劇是「不可避免的」。"
+  },
+  {
+    "id": "NCCU_115_A_01",
+    "type": "vocabulary",
+    "question": "Despite repeated warnings, the company continued its ______ use of personal data.",
+    "options": [
+      "judicious",
+      "meticulous",
+      "reckless",
+      "prudent"
+    ],
+    "answer": 2,
+    "explanation": "reckless (魯莽的/輕率的)；judicious (明智的)；meticulous (嚴謹的)；prudent (審慎的)。無視警告繼續「魯莽使用」個人資料。"
+  },
+  {
+    "id": "NCCU_115_A_02",
+    "type": "vocabulary",
+    "question": "The professor's explanation was so ______ that even first-year students could follow the argument easily.",
+    "options": [
+      "obscure",
+      "lucid",
+      "prolix",
+      "equivocal"
+    ],
+    "answer": 1,
+    "explanation": "lucid (清晰易懂的)；obscure (模糊的)；prolix (冗長的)；equivocal (模稜兩可的)。教授的解釋「清晰易懂」，連大一學生都能輕易聽懂。"
+  },
+  {
+    "id": "NCCU_115_A_03",
+    "type": "vocabulary",
+    "question": "Her research proposal was rejected because it lacked a clear ______ and methodological justification.",
+    "options": [
+      "premise",
+      "digression",
+      "ventilation",
+      "apparel"
+    ],
+    "answer": 0,
+    "explanation": "premise (前提/假定)；digression (離題)；ventilation (通風)；apparel (服飾)。研究計畫被退回因缺乏明確的「前提」與方法論論證。"
+  },
+  {
+    "id": "NCCU_115_A_04",
+    "type": "vocabulary",
+    "question": "His remarks were carefully worded to ______ public criticism without engaging with the substance of the complaint.",
+    "options": [
+      "deflect",
+      "provoke",
+      "operationalize",
+      "fabricate"
+    ],
+    "answer": 0,
+    "explanation": "deflect (轉移/避開)；provoke (挑釁)；operationalize (可操作化)；fabricate (偽造)。發言精心設計以「避開/轉移」公眾批評。"
+  },
+  {
+    "id": "NCCU_115_A_05",
+    "type": "vocabulary",
+    "question": "After hours of intense discussion, the committee reached a decision that was ______.",
+    "options": [
+      "impromptu",
+      "unanimous",
+      "immoderate",
+      "excessive"
+    ],
+    "answer": 1,
+    "explanation": "unanimous (一致同意的)；impromptu (即興的)；immoderate (無節制的)；excessive (過度的)。委員會達成「一致同意的」決定。"
+  },
+  {
+    "id": "NCCU_115_A_06",
+    "type": "vocabulary",
+    "question": "Throughout the article, the author adopts a tone that is ______, carefully avoiding emotional language.",
+    "options": [
+      "irrevocable",
+      "effusive",
+      "dispassionate",
+      "incendiary"
+    ],
+    "answer": 2,
+    "explanation": "dispassionate (不帶感情的/客觀冷靜的)；irrevocable (不可撤銷的)；effusive (感情洋溢的)；incendiary (煽動性的)。避免情緒化用語，採取「客觀冷靜/不帶感情的」語氣。"
+  },
+  {
+    "id": "NCCU_115_A_07",
+    "type": "vocabulary",
+    "question": "Without sufficient evidence, the claim remains largely ______.",
+    "options": [
+      "corroborated",
+      "authenticated",
+      "speculative",
+      "determinative"
+    ],
+    "answer": 2,
+    "explanation": "speculative (推測性的/未證實的)；corroborated (證實的)；authenticated (驗證的)；determinative (決定性的)。沒有足夠證據，主張仍屬於「推測性的」。"
+  },
+  {
+    "id": "NCCU_115_A_08",
+    "type": "vocabulary",
+    "question": "The private school mainly serves ______ families who can afford high tuition and extensive extracurricular programs.",
+    "options": [
+      "negligible",
+      "ubiquitous",
+      "unsightly",
+      "affluent"
+    ],
+    "answer": 3,
+    "explanation": "affluent (富裕的)；negligible (微不足道的)；ubiquitous (無所不在的)；unsightly (難看的)。負擔得起高昂學費代表服務「富裕的」家庭。"
+  },
+  {
+    "id": "NCCU_115_A_09",
+    "type": "vocabulary",
+    "question": "To encourage honest feedback, the university guaranteed that the evaluation forms would remain ______.",
+    "options": [
+      "deceptive",
+      "anonymous",
+      "alleged",
+      "duplicitous"
+    ],
+    "answer": 1,
+    "explanation": "anonymous (匿名的)；deceptive (欺騙性的)；alleged (被宣稱的)；duplicitous (口是心非的)。評鑑表將維持「匿名的」以鼓勵真實回饋。"
+  },
+  {
+    "id": "NCCU_115_A_10",
+    "type": "vocabulary",
+    "question": "The committee rejected the proposal as ______ because its claims were internally contradictory: it promised \"zero cost\" and \"instant results\" at the same time.",
+    "options": [
+      "deep-rooted",
+      "ingrained",
+      "preposterous",
+      "brilliant"
+    ],
+    "answer": 2,
+    "explanation": "preposterous (荒謬的/可笑的)；deep-rooted (根深蒂固的)；ingrained (積習難改的)；brilliant (傑出的)。宣稱零成本且立竿見影是前後矛盾且「荒謬的」。"
+  },
+  {
+    "id": "NCCU_115_A_11",
+    "type": "vocabulary",
+    "question": "The government introduced new water-saving policies to ______ the impact of the drought on agriculture.",
+    "options": [
+      "scorch",
+      "mitigate",
+      "induce",
+      "overestimate"
+    ],
+    "answer": 1,
+    "explanation": "mitigate (緩和/減輕)；scorch (焦灼)；induce (引發)；overestimate (高估)。推行節水政策以「減輕/緩和」旱災對農業的衝擊。"
+  },
+  {
+    "id": "NCCU_115_A_12",
+    "type": "vocabulary",
+    "question": "The budget meeting quickly turned tense when departments argued over the ______ of limited research funds.",
+    "options": [
+      "allocation",
+      "coalition",
+      "enunciation",
+      "ornamentation"
+    ],
+    "answer": 0,
+    "explanation": "allocation (分配/撥給)；coalition (同盟)；enunciation (清晰發音)；ornamentation (裝飾)。爭論有限研究資金的「分配」。"
+  },
+  {
+    "id": "NCCU_115_A_13",
+    "type": "vocabulary",
+    "question": "After years of not speaking, the two colleagues finally ______ during a project that forced them to collaborate again.",
+    "options": [
+      "evaporated",
+      "conceived",
+      "embarked",
+      "reconciled"
+    ],
+    "answer": 3,
+    "explanation": "reconciled (和解/重修舊好)；evaporated (蒸發)；conceived (構想)；embarked (著手/上船)。多年不說話後最終「和解」。"
+  },
+  {
+    "id": "NCCU_115_A_14",
+    "type": "vocabulary",
+    "question": "Although the work was demanding, the contract proved ______ due to high royalties and long-term licensing rights.",
+    "options": [
+      "lucrative",
+      "dappled",
+      "stagnant",
+      "adverse"
+    ],
+    "answer": 0,
+    "explanation": "lucrative (獲利的/賺錢的)；dappled (有斑點的)；stagnant (停滯的)；adverse (不利的)。高額版稅使合約非常「有利可圖/賺錢」。"
+  },
+  {
+    "id": "NCCU_115_A_15",
+    "type": "vocabulary",
+    "question": "When pressed for details about the data leak, the spokesperson tried to ______ the question by shifting to safer topics.",
+    "options": [
+      "encompass",
+      "evade",
+      "laud",
+      "resign"
+    ],
+    "answer": 1,
+    "explanation": "evade (逃避/規避)；encompass (包含)；laud (讚美)；resign (辭職)。轉移話題試圖「規避」問題。"
+  },
+  {
+    "id": "NCCU_115_B_01",
+    "type": "vocabulary",
+    "question": "The professor clarified that the theory was not meant to replace existing models but to ______ them by addressing overlooked variables.",
+    "options": [
+      "simplify",
+      "dismiss",
+      "contradict",
+      "supplement"
+    ],
+    "answer": 3,
+    "explanation": "supplement (補充/增補)；simplify (簡化)；dismiss (駁回/解雇)；contradict (矛盾/反駁)。非取代舊模型，而是補充舊模型的不足。"
+  },
+  {
+    "id": "NCCU_115_B_02",
+    "type": "vocabulary",
+    "question": "Although the author's tone appears neutral, a closer reading reveals a ______ criticism of the prevailing methodology.",
+    "options": [
+      "subtle",
+      "casual",
+      "random",
+      "excessive"
+    ],
+    "answer": 0,
+    "explanation": "subtle (微妙的/隱約的)；casual (漫不經心的)；random (隨機的)；excessive (過度的)。語氣看似中立，但仔細閱讀會發現「微妙隱約的」批評。"
+  },
+  {
+    "id": "NCCU_115_B_03",
+    "type": "vocabulary",
+    "question": "Several assumptions underlying the study remain ______, raising concerns about the validity of its conclusions.",
+    "options": [
+      "implicit",
+      "obsolete",
+      "irrelevant",
+      "excessive"
+    ],
+    "answer": 0,
+    "explanation": "implicit (含蓄的/未明言的/暗含的)；obsolete (淘汰的)；irrelevant (無關的)；excessive (過度的)。假設仍屬於「未明確說明的/暗含的」，因而引發疑慮。"
+  },
+  {
+    "id": "NCCU_115_B_04",
+    "type": "vocabulary",
+    "question": "The committee rejected the proposal because it lacked a ______ framework for evaluating long-term outcomes.",
+    "options": [
+      "optional",
+      "coherent",
+      "decorative",
+      "superficial"
+    ],
+    "answer": 1,
+    "explanation": "coherent (連貫的/條理分明的)；optional (可選擇的)；decorative (裝飾性的)；superficial (膚淺的)。因缺乏「條理分明/連貫的」架構而被否決。"
+  },
+  {
+    "id": "NCCU_115_B_05",
+    "type": "vocabulary",
+    "question": "The researcher warned that drawing conclusions from such a limited sample would be ______.",
+    "options": [
+      "generous",
+      "inevitable",
+      "premature",
+      "redundant"
+    ],
+    "answer": 2,
+    "explanation": "premature (過早的/倉促的)；generous (慷慨的)；inevitable (不可避免的)；redundant (多餘的)。從有限樣本下結論是「過早/倉促的」。"
+  },
+  {
+    "id": "NCCU_115_B_06",
+    "type": "vocabulary",
+    "question": "The speaker's remarks were deliberately ______, allowing multiple interpretations without committing to a specific stance.",
+    "options": [
+      "candid",
+      "dogmatic",
+      "erroneous",
+      "ambiguous"
+    ],
+    "answer": 3,
+    "explanation": "ambiguous (模稜兩可的)；candid (坦率的)；dogmatic (武斷的)；erroneous (錯誤的)。發言刻意「模稜兩可」，容許有多重解讀。"
+  },
+  {
+    "id": "NCCU_115_B_07",
+    "type": "vocabulary",
+    "question": "The theory attempts to account for anomalies that traditional frameworks have largely ______.",
+    "options": [
+      "resolved",
+      "amplified",
+      "neglected",
+      "replicated"
+    ],
+    "answer": 2,
+    "explanation": "neglected (忽視/忽略)；resolved (解決)；amplified (放大)；replicated (複製)。解釋傳統架構大多「忽略」的反常現象。"
+  },
+  {
+    "id": "NCCU_115_B_08",
+    "type": "vocabulary",
+    "question": "The philosopher criticized the argument not for its logic but for its ______ use of language, which obscured key distinctions.",
+    "options": [
+      "literal",
+      "imprecise",
+      "ornamental",
+      "economical"
+    ],
+    "answer": 1,
+    "explanation": "imprecise (不精確的/模糊的)；literal (字面上的)；ornamental (裝飾的)；economical (節省的)。語言使用「不精確」，模糊了關鍵區別。"
+  },
+  {
+    "id": "NCCU_115_B_09",
+    "type": "vocabulary",
+    "question": "The policy was initially praised, but its long-term consequences proved far more ______ than anticipated.",
+    "options": [
+      "trivial",
+      "complex",
+      "reversible",
+      "transparent"
+    ],
+    "answer": 1,
+    "explanation": "complex (複雜的)；trivial (瑣碎的)；reversible (可逆的)；transparent (透明的)。長期後果遠比預期更「複雜」。"
+  },
+  {
+    "id": "NCCU_115_B_10",
+    "type": "vocabulary",
+    "question": "Although the experiment was carefully designed, its conclusions remain ______ due to uncontrolled external variables.",
+    "options": [
+      "tentative",
+      "conclusive",
+      "telegraphic",
+      "categorical"
+    ],
+    "answer": 0,
+    "explanation": "tentative (暫定的/不確定的)；conclusive (決定性的)；telegraphic (電報式的)；categorical (絕對的)。由於變數未控制，結論仍屬「暫定/不確定的」。"
+  },
+  {
+    "id": "NCCU_115_B_11",
+    "type": "vocabulary",
+    "question": "The items I need are ______: a pencil, a notebook, and three erasers.",
+    "options": [
+      "as follows",
+      "on purpose",
+      "pros and cons",
+      "at odds"
+    ],
+    "answer": 0,
+    "explanation": "as follows (如下所示)；on purpose (故意地)；pros and cons (優缺點)；at odds (不一致)。引出清單固定片語 as follows。"
+  },
+  {
+    "id": "NCCU_115_B_12",
+    "type": "vocabulary",
+    "question": "The salesman tried his best to persuade a potential customer to buy the product. (Please choose the synonym of the underlined word: potential).",
+    "options": [
+      "major",
+      "personal",
+      "prospective",
+      "confidential"
+    ],
+    "answer": 2,
+    "explanation": "potential (潛在的/未來的) 同義字為 prospective (預期的/潛在的)。"
+  },
+  {
+    "id": "NCCU_115_B_13",
+    "type": "vocabulary",
+    "question": "Only the leaves of this plant are safe to eat. They are ______; other parts are poisonous.",
+    "options": [
+      "deliberate",
+      "artificial",
+      "edible",
+      "productive"
+    ],
+    "answer": 2,
+    "explanation": "edible (可食用的)；deliberate (深思熟慮的)；artificial (人造的)；productive (多產的)。葉子可以安全食用，代表是「可食用的 (edible)」。"
+  },
+  {
+    "id": "NCCU_115_B_14",
+    "type": "vocabulary",
+    "question": "There is a growing discussion about climate change and other ______ issues.",
+    "options": [
+      "environmental",
+      "horizontal",
+      "judgemental",
+      "digital"
+    ],
+    "answer": 0,
+    "explanation": "environmental (環境的)；horizontal (水平的)；judgemental (審判的)；digital (數位的)。氣候變遷屬於「環境 (environmental)」議題。"
+  },
+  {
+    "id": "NCCU_115_B_15",
+    "type": "vocabulary",
+    "question": "Thanks to technology, we can now make ______ fabric that looks and feels like silk.",
+    "options": [
+      "inaccurate",
+      "artificial",
+      "insurmountable",
+      "monotonous"
+    ],
+    "answer": 1,
+    "explanation": "artificial (人造的/人造合成的)；inaccurate (不準確的)；insurmountable (無法克服的)；monotonous (單調的)。人造絲或「人造 (artificial)」布料。"
+  },
+  {
+    "id": "NCCU_113_A_01",
+    "type": "vocabulary",
+    "question": "A recent ______ in point is a featured article in the new issue of the magazine highlighting the extraordinary academic achievement.",
+    "options": [
+      "case",
+      "power",
+      "win",
+      "call"
+    ],
+    "answer": 0,
+    "explanation": "case (案例)；power (力量)；win (勝利)；call (呼喚)。a case in point 為固定片語，表示「恰當的例證/很好的例子」。"
+  },
+  {
+    "id": "NCCU_113_A_02",
+    "type": "vocabulary",
+    "question": "There is a limit to how much ______ news we can take in as the virus wreaks havoc on our health, economy, and social lives.",
+    "options": [
+      "revenge",
+      "outback",
+      "scrimmage",
+      "havoc"
+    ],
+    "answer": 3,
+    "explanation": "havoc (浩劫/混亂)；revenge (報復)；outback (內陸)；scrimmage (爭球)。病毒帶來浩劫與破壞。"
+  },
+  {
+    "id": "NCCU_113_A_03",
+    "type": "vocabulary",
+    "question": "We also did twig hunting, rock hunting, found all the beautiful ______ and put them in a jar.",
+    "options": [
+      "beams",
+      "pebbles",
+      "snippets",
+      "flecks"
+    ],
+    "answer": 1,
+    "explanation": "pebbling (鵝卵石/小圓石)；beams (光束)；snippets (片段)；flecks (斑點)。尋找漂亮的「小鵝卵石」裝進罐子。"
+  },
+  {
+    "id": "NCCU_113_A_04",
+    "type": "vocabulary",
+    "question": "For an extra taste, ______ with fresh or dried rosemary for serving.",
+    "options": [
+      "dapple",
+      "scorch",
+      "drip",
+      "sprinkle"
+    ],
+    "answer": 3,
+    "explanation": "sprinkle (撒上/噴灑)；dapple (斑駁)；scorch (焦灼)；drip (滴落)。「撒上」新鮮迷迭香來提味。"
+  },
+  {
+    "id": "NCCU_113_A_05",
+    "type": "vocabulary",
+    "question": "The ______ lining was in softly glowing evidence, but he could not persuade himself that it was for him.",
+    "options": [
+      "silver",
+      "bright",
+      "queer",
+      "deep"
+    ],
+    "answer": 0,
+    "explanation": "silver (銀色的)。silver lining 為固定片語，表示「黑暗中的一線曙光/不幸中的大幸」。"
+  },
+  {
+    "id": "NCCU_113_A_06",
+    "type": "vocabulary",
+    "question": "Water vapor, liquid water, and ice are in ______ at only one specific pressure.",
+    "options": [
+      "equity",
+      "equilibrium",
+      "capacity",
+      "partiality"
+    ],
+    "answer": 1,
+    "explanation": "equilibrium (平衡狀態/三相點平衡)；equity (公平)；capacity (容量)；partiality (偏袒)。水的三相處於「平衡 (equilibrium)」狀態。"
+  },
+  {
+    "id": "NCCU_113_A_07",
+    "type": "vocabulary",
+    "question": "Efficient time ______ is crucial in project management to meet deadlines and achieve successful outcomes.",
+    "options": [
+      "enunciation",
+      "allocation",
+      "collection",
+      "reimbursement"
+    ],
+    "answer": 1,
+    "explanation": "allocation (分配/配置)；enunciation (發音)；collection (收集)；reimbursement (報銷)。高效的時間「分配」對專案管理至關重要。"
+  },
+  {
+    "id": "NCCU_113_A_08",
+    "type": "vocabulary",
+    "question": "When the teacher asked the students to ______ into groups, they quickly rearranged their desks.",
+    "options": [
+      "fritter",
+      "scatter",
+      "fabricate",
+      "resign"
+    ],
+    "answer": 1,
+    "explanation": "scatter (分散/解散)；fritter (浪費)；fabricate (捏造)；resign (辭職)。老師要求學生「分開/散開」分組。"
+  },
+  {
+    "id": "NCCU_113_A_09",
+    "type": "vocabulary",
+    "question": "The robot was programmed to ______ human gestures and expressions, making it seem incredibly lifelike.",
+    "options": [
+      "mimic",
+      "squeeze",
+      "jiggle",
+      "concern"
+    ],
+    "answer": 0,
+    "explanation": "mimic (模仿)；squeeze (擠壓)；jiggle (輕搖)；concern (關心)。機器人被設定用來「模仿」人類手勢與表情。"
+  },
+  {
+    "id": "NCCU_113_A_10",
+    "type": "vocabulary",
+    "question": "She spent an entire year revising her research paper ______ to address the feedback from her advisor.",
+    "options": [
+      "substantially",
+      "immortally",
+      "curiously",
+      "immediately"
+    ],
+    "answer": 0,
+    "explanation": "substantially (大幅度地/實質上地)；immortally (不朽地)；curiously (好奇地)；immediately (立即)。花整年時間「大幅度地」修改論文。"
+  },
+  {
+    "id": "NCCU_113_A_11",
+    "type": "vocabulary",
+    "question": "The scientist conducted extensive experiments for the ______ of the newly proposed theory.",
+    "options": [
+      "entertainment",
+      "validation",
+      "juggling",
+      "colonialism"
+    ],
+    "answer": 1,
+    "explanation": "validation (驗證/證實)；entertainment (娛樂)；juggling (雜耍/雜耍)；colonialism (殖民主義)。做大量實驗是為了對新理論進行「驗證」。"
+  },
+  {
+    "id": "NCCU_113_A_12",
+    "type": "vocabulary",
+    "question": "The doctor prescribed medication to ______ the patient's pain and discomfort.",
+    "options": [
+      "encompass",
+      "acquire",
+      "evaporate",
+      "mitigate"
+    ],
+    "answer": 3,
+    "explanation": "mitigate (緩和/減輕)；encompass (包含)；acquire (取得)；evaporate (蒸發)。開藥以「減輕/緩和」疼痛與不適。"
+  },
+  {
+    "id": "NCCU_113_A_13",
+    "type": "vocabulary",
+    "question": "The artist ______ a brilliant painting that captured the essence of the sunset.",
+    "options": [
+      "consisted",
+      "reconciled",
+      "surrendered",
+      "conceived"
+    ],
+    "answer": 3,
+    "explanation": "conceived (構想/創作/懷胎)；consisted (由...組成)；reconciled (和解)；surrendered (投降)。藝術家「構思/創作出」一幅傑出的畫作。"
+  },
+  {
+    "id": "NCCU_113_A_14",
+    "type": "vocabulary",
+    "question": "Students often feel a mix of excitement and nervousness as they ______ on their college journey.",
+    "options": [
+      "advocate",
+      "promote",
+      "embark",
+      "identify"
+    ],
+    "answer": 2,
+    "explanation": "embark (展開/著手)；advocate (倡導)；promote (推廣)；identify (識別)。embark on... 表示「展開/踏上...旅程」。"
+  },
+  {
+    "id": "NCCU_113_A_15",
+    "type": "vocabulary",
+    "question": "The journalist wrote a ______ article that addressed controversial issues and prompted public debate.",
+    "options": [
+      "provocative",
+      "stagnant",
+      "affluent",
+      "cumulative"
+    ],
+    "answer": 0,
+    "explanation": "provocative (引人思考的/挑釁的/引起爭論的)；stagnant (停滯的)；affluent (富裕的)；cumulative (累積的)。寫出一篇「引發討論/爭議的 (provocative)」文章。"
+  },
+  {
+    "id": "NCCU_113_B_01",
+    "type": "vocabulary",
+    "question": "Around a year ago, the file was ______ because a worker erroneously marked it as inactive.",
+    "options": [
+      "archived",
+      "celebrated",
+      "escorted",
+      "reconciled"
+    ],
+    "answer": 0,
+    "explanation": "archived (歸檔/封存)；celebrated (慶祝)；escorted (護送)；reconciled (和解)。標記為不活躍因而被「歸檔/封存」。"
+  },
+  {
+    "id": "NCCU_113_B_02",
+    "type": "vocabulary",
+    "question": "The recently launched shampoo features a gentle ______ derived from a blend of herb and plant extracts.",
+    "options": [
+      "inhabitant",
+      "offspring",
+      "sparrow",
+      "fragrance"
+    ],
+    "answer": 3,
+    "explanation": "fragrance (香味/香氣)；inhabitant (居民)；offspring (後代)；sparrow (麻雀)。洗髮精含有植物萃取的溫和「香氣」。"
+  },
+  {
+    "id": "NCCU_113_B_03",
+    "type": "vocabulary",
+    "question": "John ascended quickly through the corporate ______ progressing from a sales clerk to the position of CEO.",
+    "options": [
+      "intimacy",
+      "hierarchy",
+      "monument",
+      "diplomacy"
+    ],
+    "answer": 1,
+    "explanation": "hierarchy (階級制度/階層)；intimacy (親密)；monument (紀念碑)；diplomacy (外交)。corporate hierarchy 指「企業階層/公司體制」。"
+  },
+  {
+    "id": "NCCU_113_B_04",
+    "type": "vocabulary",
+    "question": "We opted to repair the existing computer system rather than initiating a new system from ______.",
+    "options": [
+      "repetition",
+      "vessel",
+      "scratch",
+      "auction"
+    ],
+    "answer": 2,
+    "explanation": "scratch (抓痕/起點)。from scratch 為固定片語，表示「從頭開始/從零開始」。"
+  },
+  {
+    "id": "NCCU_113_B_05",
+    "type": "vocabulary",
+    "question": "Recent research indicates that eating a higher proportion of plant-based foods can help adults prevent ______ diseases.",
+    "options": [
+      "chronic",
+      "federal",
+      "bulky",
+      "judicial"
+    ],
+    "answer": 0,
+    "explanation": "chronic (慢性/長期性的)；federal (聯邦的)；bulky (龐大的)；judicial (司法的)。植物性飲食有助預防「慢性」疾病。"
+  },
+  {
+    "id": "NCCU_113_B_06",
+    "type": "vocabulary",
+    "question": "Diligent oral hygiene practices are essential for preventing dental ______.",
+    "options": [
+      "closure",
+      "decay",
+      "fertility",
+      "relic"
+    ],
+    "answer": 1,
+    "explanation": "decay (蛀牙/腐爛)；closure (關閉)；fertility (生育力)；relic (遺跡)。dental decay 指「蛀牙/蛀蝕」。"
+  },
+  {
+    "id": "NCCU_113_B_07",
+    "type": "vocabulary",
+    "question": "To accurately ______ the temperature, it is advisable to use a thermometer.",
+    "options": [
+      "liberate",
+      "preside",
+      "reign",
+      "gauge"
+    ],
+    "answer": 3,
+    "explanation": "gauge (測量/估計)；liberate (解放)；preside (主持)；reign (統治)。用體溫計來精確「測量」溫度。"
+  },
+  {
+    "id": "NCCU_113_B_08",
+    "type": "vocabulary",
+    "question": "We prepared and packed plates, cups, napkins, and eating ______ for the picnic.",
+    "options": [
+      "outskirts",
+      "mementos",
+      "extracts",
+      "utensils"
+    ],
+    "answer": 3,
+    "explanation": "utensils (用具/餐具)；outskirts (郊區)；mementos (紀念品)；extracts (萃取物)。eating utensils 指「餐具 (刀叉匙)」。"
+  },
+  {
+    "id": "NCCU_113_B_09",
+    "type": "vocabulary",
+    "question": "When ______ of sleep, the majority of individuals experience impaired functioning.",
+    "options": [
+      "deprived",
+      "illuminated",
+      "mimicked",
+      "magnified"
+    ],
+    "answer": 0,
+    "explanation": "deprived (剝奪/缺乏)；illuminated (照亮)；mimicked (模仿)；magnified (放大)。deprived of sleep 表示「被剝奪睡眠/睡眠不足」。"
+  },
+  {
+    "id": "NCCU_113_B_10",
+    "type": "vocabulary",
+    "question": "Yesterday, U.S. stock markets experienced a significant decline during a period of growing ______ on Wall Street.",
+    "options": [
+      "gravity",
+      "pessimism",
+      "enthusiasm",
+      "innovation"
+    ],
+    "answer": 1,
+    "explanation": "pessimism (悲觀情緒)；gravity (嚴重性/重力)；enthusiasm (熱情)；innovation (創新)。美股下跌是因為華爾街「悲觀情緒」蔓延。"
+  },
+  {
+    "id": "NCCU_113_B_11",
+    "type": "vocabulary",
+    "question": "______ by a United Nations special representative, the peace talks finally occurred this week.",
+    "options": [
+      "Perceived",
+      "Recited",
+      "Initiated",
+      "Exploited"
+    ],
+    "answer": 2,
+    "explanation": "initiated (發起/倡導)；perceived (感知)；recited (背誦)；exploited (剝削/開發)。由聯合國特使「發起」的和談。"
+  },
+  {
+    "id": "NCCU_113_B_12",
+    "type": "vocabulary",
+    "question": "Household chores are made more manageable with the assistance of modern ______ like washing machines and vacuum cleaners.",
+    "options": [
+      "appliances",
+      "correspondents",
+      "faculties",
+      "mattresses"
+    ],
+    "answer": 0,
+    "explanation": "appliances (家電)；correspondents (記者)；faculties (教職員/能力)；mattresses (床墊)。如洗衣機與吸塵器等現代「家電」。"
+  },
+  {
+    "id": "NCCU_113_B_13",
+    "type": "vocabulary",
+    "question": "The pathway is designated for cyclists and ______ and motorists will face fines if they use it.",
+    "options": [
+      "spectators",
+      "moderators",
+      "tenants",
+      "pedestrians"
+    ],
+    "answer": 3,
+    "explanation": "pedestrians (行人)；spectators (觀眾) ; moderators (主持人)；tenants (房客)。專供單車騎手與「行人」使用的步道。"
+  },
+  {
+    "id": "NCCU_113_B_14",
+    "type": "vocabulary",
+    "question": "Three hundred people in the village ______ in the earthquake, leaving only a handful of survivors.",
+    "options": [
+      "mingled",
+      "devoured",
+      "perished",
+      "catered"
+    ],
+    "answer": 2,
+    "explanation": "perished (罹難/死亡)；mingled (混合)；devoured (吞噬)；catered (迎合)。三百人在地震中「罹難」。"
+  },
+  {
+    "id": "NCCU_113_B_15",
+    "type": "vocabulary",
+    "question": "This business is highly ______, enabling me to earn a large amount of income.",
+    "options": [
+      "mischievous",
+      "lucrative",
+      "aesthetic",
+      "cynical"
+    ],
+    "answer": 1,
+    "explanation": "lucrative (獲利的/賺錢的)；mischievous (惡作劇的)；aesthetic (美學的)；cynical (憤世嫉俗的)。這筆生意非常「賺錢/獲利豐厚」。"
+  },
+  {
+    "id": "NTU_113_B_01",
+    "type": "vocabulary",
+    "question": "The first time someone performs in public is a ______.",
+    "options": [
+      "publicity",
+      "debut",
+      "trial",
+      "outing"
+    ],
+    "answer": 1,
+    "explanation": "debut (首演/首次亮相)；publicity (宣傳)；trial (試驗)；outing (遠足)。首次公開演出稱為 debut。"
+  },
+  {
+    "id": "NTU_113_B_02",
+    "type": "vocabulary",
+    "question": "She puts on a happy ______ but she is really very sad.",
+    "options": [
+      "facade",
+      "ego",
+      "tempo",
+      "pace"
+    ],
+    "answer": 0,
+    "explanation": "facade (表面/假象)；ego (自我)；tempo (節奏)；pace (步調)。put on a happy facade 表示「強顏歡笑/裝出快樂的外表」。"
+  },
+  {
+    "id": "NTU_113_B_03",
+    "type": "vocabulary",
+    "question": "They administered an injection which would help ______ the pain.",
+    "options": [
+      "interpret",
+      "alleviate",
+      "aspire",
+      "escalate"
+    ],
+    "answer": 1,
+    "explanation": "alleviate (減輕/緩和)；interpret (解釋)；aspire (渴望)；escalate (升級)。注射有助於「減輕」疼痛。"
+  },
+  {
+    "id": "NTU_113_B_04",
+    "type": "vocabulary",
+    "question": "The students had great difficulty trying to ______ the concept.",
+    "options": [
+      "evoke",
+      "facilitate",
+      "encompass",
+      "grasp"
+    ],
+    "answer": 3,
+    "explanation": "grasp (理解/掌握)；evoke (喚起)；facilitate (促進)；encompass (包含)。難以「理解/掌握」該概念。"
+  },
+  {
+    "id": "NTU_113_B_05",
+    "type": "vocabulary",
+    "question": "Acid rain has caused direct damage to architectural ______ such as the Acropolis in Greece and the Taj Mahal in India.",
+    "options": [
+      "tenements",
+      "sculpture",
+      "relics",
+      "monuments"
+    ],
+    "answer": 3,
+    "explanation": "monuments (紀念碑/歷史建築)；tenements (廉租公寓)；sculpture (雕刻)；relics (遺物/遺跡)。衛城與泰姬瑪哈陵屬於建築「歷史古蹟/紀念物」。"
+  },
+  {
+    "id": "NTU_113_B_06",
+    "type": "vocabulary",
+    "question": "The translators disagreed about the writer's intention because of ______ in the language used by the writer.",
+    "options": [
+      "ambiguity",
+      "blockage",
+      "stupor",
+      "hurdles"
+    ],
+    "answer": 0,
+    "explanation": "ambiguity (模稜兩可/歧義)；blockage (堵塞)；stupor (昏迷)；hurdles (障礙)。用語存在「模稜兩可/歧義」導致譯者意見不一。"
+  },
+  {
+    "id": "NTU_113_B_07",
+    "type": "vocabulary",
+    "question": "Some people are urging the government to put more controls on automobile ______.",
+    "options": [
+      "secretions",
+      "emissions",
+      "projections",
+      "discharge"
+    ],
+    "answer": 1,
+    "explanation": "emissions (排放物/廢氣)；secretions (分泌物)；projections (投影/預測)；discharge (排出)。automobile emissions 指「汽車廢氣排放」。"
+  },
+  {
+    "id": "NTU_113_B_08",
+    "type": "vocabulary",
+    "question": "We're lured into thinking that a small, hate-mongering ______ reflects all humankind.",
+    "options": [
+      "majority",
+      "celebrity",
+      "minority",
+      "entity"
+    ],
+    "answer": 2,
+    "explanation": "minority (少數族群/少數人)；majority (多數)；celebrity (名人)；entity (實體)。一小撮散播仇恨的「極少數人」。"
+  },
+  {
+    "id": "NTU_113_B_09",
+    "type": "vocabulary",
+    "question": "Epigenetics is the most monumental explanation to emerge in the social and biological sciences since Darwin proposed his theory of natural ______.",
+    "options": [
+      "screening",
+      "selection",
+      "competition",
+      "violation"
+    ],
+    "answer": 1,
+    "explanation": "selection (選擇)。theory of natural selection 指達爾文的「物競天擇/天擇說」。"
+  },
+  {
+    "id": "NTU_113_B_10",
+    "type": "vocabulary",
+    "question": "As AI models transition to becoming ______, there is a growing focus on maintaining performance while making them smaller and faster.",
+    "options": [
+      "commercialized",
+      "subsidized",
+      "trivialized",
+      "specialized"
+    ],
+    "answer": 0,
+    "explanation": "commercialized (商業化的)；subsidized (受補助的) ; trivialized (輕視的)；specialized (專門的)。隨著 AI 模型逐漸「商業化」。"
+  },
+  {
+    "id": "NTU_113_B_11",
+    "type": "grammar",
+    "question": "I met ______ friendly college students at the swimming pool.",
+    "options": [
+      "a",
+      "an",
+      "some"
+    ],
+    "answer": 2,
+    "explanation": "冠詞與數量詞考點：students 為複數名詞，故選 some。"
+  },
+  {
+    "id": "NTU_113_B_12",
+    "type": "grammar",
+    "question": "Her daughter is in a special math class for ______ children.",
+    "options": [
+      "gift",
+      "gifted",
+      "gifting"
+    ],
+    "answer": 1,
+    "explanation": "形容詞用法：gifted (有天賦的/資優的)，gifted children 即資優兒童。"
+  },
+  {
+    "id": "NTU_113_B_13",
+    "type": "grammar",
+    "question": "The causes of the accident ______ analyzed by the police.",
+    "options": [
+      "was",
+      "were",
+      "had been"
+    ],
+    "answer": 1,
+    "explanation": "主謂一致：主詞為 The causes (複數)，謂語動詞用 were。"
+  },
+  {
+    "id": "NTU_113_B_14",
+    "type": "grammar",
+    "question": "There ______ several reasons for my decision.",
+    "options": [
+      "is",
+      "are",
+      "may be"
+    ],
+    "answer": 1,
+    "explanation": "There be 句型與主謂一致：後接複數名詞 several reasons，動詞用 are。"
+  },
+  {
+    "id": "NTU_113_B_15",
+    "type": "grammar",
+    "question": "My company pays workers ______.",
+    "options": [
+      "good",
+      "well",
+      "fair"
+    ],
+    "answer": 1,
+    "explanation": "副詞修飾動詞：修飾動詞 pays 需用副詞 well。"
+  },
+  {
+    "id": "NTU_113_B_16",
+    "type": "grammar",
+    "question": "I like to read ______ before bedtime.",
+    "options": [
+      "in the night",
+      "by night",
+      "at night"
+    ],
+    "answer": 2,
+    "explanation": "時間介系詞習慣搭配：在夜間/晚上固定用法為 at night。"
+  },
+  {
+    "id": "NTU_113_B_17",
+    "type": "grammar",
+    "question": "I saw a great documentary ______ tornados, hurricanes and typhoons.",
+    "options": [
+      "with",
+      "by",
+      "about"
+    ],
+    "answer": 2,
+    "explanation": "介系詞搭配：紀錄片「關於 (about)」龍捲風與颶風。"
+  },
+  {
+    "id": "NTU_113_B_18",
+    "type": "grammar",
+    "question": "I'm afraid that I'm not very good ______ sports.",
+    "options": [
+      "with",
+      "in",
+      "at"
+    ],
+    "answer": 2,
+    "explanation": "固定搭配：be good at... 表示「擅長於...」。"
+  },
+  {
+    "id": "NTU_113_B_19",
+    "type": "grammar",
+    "question": "I put the beautiful antique bowl ______ the new china cabinet.",
+    "options": [
+      "on top of",
+      "between",
+      "over"
+    ],
+    "answer": 0,
+    "explanation": "方位介系詞：把古董碗放在櫃子「上方/頂端 (on top of)」。"
+  },
+  {
+    "id": "NTU_113_B_20",
+    "type": "grammar",
+    "question": "If Doris hadn't been feeling under the weather, she ______ to our party.",
+    "options": [
+      "could come",
+      "would come",
+      "would have come"
+    ],
+    "answer": 2,
+    "explanation": "與過去事實相反之假設語氣：If 子句為 had + p.p.，主要子句需用 would have + p.p.。"
+  },
+  {
+    "id": "NTU_114_B_01",
+    "type": "vocabulary",
+    "question": "Those shiny red shoes Janny just bought ______ her shiny red purse.",
+    "options": [
+      "compartment",
+      "compliment",
+      "component",
+      "complement"
+    ],
+    "answer": 3,
+    "explanation": "complement (補足/襯托)；compartment (隔間)；compliment (讚美)；component (零件)。紅鞋與紅包相互「襯托」。"
+  },
+  {
+    "id": "NTU_114_B_02",
+    "type": "vocabulary",
+    "question": "After a long week at work, most people feel ______.",
+    "options": [
+      "broken down",
+      "phased out",
+      "turned down",
+      "worn out"
+    ],
+    "answer": 3,
+    "explanation": "worn out (筋疲力竭的)；broken down (故障的)；phased out (逐步淘汰)；turned down (被拒絕)。工作一整週後感到「筋疲力竭」。"
+  },
+  {
+    "id": "NTU_114_B_03",
+    "type": "vocabulary",
+    "question": "The play contained a variety of ______ events: the death of a young child, the suicide of her mother, and the murder of an older sister.",
+    "options": [
+      "opposable",
+      "avaricious",
+      "morbid",
+      "exhilarating"
+    ],
+    "answer": 2,
+    "explanation": "morbid (病態的/病態可怖的/病理的)；opposable (可相對的)；avaricious (貪婪的)；exhilarating (令人振奮的)。充滿死亡與謀殺等「令人毛骨悚然/病態可怖的」事件。"
+  },
+  {
+    "id": "NTU_114_B_04",
+    "type": "vocabulary",
+    "question": "We can ensure a safe and enjoyable holiday season by ______ to these precautions.",
+    "options": [
+      "reverting",
+      "adhering",
+      "contributing",
+      "subscribing"
+    ],
+    "answer": 1,
+    "explanation": "adhere to (遵循/堅持)；revert to (回復)；contribute to (貢獻)；subscribe to (訂閱)。「遵守」這些預防措施。"
+  },
+  {
+    "id": "NTU_114_B_05",
+    "type": "vocabulary",
+    "question": "To ______ his theory, Dr. Hayes offered experimental evidence, case study reports, and a log of observational notes.",
+    "options": [
+      "allocate",
+      "incorporate",
+      "exacerbate",
+      "substantiate"
+    ],
+    "answer": 3,
+    "explanation": "substantiate (證實/實證)；allocate (分配)；incorporate (包含)；exacerbate (惡化)。提出實驗證據以「證實」理論。"
+  },
+  {
+    "id": "NTU_114_B_06",
+    "type": "vocabulary",
+    "question": "The engineer explained that the suspension bridge's design is ______ to a spider's web structure.",
+    "options": [
+      "analogous",
+      "susceptible",
+      "indifferent",
+      "intangible"
+    ],
+    "answer": 0,
+    "explanation": "analogous to... (與...相似/可類比的)；susceptible (易受影響的)；indifferent (冷漠的)；intangible (無形的)。吊橋設計與蜘蛛網結構「相似/可類比」。"
+  },
+  {
+    "id": "NTU_114_B_07",
+    "type": "vocabulary",
+    "question": "To take the research further, the team plans to ______ single-cell technology to investigate more tissues such as muscle and adipose.",
+    "options": [
+      "leverage",
+      "manufacture",
+      "screen",
+      "prescribe"
+    ],
+    "answer": 0,
+    "explanation": "leverage (利用/槓桿)；manufacture (製造)；screen (篩檢)；prescribe (開處方)。「利用」單細胞技術來深入研究。"
+  },
+  {
+    "id": "NTU_114_B_08",
+    "type": "vocabulary",
+    "question": "The ______ islanders responded reluctantly to the government's compromises on land settlement, while the immigrants agreed immediately.",
+    "options": [
+      "exquisite",
+      "robust",
+      "tenacious",
+      "mediocre"
+    ],
+    "answer": 2,
+    "explanation": "tenacious (堅定不移的/固執的)；exquisite (精緻的)；robust (強健的)；mediocre (平庸的)。「堅定不移/固執的」島民反應冷淡。"
+  },
+  {
+    "id": "NTU_114_B_09",
+    "type": "vocabulary",
+    "question": "The editor would not allow the paper to go to press until certain passages were ______ from an article naming individuals involved in a political scandal.",
+    "options": [
+      "expounded",
+      "expunged",
+      "detached",
+      "dismantled"
+    ],
+    "answer": 1,
+    "explanation": "expunged (刪除/抹去)；expounded (詳細說明)；detached (拆下)；dismantled (拆卸)。敏感段落被「刪除」前不准出版。"
+  },
+  {
+    "id": "NTU_114_B_10",
+    "type": "vocabulary",
+    "question": "When the judge pronounced the sentence, the convicted criminal shouted ______ at the jury.",
+    "options": [
+      "profanities",
+      "approbations",
+      "benedictions",
+      "amenities"
+    ],
+    "answer": 0,
+    "explanation": "profanities (褻瀆的話/髒話)；approbations (認可)；benedictions (祝福)；amenities (便利設施)。宣判時罪犯向陪審團咆哮「髒話」。"
+  },
+  {
+    "id": "NTU_114_B_11",
+    "type": "vocabulary",
+    "question": "Many workers complained about the job conditions, so a special committee was set up to investigate the workers' ______.",
+    "options": [
+      "divergence",
+      "grievance",
+      "serendipity",
+      "disparagement"
+    ],
+    "answer": 1,
+    "explanation": "grievance (不滿/抱怨/委屈)；divergence (分歧)；serendipity (機緣巧合)；disparagement (貶低)。調查工人的「不滿/申訴」。"
+  },
+  {
+    "id": "NTU_114_B_12",
+    "type": "vocabulary",
+    "question": "The school's policy of punishing students who did not wear proper clothes was ______ to its mission of educating all of its students.",
+    "options": [
+      "extravagant",
+      "compatible",
+      "antithetical",
+      "outrageous"
+    ],
+    "answer": 2,
+    "explanation": "antithetical (對立的/背道而馳的)；extravagant (奢侈的)；compatible (相容的)；outrageous (荒謬的)。懲罰政策與教育宗旨「背道而馳」。"
+  },
+  {
+    "id": "NTU_114_B_13",
+    "type": "grammar",
+    "question": "I really think that apologizing is ______ you can do.",
+    "options": [
+      "a little",
+      "the least",
+      "as far as",
+      "not as much as"
+    ],
+    "answer": 1,
+    "explanation": "最高級慣用語考點：the least you can do 表示「你至少能做的事」。"
+  },
+  {
+    "id": "NTU_114_B_14",
+    "type": "grammar",
+    "question": "I have to go now. I promised not ______ late.",
+    "options": [
+      "have been",
+      "being",
+      "to be",
+      "be"
+    ],
+    "answer": 2,
+    "explanation": "不定詞否定句考點：promise to V 的否定結構為 promise not to V。"
+  },
+  {
+    "id": "NTU_114_B_15",
+    "type": "grammar",
+    "question": "What's the name of the place ______ your parents spend their vacation?",
+    "options": [
+      "that",
+      "which",
+      "where",
+      "who"
+    ],
+    "answer": 2,
+    "explanation": "關係副詞考點：先行詞為地點 the place，在該處度過假期使用 where。"
+  },
+  {
+    "id": "NTU_114_B_16",
+    "type": "grammar",
+    "question": "She wondered what ______.",
+    "options": [
+      "will look like her future",
+      "looks like her future",
+      "her future looks like",
+      "her future would look like"
+    ],
+    "answer": 3,
+    "explanation": "間接問句語序與時態一致：主要子句為過去時 wondered，引導的間接問句需用陳述句語序 (her future) 且助動詞退回過去時 (would look like)。"
+  },
+  {
+    "id": "NTU_114_B_17",
+    "type": "grammar",
+    "question": "Which of the following is NOT correct?",
+    "options": [
+      "Using the latest technology, better hearing is made possible for people with hearing problems.",
+      "Hiking through the dense forest, we discovered a hidden waterfall.",
+      "The car, damaged in the accident, was towed to the nearest repair shop.",
+      "Written in haste, the letter contained several errors that needed to be corrected."
+    ],
+    "answer": 0,
+    "explanation": "懸垂分詞 (Dangling Participle) 錯誤：(A) 中分詞 Using... 的邏輯主詞不可能為 better hearing，造成懸垂分詞錯誤。"
+  },
+  {
+    "id": "NTU_114_B_18",
+    "type": "grammar",
+    "question": "Which of the following is NOT correct?",
+    "options": [
+      "Look out! There is a truck coming! It's going to hit us!",
+      "I live in Taipei but I'm staying in New York for a few weeks.",
+      "Sorry, I can't help you. I'm leaving for an interview in an hour.",
+      "I'll wait here until you are finishing the writing."
+    ],
+    "answer": 3,
+    "explanation": "時間從屬子句時態考點：(D) 中 until 引導的時間副詞子句中，應用現在簡單式或現在完成式 (until you finish / are finished)，不可用進行式 are finishing。"
+  },
+  {
+    "id": "NTU_114_B_19",
+    "type": "grammar",
+    "question": "Which of the following is NOT correct?",
+    "options": [
+      "If Jack had studied more, he will get better marks.",
+      "I'd join the basketball team if I were taller.",
+      "If you leave now, you might catch the train to Taichung.",
+      "If I owned a dog like that, I'd keep it on a leash."
+    ],
+    "answer": 0,
+    "explanation": "假設語氣時態不一致：(A) 中 If 子句為與過去事實相反 (had studied)，主要子句應為 would have gotten，不可混用未來簡單式 will get。"
+  },
+  {
+    "id": "NTU_114_B_20",
+    "type": "grammar",
+    "question": "Which of the following is NOT correct?",
+    "options": [
+      "Is this the person you told me about?",
+      "Whether the team needs now is clear leadership.",
+      "It is during the night that the city becomes most vibrant.",
+      "What makes this course unique is its focus on real-world applications."
+    ],
+    "answer": 1,
+    "explanation": "名詞子句引導詞錯誤：(B) 中缺乏受詞「隊伍現在需要的東西」，應使用關係代名詞 What (What the team needs now...)，而非連接詞 Whether。"
+  },
+  {
+    "id": "NTU_114_B_21",
+    "type": "grammar",
+    "question": "The following is a narrated sequence of thought. Which sentence is NOT correct?",
+    "options": [
+      "I was walking home after school yesterday when it started raining heavily.",
+      "\"Oh no, I will get soaked before I reach home,\" I thought.",
+      "\"I wish I remember to bring my umbrella,\" I sighed.",
+      "But unfortunately, I had left it at home."
+    ],
+    "answer": 2,
+    "explanation": "假設語氣/時態考點：(C) 引號內為當下想法的假設語氣「真希望當時有記得帶傘」，wish 後方動詞應退回過去式 (I wish I remembered / had remembered)。"
+  },
+  {
+    "id": "NTU_114_B_22",
+    "type": "grammar",
+    "question": "Which of the following is NOT logically correct?",
+    "options": [
+      "That was close! You might have caused an accident!",
+      "I shouldn't have used this kind of paint. It's the right kind.",
+      "We should have turned right. We've missed the turning.",
+      "The thief must have unlocked the door. There is no other explanation."
+    ],
+    "answer": 1,
+    "explanation": "邏輯矛盾考點：(B) 前文說「我不該用這種油漆 (I shouldn't have used...)」，後文卻說「這是對的種類 (It's the right kind)」，前後文意邏輯衝突。"
+  },
+  {
+    "id": "NTU_115_B_01",
+    "type": "vocabulary",
+    "question": "Despite being excited by the opportunity, Lena felt ______ about leaving her hometown and starting over in a new city.",
+    "options": [
+      "decisive",
+      "ambivalent",
+      "indifferent",
+      "resolute"
+    ],
+    "answer": 1,
+    "explanation": "ambivalent (矛盾的/喜憂參半的)；decisive (果斷的)；indifferent (冷漠的)；resolute (堅決的)。既興奮又捨不得離開，心情感到「矛盾/喜憂參半」。"
+  },
+  {
+    "id": "NTU_115_B_02",
+    "type": "vocabulary",
+    "question": "The government introduced tax incentives to ______ the financial burden on small businesses.",
+    "options": [
+      "intensify",
+      "complicate",
+      "mitigate",
+      "provoke"
+    ],
+    "answer": 2,
+    "explanation": "mitigate (緩和/減輕)；intensify (加劇)；complicate (使複雜)；provoke (挑釁)。稅務優惠旨在「減輕」負擔。"
+  },
+  {
+    "id": "NTU_115_B_03",
+    "type": "vocabulary",
+    "question": "His casual attire seemed ______ at the formal awards ceremony.",
+    "options": [
+      "harmonious",
+      "deliberate",
+      "incongruous",
+      "concise"
+    ],
+    "answer": 2,
+    "explanation": "incongruous (不協調的/不相稱的)；harmonious (和諧的)；deliberate (深思熟慮的)；concise (簡潔的)。休閒服裝在正式頒獎典禮上顯得「不協調/突兀」。"
+  },
+  {
+    "id": "NTU_115_B_04",
+    "type": "vocabulary",
+    "question": "The philosopher's early writings were so ______ that even specialists struggled to interpret them.",
+    "options": [
+      "obscure",
+      "transparent",
+      "pragmatic",
+      "accessible"
+    ],
+    "answer": 0,
+    "explanation": "obscure (晦澀難懂的)；transparent (透明的)；pragmatic (務實的)；accessible (易懂的)。連專家都難以解讀，代表早期著作非常「晦澀難懂」。"
+  },
+  {
+    "id": "NTU_115_B_05",
+    "type": "vocabulary",
+    "question": "Faced with limited time and resources, the team adopted a(n) ______ solution rather than an idealistic one.",
+    "options": [
+      "conventional",
+      "speculative",
+      "impulsive",
+      "pragmatic"
+    ],
+    "answer": 3,
+    "explanation": "pragmatic (務實的/講求實效的)；speculative (推測性的)；impulsive (衝動的)；conventional (傳統的)。資源有限下採取「務實的」而非理想化的解方。"
+  },
+  {
+    "id": "NTU_115_B_06",
+    "type": "vocabulary",
+    "question": "Her ______ speech moved the audience and clarified a complex issue with remarkable grace.",
+    "options": [
+      "verbose",
+      "restrained",
+      "defensive",
+      "eloquent"
+    ],
+    "answer": 3,
+    "explanation": "eloquent (雄辯的/雄辯流利的/打動人的)；verbose (冗長的)；restrained (克制的)；defensive (防衛性的)。優雅流暢且打動人心的「雄辯/精彩」演說。"
+  },
+  {
+    "id": "NTU_115_B_07",
+    "type": "vocabulary",
+    "question": "Wireless internet has become so ______ that many people notice it only when it disappears.",
+    "options": [
+      "exclusive",
+      "innovative",
+      "ubiquitous",
+      "intermittent"
+    ],
+    "answer": 2,
+    "explanation": "ubiquitous (無所不在的/普遍的)；exclusive (獨家的)；innovative (創新的)；intermittent (間歇性的)。無線網路已變得「無所不在/普及」。"
+  },
+  {
+    "id": "NTU_115_B_08",
+    "type": "vocabulary",
+    "question": "Aware of the political consequences, the minister gave a(n) ______ response to the reporter's question.",
+    "options": [
+      "impulsive",
+      "circumspect",
+      "candid",
+      "dramatic"
+    ],
+    "answer": 1,
+    "explanation": "circumspect (慎重的/小心的)；impulsive (衝動的)；candid (坦率的)；dramatic (戲劇性的)。考量政治後果，給出「慎重/謹慎的」回答。"
+  },
+  {
+    "id": "NTU_115_B_09",
+    "type": "vocabulary",
+    "question": "The evidence supporting the theory was ______, relying on assumptions rather than solid data.",
+    "options": [
+      "tenuous",
+      "compelling",
+      "comprehensive",
+      "definitive"
+    ],
+    "answer": 0,
+    "explanation": "tenuous (站不住腳的/薄弱的)；compelling (令人信服的)；comprehensive (全面的)；definitive (決定性的)。依賴假設而非實據，代表證據「薄弱/站不住腳」。"
+  },
+  {
+    "id": "NTU_115_B_10",
+    "type": "vocabulary",
+    "question": "Although Kevin's peers experimented with bold techniques, he still favored a(n) ______ approach to design.",
+    "options": [
+      "radical",
+      "experimental",
+      "conventional",
+      "unorthodox"
+    ],
+    "answer": 2,
+    "explanation": "conventional (傳統的/守舊的)；radical (激進的)；experimental (實驗性的)；unorthodox (非正統的)。相較於大膽創新，他偏好「傳統/守舊的」方法。"
+  },
+  {
+    "id": "NTU_115_B_11",
+    "type": "vocabulary",
+    "question": "Many modern scientific terms ______ from ancient Greek.",
+    "options": [
+      "diverge",
+      "derive",
+      "deteriorate",
+      "fluctuate"
+    ],
+    "answer": 1,
+    "explanation": "derive from... (源自於...)；diverge (分歧)；deteriorate (惡化)；fluctuate (波動)。許多科學術語「源自」古希臘語。"
+  },
+  {
+    "id": "NTU_115_B_12",
+    "type": "vocabulary",
+    "question": "Before releasing the report, the committee agreed to ______ every statistic carefully.",
+    "options": [
+      "overlook",
+      "expedite",
+      "scrutinize",
+      "summarize"
+    ],
+    "answer": 2,
+    "explanation": "scrutinize (審查/細查)；overlook (忽視)；expedite (加速)；summarize (總結)。仔細「審查/檢查」數據。"
+  },
+  {
+    "id": "NTU_115_B_13",
+    "type": "vocabulary",
+    "question": "The researcher was unable to ______ his claims without additional data.",
+    "options": [
+      "dismiss",
+      "contradict",
+      "substantiate",
+      "speculate"
+    ],
+    "answer": 2,
+    "explanation": "substantiate (證實/實證)；dismiss (駁回)；contradict (矛盾)；speculate (推測)。沒有額外數據無法「證實」其主張。"
+  },
+  {
+    "id": "NTU_115_B_14",
+    "type": "vocabulary",
+    "question": "It is ______ that increased regulation can sometimes encourage innovation.",
+    "options": [
+      "predictable",
+      "illogical",
+      "simplistic",
+      "paradoxical"
+    ],
+    "answer": 3,
+    "explanation": "paradoxical (看似矛盾卻真實的/悖論的)；predictable (可預測的)；illogical (不合邏輯的)；simplistic (過度簡化的)。增加管制有時反而促進創新，這是「看似矛盾的 (paradoxical)」現象。"
+  },
+  {
+    "id": "NTU_115_B_15",
+    "type": "vocabulary",
+    "question": "After the layout change, the article was ______ to a less prominent section of the website.",
+    "options": [
+      "promoted",
+      "highlighted",
+      "replenished",
+      "relegated"
+    ],
+    "answer": 3,
+    "explanation": "relegated (降級/移至較不重要的位置)；promoted (升職/推廣)；highlighted (強調)；replenished (補充)。文章被「移至」較不顯眼的版面。"
+  },
+  {
+    "id": "NTU_115_B_16",
+    "type": "vocabulary",
+    "question": "David was caught between two friends and tried to ______ by mediating between them.",
+    "options": [
+      "take sides",
+      "keep the peace",
+      "start a quarrel",
+      "burn bridges"
+    ],
+    "answer": 1,
+    "explanation": "keep the peace (維持和平/調停)；take sides (偏袒)；start a quarrel (挑起爭端)；burn bridges (自斷後路)。夾在兩人中間試圖「維持和平/調停」。"
+  },
+  {
+    "id": "NTU_115_B_17",
+    "type": "vocabulary",
+    "question": "After a long week, Sara just wanted to ______, relax, and forget about work.",
+    "options": [
+      "kick back",
+      "stress out",
+      "hit it off",
+      "push through"
+    ],
+    "answer": 0,
+    "explanation": "kick back (放鬆/歇息)；stress out (壓力山大)；hit it off (一見如故)；push through (挺過去)。想「放鬆歇息 (kick back)」並忘掉工作。"
+  },
+  {
+    "id": "NTU_115_B_18",
+    "type": "vocabulary",
+    "question": "Although the model initially appeared persuasive, closer inspection revealed that it depended on ______, which ultimately weakened its credibility.",
+    "options": [
+      "a rigorously tested evidentiary base",
+      "a coherent explanatory structure",
+      "loosely connected suppositions",
+      "a comprehensive analytical design"
+    ],
+    "answer": 2,
+    "explanation": "文意語境：後文提削弱公信力 (weakened its credibility)，可知依賴的是「缺乏緊密連結的推測 (loosely connected suppositions)」。"
+  },
+  {
+    "id": "NTU_115_B_19",
+    "type": "vocabulary",
+    "question": "The article's strength lies not in originality of data but in how effectively it ______ earlier findings into a unified argument.",
+    "options": [
+      "selectively integrates",
+      "openly challenges",
+      "deliberately disregards",
+      "superficiality summarizes"
+    ],
+    "answer": 0,
+    "explanation": "文意語境：能形成統一論點 (unified argument)，代表文章「有選擇性地整合了 (selectively integrates)」早期研究成果。"
+  },
+  {
+    "id": "NTU_115_B_20",
+    "type": "vocabulary",
+    "question": "To avoid committing the institution to a definitive stance, the statement was written in language that was ______, allowing for interpretive flexibility.",
+    "options": [
+      "carefully noncommittal",
+      "overtly confrontational",
+      "unusually transparent",
+      "explicitly prescriptive"
+    ],
+    "answer": 0,
+    "explanation": "文意語境：為避免採取明確立場並保留彈性，用語為「謹慎而不表態的 (carefully noncommittal)」。"
+  },
+  {
+    "id": "NTU_115_B_21",
+    "type": "grammar",
+    "question": "Neither the professor nor the students ______ prepared for the unexpected power outage.",
+    "options": [
+      "was",
+      "were",
+      "have been",
+      "has"
+    ],
+    "answer": 1,
+    "explanation": "主謂就近一致：Neither A nor B 結構，動詞與鄰近主詞 B (the students, 複數) 一致，故用 were。"
+  },
+  {
+    "id": "NTU_115_B_22",
+    "type": "grammar",
+    "question": "Hardly ______ the research team completed the experiment when the funding was unexpectedly cut.",
+    "options": [
+      "has",
+      "did",
+      "had",
+      "have"
+    ],
+    "answer": 2,
+    "explanation": "否定副詞置首倒裝：Hardly had + 主詞 + p.p. + when... 句型（一...就...）。"
+  },
+  {
+    "id": "NTU_115_B_23",
+    "type": "grammar",
+    "question": "If the university administration had implemented the new policy earlier, student dissatisfaction ______ alleviated to a large extent.",
+    "options": [
+      "would have",
+      "will be",
+      "would be",
+      "would have been"
+    ],
+    "answer": 3,
+    "explanation": "與過去事實相反之假設語氣：If 子句為 had + p.p.，主要子句配合被動態應為 would have been + p.p."
+  },
+  {
+    "id": "NTU_115_B_24",
+    "type": "grammar",
+    "question": "The professor insisted that every student ______ the assignment on time, regardless of circumstances.",
+    "options": [
+      "submit",
+      "submits",
+      "submitted",
+      "submitting"
+    ],
+    "answer": 0,
+    "explanation": "原形動詞 (當格) 考點：insist 後接 that 子句省略 should，動詞使用原形 (submit)。"
+  },
+  {
+    "id": "NTU_115_B_25",
+    "type": "grammar",
+    "question": "She not only completed the analysis accurately but also ______ the report in a clear and concise manner.",
+    "options": [
+      "present",
+      "presented",
+      "presenting",
+      "presents"
+    ],
+    "answer": 1,
+    "explanation": "平行結構：not only + 過去式動詞 (completed) + but also + 過去式動詞 (presented)。"
+  },
+  {
+    "id": "NTU_115_B_26",
+    "type": "grammar",
+    "question": "Having studied multiple paradigms, the graduate student was confident in her ability to ______ the complex theories.",
+    "options": [
+      "interpret",
+      "interpreting",
+      "interprets",
+      "interpreted"
+    ],
+    "answer": 0,
+    "explanation": "不定詞用法：ability to V，後面接原形動詞 interpret。"
+  },
+  {
+    "id": "NTU_115_B_27",
+    "type": "grammar",
+    "question": "______ will give a public lecture tonight.",
+    "options": [
+      "Dr. Y.-M. Chen a professor who teaches linguistics,",
+      "Dr. Y.-M. Chen, a professor who teaches linguistics",
+      "Prof. Y.-M. Chen who teaches linguistics,",
+      "Prof. Y.-M. Chen, the professor who teaches linguistics,"
+    ],
+    "answer": 1,
+    "explanation": "同位語標點符號：專有名詞後接同位語短語需用雙逗號隔開 (Dr. Y.-M. Chen, a professor..., will give...)。"
+  },
+  {
+    "id": "NTU_115_B_28",
+    "type": "grammar",
+    "question": "The painting Mona Lisa ______, by the Italian artist Leonardo da Vinci in the 16th century, was once stolen from the Louvre Museum.",
+    "options": [
+      "which was created",
+      "that was created",
+      ", which was created",
+      ", that was created"
+    ],
+    "answer": 2,
+    "explanation": "非限定關係子句：專有名詞 Mona Lisa 補充說明需用逗號隔開的非限定關係子句 , which was created..."
+  }
+]

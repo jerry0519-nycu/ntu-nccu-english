@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#1e3a8a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="台政財金英文" />
+  <title>台政財金所英文刷題</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;          /* 經典牛津深海藍 */
+      --primary-hover: #1e40af;
+      --primary-light: #eff6ff;
+      --accent: #d97706;           /* 琥珀金 (收藏/星號) */
+      --accent-light: #fef3c7;
+      --success: #059669;          /* 翡翠綠 (認識/正確) */
+      --success-light: #ecfdf5;
+      --error: #dc2626;            /* 寶石紅 (不熟/錯誤) */
+      --error-light: #fef2f2;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-300: #cbd5e1;
+      --slate-400: #94a3b8;
+      --slate-500: #64748b;
+      --slate-700: #334155;
+      --slate-900: #0f172a;
+      --card-bg: #ffffff;
+      --radius-lg: 24px;
+      --radius-md: 14px;
+      --radius-sm: 8px;
+      --shadow-card: 0 20px 40px -15px rgba(15, 23, 42, 0.07), 0 0 1px 1px rgba(15, 23, 42, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "PingFang TC", "Noto Sans TC", sans-serif;
+      background-color: #f8fafc;
+      background-image: radial-gradient(var(--slate-200) 1px, transparent 1px);
+      background-size: 24px 24px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: var(--slate-900);
+      overflow-x: hidden;
+      padding: 24px 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--slate-200);
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .brand-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--slate-100);
+      color: var(--primary);
+      font-size: 0.8em;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 30px;
+      border: 1px solid var(--slate-200);
+      margin-bottom: 12px;
+      letter-spacing: 0.6px;
+    }
+
+    h1 {
+      font-size: 2.05em;
+      color: var(--slate-900);
+      letter-spacing: -0.6px;
+      margin-bottom: 6px;
+      line-height: 1.25;
+      font-weight: 800;
+    }
+
+    .subtitle {
+      font-size: 0.92em;
+      color: var(--slate-500);
+      line-height: 1.5;
+    }
+
+    /* 頂部主分頁切換：刷題 vs 單字卡 */
+    .main-tab-nav {
+      display: flex;
+      background: var(--slate-100);
+      padding: 4px;
+      border-radius: 14px;
+      margin-top: 18px;
+      border: 1px solid var(--slate-200);
+      gap: 4px;
+    }
+
+    .main-tab-btn {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: none;
+      background: transparent;
+      font-size: 0.95em;
+      font-weight: 700;
+      color: var(--slate-500);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .main-tab-btn.active {
+      background: #ffffff;
+      color: var(--primary);
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+    }
+
+    /* 通知 Banner */
+    .toast-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      background: var(--success-light);
+      border: 1px solid #a7f3d0;
+      border-radius: var(--radius-sm);
+      color: #065f46;
+      font-size: 0.86em;
+      font-weight: 600;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .toast-banner.warning {
+      background: #fffbeb;
+      border-color: #fde68a;
+      color: #92400e;
+    }
+
+    .view-card {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    /* 模式選單網格 */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 6px;
+    }
+
+    .menu-btn {
+      background: #ffffff;
+      border: 1.5px solid var(--slate-200);
+      color: var(--slate-900);
+      padding: 22px 16px;
+      border-radius: 16px;
+      font-size: 1.08em;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+
+    .menu-btn .btn-icon {
+      font-size: 1.8em;
+      margin-bottom: 2px;
+      transition: transform 0.2s ease;
+    }
+
+    .menu-btn small {
+      display: block;
+      font-size: 0.8em;
+      color: var(--slate-500);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .menu-btn:hover {
+      background: var(--slate-50);
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px -5px rgba(30, 58, 138, 0.12);
+    }
+
+    .sub-menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .sub-menu-btn {
+      background: var(--slate-50);
+      border: 1.5px solid var(--slate-200);
+      padding: 13px 16px;
+      border-radius: 14px;
+      font-size: 0.94em;
+      font-weight: 600;
+      color: var(--slate-700);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+
+    .sub-menu-btn:hover {
+      background: #ffffff;
+      border-color: var(--slate-400);
+      transform: translateY(-2px);
+    }
+
+    .badge-count {
+      background: var(--slate-200);
+      color: var(--slate-700);
+      font-size: 0.82em;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 12px;
+    }
+
+    .sub-menu-btn.mistake .badge-count {
+      background: #fee2e2;
+      color: var(--error);
+    }
+
+    .sub-menu-btn.starred .badge-count {
+      background: #fef3c7;
+      color: var(--accent);
+    }
+
+    /* 篩選自訂面板 */
+    .filter-panel {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: 16px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .filter-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .filter-label {
+      font-size: 0.88em;
+      font-weight: 700;
+      color: var(--slate-700);
+      white-space: nowrap;
+    }
+
+    .filter-chips {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .chip-btn {
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.85em;
+      font-weight: 600;
+      color: var(--slate-700);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .chip-btn:hover {
+      background: var(--slate-100);
+    }
+
+    .chip-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 2px 6px rgba(30, 58, 138, 0.2);
+    }
+
+    /* 測驗/卡片頂部進度列 */
+    .quiz-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1.5px solid var(--slate-100);
+      gap: 10px;
+    }
+
+    .quiz-source-tag {
+      font-size: 0.82em;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--primary-light);
+      border: 1px solid #bfdbfe;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .type-and-source {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.78em;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .badge.vocab {
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
+    }
+
+    .badge.grammar {
+      background: #fef3c7;
+      color: #b45309;
+      border: 1px solid #fde68a;
+    }
+
+    .badge.flash {
+      background: #f3e8ff;
+      color: #7e22ce;
+      border: 1px solid #e9d5ff;
+    }
+
+    .quiz-progress-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .stats {
+      font-size: 0.9em;
+      color: var(--slate-500);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .icon-action-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1.25em;
+      line-height: 1;
+      padding: 5px;
+      color: var(--slate-400);
+      transition: all 0.2s ease;
+      border-radius: 6px;
+    }
+
+    .icon-action-btn:hover {
+      color: var(--slate-700);
+      background: var(--slate-100);
+    }
+
+    .icon-action-btn.starred {
+      color: var(--accent);
+      transform: scale(1.1);
+    }
+
+    .progress-bar-bg {
+      width: 100%;
+      height: 4px;
+      background: var(--slate-200);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: -12px;
+      margin-bottom: 6px;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), #3b82f6);
+      width: 0%;
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+
+    /* 題目區塊 */
+    .question-box {
+      font-size: 1.25em;
+      line-height: 1.7;
+      font-weight: 600;
+      color: var(--slate-900);
+      margin-top: 6px;
+      margin-bottom: 14px;
+      letter-spacing: -0.2px;
+    }
+
+    .blank-pill {
+      display: inline-block;
+      padding: 0 10px;
+      margin: 0 4px;
+      background: var(--slate-100);
+      border-bottom: 2.5px solid var(--primary);
+      color: var(--primary);
+      font-weight: 800;
+      letter-spacing: 2px;
+      border-radius: 4px;
+      vertical-align: baseline;
+    }
+
+    /* 選項區塊 */
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .opt-btn {
+      background: #ffffff;
+      border: 1.5px solid var(--slate-200);
+      padding: 16px 20px;
+      border-radius: 14px;
+      font-size: 1.05em;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      color: var(--slate-700);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    }
+
+    .opt-content {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .opt-letter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--slate-100);
+      color: var(--slate-700);
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 0.9em;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+
+    .opt-text {
+      flex: 1;
+      font-size: 1.02em;
+    }
+
+    .opt-status-icon {
+      font-size: 1.25em;
+      opacity: 0;
+      transform: scale(0.6);
+      transition: all 0.2s ease;
+    }
+
+    .opt-btn:hover:not([disabled]) {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      transform: translateX(3px);
+    }
+
+    .opt-btn:hover:not([disabled]) .opt-letter {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .opt-btn.correct {
+      background: var(--success-light) !important;
+      border-color: var(--success) !important;
+      color: #065f46 !important;
+      font-weight: 700;
+    }
+
+    .opt-btn.correct .opt-letter {
+      background: var(--success);
+      color: #ffffff;
+    }
+
+    .opt-btn.correct .opt-status-icon {
+      opacity: 1;
+      transform: scale(1);
+      color: var(--success);
+    }
+
+    .opt-btn.wrong {
+      background: var(--error-light) !important;
+      border-color: var(--error) !important;
+      color: #991b1b !important;
+      font-weight: 700;
+    }
+
+    .opt-btn.wrong .opt-letter {
+      background: var(--error);
+      color: #ffffff;
+    }
+
+    .opt-btn.wrong .opt-status-icon {
+      opacity: 1;
+      transform: scale(1);
+      color: var(--error);
+    }
+
+    .opt-btn:disabled {
+      cursor: default;
+    }
+
+    /* 解析卡片 */
+    .explanation-card {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-left: 4.5px solid var(--primary);
+      border-radius: var(--radius-md);
+      padding: 20px 22px;
+      margin-top: 14px;
+      animation: slideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .explanation-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 1.05em;
+    }
+
+    .explanation-body {
+      font-size: 0.96em;
+      line-height: 1.7;
+      color: var(--slate-700);
+    }
+
+    .vocab-row {
+      margin-bottom: 6px;
+      padding-left: 10px;
+      border-left: 2px solid var(--slate-300);
+    }
+
+    .note-row {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--slate-300);
+      color: var(--slate-900);
+    }
+
+    .point-badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: #1e40af;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #bfdbfe;
+    }
+
+    /* =========================================================
+       📇 3D 翻轉單字卡專屬樣式 (Flashcard Styles)
+       ========================================================= */
+    .flashcard-scene {
+      perspective: 1200px;
+      width: 100%;
+      min-height: 310px;
+      cursor: pointer;
+      margin: 10px 0 16px 0;
+    }
+
+    .flashcard-inner {
+      position: relative;
+      width: 100%;
+      min-height: 310px;
+      text-align: center;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      transform-style: preserve-3d;
+    }
+
+    .flashcard-inner.is-flipped {
+      transform: rotateY(180deg);
+    }
+
+    .flashcard-face {
+      position: absolute;
+      width: 100%;
+      min-height: 310px;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 20px;
+      padding: 34px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+      border: 2px solid var(--slate-200);
+      background: #ffffff;
+      user-select: none;
+    }
+
+    .flashcard-face.back {
+      transform: rotateY(180deg);
+      background: var(--slate-50);
+      border-color: #93c5fd;
+    }
+
+    .card-word-title {
+      font-size: 2.3em;
+      font-weight: 900;
+      color: var(--slate-900);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+
+    .card-word-zh {
+      font-size: 1.7em;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 14px;
+      letter-spacing: -0.3px;
+    }
+
+    .card-sentence-box {
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-size: 0.96em;
+      line-height: 1.6;
+      color: var(--slate-700);
+      text-align: left;
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .card-sentence-box mark {
+      background: #fef08a;
+      color: var(--slate-900);
+      font-weight: 700;
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+
+    .card-flip-hint {
+      margin-top: 16px;
+      font-size: 0.82em;
+      color: var(--slate-400);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    /* 單字卡自評按鈕區 (左邊認識 / 右邊不會) */
+    .flashcard-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .assess-btn {
+      padding: 16px 20px;
+      border-radius: 16px;
+      border: 2px solid transparent;
+      font-size: 1.05em;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .assess-btn.know {
+      background: var(--success-light);
+      border-color: #86efac;
+      color: #065f46;
+    }
+
+    .assess-btn.know:hover {
+      background: #dcfce7;
+      border-color: var(--success);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.2);
+    }
+
+    .assess-btn.dont-know {
+      background: var(--error-light);
+      border-color: #fca5a5;
+      color: #991b1b;
+    }
+
+    .assess-btn.dont-know:hover {
+      background: #fee2e2;
+      border-color: var(--error);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
+    }
+
+    /* 控制按鈕區 */
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      gap: 12px;
+    }
+
+    .action-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 13px 26px;
+      border-radius: 12px;
+      font-size: 1em;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
+    }
+
+    .action-btn:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(30, 58, 138, 0.25);
+    }
+
+    .secondary-btn {
+      background: var(--slate-100);
+      color: var(--slate-700);
+      border: 1px solid var(--slate-200);
+      padding: 11px 18px;
+      border-radius: 12px;
+      font-size: 0.94em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .secondary-btn:hover {
+      background: var(--slate-200);
+      color: var(--slate-900);
+    }
+
+    /* 結算卡片 */
+    .result-card {
+      text-align: center;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .score-circle {
+      width: 135px;
+      height: 135px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+      border: 3.5px solid var(--primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(30, 58, 138, 0.12);
+    }
+
+    .score-number {
+      font-size: 2.5em;
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .score-label {
+      font-size: 0.78em;
+      color: var(--slate-500);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .result-grade {
+      font-size: 1.35em;
+      font-weight: 800;
+      color: var(--slate-900);
+    }
+
+    .result-feedback {
+      font-size: 0.95em;
+      color: var(--slate-600);
+      max-width: 480px;
+      line-height: 1.6;
+    }
+
+    .result-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .stat-box {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      padding: 14px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .stat-val {
+      font-size: 1.4em;
+      font-weight: 800;
+      color: var(--slate-900);
+    }
+
+    .stat-desc {
+      font-size: 0.78em;
+      color: var(--slate-500);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    .result-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .kbd-hint {
+      display: inline-block;
+      font-size: 0.72em;
+      padding: 2px 6px;
+      background: var(--slate-200);
+      color: var(--slate-600);
+      border-radius: 4px;
+      margin-left: 6px;
+      font-family: monospace;
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 28px;
+      font-size: 0.85em;
+      color: var(--slate-400);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 行動裝置適應 */
+    @media (max-width: 640px) {
+      body {
+        padding: 12px;
+      }
+      .container {
+        padding: 22px 16px;
+        border-radius: 18px;
+      }
+      h1 {
+        font-size: 1.55em;
+      }
+      .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .sub-menu-grid {
+        grid-template-columns: 1fr;
+      }
+      .filter-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .card-word-title {
+        font-size: 1.8em;
+      }
+      .card-word-zh {
+        font-size: 1.4em;
+      }
+      .flashcard-actions {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .result-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .result-actions {
+        flex-direction: column;
+      }
+      .result-actions button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand-tag">🏛️ FINANCE </div>
+      <h1>研究所英文歷屆刷題</h1>
+
+      <!-- 頂部核心模式分流：刷題 vs 單字卡 -->
+      <nav class="main-tab-nav">
+        <button id="tab-quiz" class="main-tab-btn active" onclick="switchAppTab('quiz')">
+          ⚡ 歷屆真題
+        </button>
+        <button id="tab-flashcard" class="main-tab-btn" onclick="switchAppTab('flashcard')">
+          📇 單字 Flashcard
+        </button>
+      </nav>
+    </header>
+
+    <!-- 即時狀態通知 -->
+    <div id="toast-banner" class="toast-banner" style="display: none;">
+      <span id="toast-msg">載入中...</span>
+      <span style="cursor: pointer; opacity: 0.7;" onclick="this.parentElement.style.display='none'">✕</span>
+    </div>
+
+    <!-- ==========================================
+         視圖 1：【刷題首頁選單】(#menu-view)
+         ========================================== -->
+    <div id="menu-view" class="view-card">
+      <div class="menu-grid">
+        <button class="menu-btn" onclick="startQuiz('all')">
+          <div class="btn-icon">⚡</div>
+          All Practice
+          <small>綜合刷題模式<br/>單字與文法隨機</small>
+        </button>
+        <button class="menu-btn" onclick="startQuiz('vocabulary')">
+          <div class="btn-icon">📖</div>
+          Vocabulary Only
+          <small>純單字<br/>政大 & 台大純單字</small>
+        </button>
+        <button class="menu-btn" onclick="startQuiz('grammar')">
+          <div class="btn-icon">⚖️</div>
+          Grammar Only
+          <small>純文法與句型<br/>倒裝、假設語氣、挑錯等</small>
+        </button>
+      </div>
+
+      <div class="sub-menu-grid">
+        <button class="sub-menu-btn mistake" onclick="startMistakesQuiz()">
+          <span>🎯 錯題訂正</span>
+          <span id="mistake-count-badge" class="badge-count">0 題</span>
+        </button>
+        <button class="sub-menu-btn starred" onclick="startStarredQuiz()">
+          <span>⭐ 我的收藏</span>
+          <span id="starred-count-badge" class="badge-count">0 題</span>
+        </button>
+      </div>
+
+      <div class="filter-panel">
+        <div class="filter-row">
+          <span class="filter-label">🏛️ 選擇校系：</span>
+          <div class="filter-chips" id="school-filters">
+            <button class="chip-btn active" onclick="setSchoolFilter('all', this)">全部校系</button>
+            <button class="chip-btn" onclick="setSchoolFilter('NTU', this)">台灣大學 (NTU)</button>
+            <button class="chip-btn" onclick="setSchoolFilter('NCCU', this)">政治大學 (NCCU)</button>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <span class="filter-label">⏱️ 單次題數：</span>
+          <div class="filter-chips" id="length-filters">
+            <button class="chip-btn active" onclick="setLengthFilter(15, this)">15 題</button>
+            <button class="chip-btn" onclick="setLengthFilter(30, this)">30 題</button>
+            <button class="chip-btn" onclick="setLengthFilter(0, this)">全部題庫</button>
+          </div>
+        </div>
+
+        <div class="filter-row" style="border-top: 1px dashed var(--slate-200); padding-top: 12px; margin-top: 2px;">
+          <span class="filter-label">⚙️ 進度管理：</span>
+          <div class="filter-chips">
+            <button class="chip-btn" style="color: var(--error); border-color: #fecaca; background: #fff5f5;" onclick="confirmResetProgress()">
+              🗑️ 重置／清空進度紀錄
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         視圖 2：【刷題測驗進行中】(#quiz-view)
+         ========================================== -->
+    <div id="quiz-view" class="view-card" style="display: none;">
+      <div class="progress-bar-bg">
+        <div id="progress-bar" class="progress-bar-fill"></div>
+      </div>
+
+      <div class="quiz-header">
+        <div class="type-and-source">
+          <span id="quiz-source" class="quiz-source-tag">🏛️ 台大 111 英文(B)</span>
+          <span id="type-badge" class="badge vocab">VOCABULARY</span>
+        </div>
+        
+        <div class="quiz-progress-wrap">
+          <button id="star-current-btn" class="icon-action-btn" title="收藏此題" onclick="toggleCurrentStar()">☆</button>
+          <span id="quiz-stats" class="stats">1 / 15 | 正確率: 0%</span>
+        </div>
+      </div>
+
+      <div id="question-text" class="question-box"></div>
+
+      <div id="options-container" class="options-grid"></div>
+
+      <div id="explanation-box" class="explanation-card" style="display: none;">
+        <div class="explanation-title">
+          <span>💡 補教名師考點解析與關鍵字彙</span>
+        </div>
+        <div id="explanation-text" class="explanation-body"></div>
+      </div>
+
+      <div class="controls">
+        <button class="secondary-btn" onclick="confirmExit()">回首頁選單</button>
+        <button id="next-btn" class="action-btn" onclick="nextQuestion()" style="display: none;">
+          下一題 <span class="kbd-hint">[Enter]</span> ➔
+        </button>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         視圖 3：【刷題成績結算】(#result-view)
+         ========================================== -->
+    <div id="result-view" class="view-card" style="display: none;">
+      <div class="result-card">
+        <div class="score-circle">
+          <div id="result-score-val" class="score-number">88%</div>
+          <div class="score-label">Accuracy</div>
+        </div>
+
+        <div id="result-grade-text" class="result-grade">🎉 表現優異！台大正取生實力</div>
+        <div id="result-feedback-text" class="result-feedback">在極具挑戰的台政大財金所純粹單字與文法試題中維持高正確率，持續保持每日做題的手感！</div>
+
+        <div class="result-stats-grid">
+          <div class="stat-box">
+            <div id="res-total-count" class="stat-val">15</div>
+            <div class="stat-desc">本次做題數</div>
+          </div>
+          <div class="stat-box">
+            <div id="res-correct-count" class="stat-val">13</div>
+            <div class="stat-desc">答對題數</div>
+          </div>
+          <div class="stat-box">
+            <div id="res-wrong-count" class="stat-val" style="color: var(--error);">2</div>
+            <div class="stat-desc">已存入錯題本</div>
+          </div>
+        </div>
+
+        <div class="result-actions">
+          <button id="retry-mistakes-btn" class="action-btn" style="background:#be123c;" onclick="startSessionMistakes()">
+            🎯 立即重練本次錯題 (<span id="session-mistakes-count">0</span>)
+          </button>
+          <button id="quiz-star-all-btn" class="action-btn" style="background:#d97706;" onclick="starAllQuizSessionMistakes()">
+            ⭐ 一鍵將本次錯題加入收藏 (<span id="quiz-star-all-count">0</span>)
+          </button>
+          <button class="action-btn" onclick="restartCurrentQuiz()">
+            🔄 再刷一組新題目
+          </button>
+          <button class="secondary-btn" onclick="showMenu()">
+            🏠 回首頁主選單
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         視圖 4：【單字卡首頁選單】(#flashcard-menu-view)
+         ========================================== -->
+    <div id="flashcard-menu-view" class="view-card" style="display: none;">
+      <div class="menu-grid">
+        <button class="menu-btn" onclick="startFlashcardSession('all')">
+          <div class="btn-icon">🔀</div>
+          All Exam Words
+          <small>全部選項單字</small>
+        </button>
+        <button class="menu-btn" onclick="startFlashcardSession('unfamiliar')">
+          <div class="btn-icon">🎯</div>
+          Unfamiliar Words
+          <small>待複習不熟單字</small>
+        </button>
+        <button class="menu-btn" onclick="startFlashcardSession('starred')">
+          <div class="btn-icon">⭐</div>
+          Starred Words
+          <small>星號標記單字</small>
+        </button>
+      </div>
+
+      <div class="sub-menu-grid">
+        <div class="sub-menu-btn mistake">
+          <span>🎯 目前待複習不熟單字：</span>
+          <span id="flash-unfamiliar-badge" class="badge-count">0 個</span>
+        </div>
+        <div class="sub-menu-btn starred">
+          <span>⭐ 目前已收藏星號單字：</span>
+          <span id="flash-starred-badge" class="badge-count">0 個</span>
+        </div>
+      </div>
+
+      <div class="filter-panel">
+        <div class="filter-row">
+          <span class="filter-label">⏱️ 單次輪次量：</span>
+          <div class="filter-chips" id="flash-length-filters">
+            <button class="chip-btn active" onclick="setFlashLengthFilter(20, this)">20 個</button>
+            <button class="chip-btn" onclick="setFlashLengthFilter(50, this)">50 個</button>
+            <button class="chip-btn" onclick="setFlashLengthFilter(0, this)">全部單字</button>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <span class="filter-label">🏛️ 來源學校：</span>
+          <div class="filter-chips" id="flash-school-filters">
+            <button class="chip-btn active" onclick="setFlashSchoolFilter('all', this)">全部真題</button>
+            <button class="chip-btn" onclick="setFlashSchoolFilter('NTU', this)">台大真題選項</button>
+            <button class="chip-btn" onclick="setFlashSchoolFilter('NCCU', this)">政大真題選項</button>
+          </div>
+        </div>
+
+        <div class="filter-row" style="border-top: 1px dashed var(--slate-200); padding-top: 12px; margin-top: 2px;">
+          <span class="filter-label">⚙️ 進度管理：</span>
+          <div class="filter-chips">
+            <button class="chip-btn" style="color: var(--error); border-color: #fecaca; background: #fff5f5;" onclick="confirmResetProgress()">
+              🗑️ 重置／清空單字卡紀錄
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         視圖 5：【單字卡翻卡進行中】(#flashcard-view)
+         ========================================== -->
+    <div id="flashcard-view" class="view-card" style="display: none;">
+      <div class="progress-bar-bg">
+        <div id="flash-progress-bar" class="progress-bar-fill"></div>
+      </div>
+
+      <div class="quiz-header">
+        <div class="type-and-source">
+          <span id="flash-source" class="quiz-source-tag">🏛️ 政大 111 英文(A) 選項</span>
+          <span class="badge flash">FLASHCARD</span>
+        </div>
+        
+        <div class="quiz-progress-wrap">
+          <button id="flash-audio-btn" class="icon-action-btn" title="朗讀發音" onclick="pronounceCurrentWord()">🔊</button>
+          <button id="flash-star-btn" class="icon-action-btn" title="星號收藏" onclick="toggleFlashStar()">☆</button>
+          <span id="flash-stats" class="stats">1 / 20</span>
+        </div>
+      </div>
+
+      <!-- 3D 翻轉卡片容器 -->
+      <div class="flashcard-scene" onclick="flipFlashcard()">
+        <div id="flashcard-inner" class="flashcard-inner">
+          <!-- 正面：英文單字 -->
+          <div class="flashcard-face front">
+            <div id="card-front-word" class="card-word-title">undermine</div>
+            <div class="card-flip-hint">
+              <span>👆 點擊卡片或按 <span class="kbd-hint">[Space]</span> 翻看中文</span>
+            </div>
+          </div>
+
+          <!-- 背面：中文釋義與真題例句 -->
+          <div class="flashcard-face back">
+            <div id="card-back-word" style="font-size: 1.1em; font-weight: 700; color: var(--slate-500); margin-bottom: 4px;">undermine</div>
+            <div id="card-back-zh" class="card-word-zh">逐漸削弱 / 破壞</div>
+            <div class="card-sentence-box">
+              <div style="font-size: 0.78em; font-weight: 800; color: var(--primary); margin-bottom: 4px;">📖 歷屆真題出處語境：</div>
+              <div id="card-back-sentence">She writes across generational lines, and thus makes the past so vivid...</div>
+            </div>
+            <div class="card-flip-hint">
+              <span>👆 點擊翻回正面</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 自評按鍵 (左邊認識 / 右邊不會) -->
+      <div class="flashcard-actions">
+        <button class="assess-btn know" onclick="assessWord(true)">
+          <span>✅ 認識／我會 <span class="kbd-hint">[←] 或 [1]</span></span>
+          <small style="font-weight: 500; opacity: 0.85;">已記住，移除不熟標籤</small>
+        </button>
+        <button class="assess-btn dont-know" onclick="assessWord(false)">
+          <span>❌ 不熟／不會 <span class="kbd-hint">[→] 或 [2]</span></span>
+          <small style="font-weight: 500; opacity: 0.85;">存入待複習庫，本輪重練</small>
+        </button>
+      </div>
+
+      <div class="controls">
+        <button class="secondary-btn" onclick="showMenu()">回單字選單</button>
+        <span style="font-size: 0.85em; color: var(--slate-400);">快捷鍵：[空白鍵] 翻面 • [←] 認識 • [→] 不會</span>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         視圖 6：【單字卡輪次結算】(#flashcard-result-view)
+         ========================================== -->
+    <div id="flashcard-result-view" class="view-card" style="display: none;">
+      <div class="result-card">
+        <div class="score-circle">
+          <div id="flash-result-score" class="score-number">100%</div>
+          <div class="score-label">Mastery</div>
+        </div>
+
+        <div id="flash-result-title" class="result-grade">🎉 太神了！本輪單字全數掌握！</div>
+        <div id="flash-result-desc" class="result-feedback">真題選項中的高頻難字是決定台政大能否通過英文門檻的勝負手，請保持每日翻卡手感！</div>
+
+        <div class="result-stats-grid">
+          <div class="stat-box">
+            <div id="flash-res-total" class="stat-val">20</div>
+            <div class="stat-desc">本輪複習總數</div>
+          </div>
+          <div class="stat-box">
+            <div id="flash-res-know" class="stat-val" style="color: var(--success);">18</div>
+            <div class="stat-desc">認識掌握</div>
+          </div>
+          <div class="stat-box">
+            <div id="flash-res-dont-know" class="stat-val" style="color: var(--error);">2</div>
+            <div class="stat-desc">不熟／待重練</div>
+          </div>
+        </div>
+
+        <div class="result-actions">
+          <button id="flash-repeat-unfamiliar-btn" class="action-btn" style="background: #be123c;" onclick="startFlashcardRepeatUnfamiliar()">
+            🎯 將本輪不會的單字再練一遍 (<span id="flash-unfamiliar-round-count">0</span>)
+          </button>
+          <button id="flash-star-all-btn" class="action-btn" style="background: #d97706;" onclick="starAllSessionFlashcardUnfamiliar()">
+            ⭐ 一鍵將本輪不熟單字加入星號 (<span id="flash-star-all-count">0</span>)
+          </button>
+          <button id="flash-next-round-btn" class="action-btn" onclick="startFlashcardNextRound()">
+            ➡️ 開啟下一輪單字
+          </button>
+          <button class="secondary-btn" onclick="showMenu()">
+            🏠 回到主選單
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>鍵盤支援：[A-D] 或 [1-4] 選答案 • [Space] 翻卡 • [←] 認識 • [→] 不會</div>
+  </footer>
+
+  <script>
+    // 預設備用純淨題庫
+    const mockData = [
+      {
+        "id": "NTU_111_B_01",
+        "type": "vocabulary",
+        "question": "The omicron ______ first identified late last month in southern Africa, has sent infections soaring to levels not seen since last winter.",
+        "options": ["variance", "difference", "variant", "deviation"],
+        "answer": 2,
+        "explanation": "variant (變異株)；variance (變異/分歧)；difference (差異)；deviation (偏差)。病毒變異株的固定字彙為 variant。"
+      },
+      {
+        "id": "NTU_111_B_04",
+        "type": "vocabulary",
+        "question": "Flight ______ triggered by weather and coronavirus-related staffing shortages eased slightly Tuesday.",
+        "options": ["destructions", "disruptions", "devotion", "detention"],
+        "answer": 1,
+        "explanation": "disruptions (中斷/干擾)；destructions (破壞)；devotion (奉獻)；detention (拘留)。航班因天氣或人力短缺而受到干擾中斷。"
+      },
+      {
+        "id": "NTU_111_B_11",
+        "type": "grammar",
+        "question": "A ______ of covid-19 cases in China prompts a citywide lockdown.",
+        "options": ["cluster", "few", "team", "collective"],
+        "answer": 0,
+        "explanation": "【名詞搭配考點】醫學與公衛上指「群聚感染」固定用法為 a cluster of cases。"
+      },
+      {
+        "id": "NTU_111_B_12",
+        "type": "grammar",
+        "question": "______ a third year of the pandemic loomed, the seven-day average of U.S. cases topped 267,000 on Tuesday.",
+        "options": ["Through", "As", "Since", "In"],
+        "answer": 1,
+        "explanation": "【連接詞考點】這裡需要一個能連接子句的連接詞。As 在此表「隨著」，「隨著大流行第三年逼近...」。"
+      },
+      {
+        "id": "NCCU_111_A_01",
+        "type": "vocabulary",
+        "question": "Whereas there are recent reports of declines in movie violence and fewer portrayals of violence as ______, media portraits of crime greatly overemphasize individual acts of violence.",
+        "options": ["graphic", "annexed", "negative", "damaging"],
+        "answer": 0,
+        "explanation": "graphic (生動的/寫實的/露骨的)；annexed (附加的)；negative (負面的)；damaging (破壞性的)。graphic violence 指「露骨/血腥暴力的畫面」。"
+      },
+      {
+        "id": "NCCU_111_A_02",
+        "type": "vocabulary",
+        "question": "She writes across generational lines, and thus makes the past so vivid that our belief that the present is the true locus of experience is ______.",
+        "options": ["enhanced", "strengthened", "ridiculed", "undermined"],
+        "answer": 3,
+        "explanation": "undermine (逐漸削弱/破壞)；enhance (提升)；strengthen (加強)；ridicule (嘲笑)。文字讓過去過於生動，因而「削弱了」當下才是唯一真實體驗的信念。"
+      },
+      {
+        "id": "NTU_113_B_09",
+        "type": "vocabulary",
+        "question": "Epigenetics is the most monumental explanation to emerge in the social and biological sciences since Darwin proposed his theory of natural ______.",
+        "options": ["screening", "selection", "competition", "violation"],
+        "answer": 1,
+        "explanation": "selection (選擇)。theory of natural selection 指達爾文的「物競天擇/天擇說」。"
+      },
+      {
+        "id": "NTU_112_B_31",
+        "type": "grammar",
+        "question": "Families of incarcerated persons were usually poor and powerless, with ______ to address the issue of rights.",
+        "options": [
+          "either the means or the know-how",
+          "neither the means or the know-how",
+          "neither the means nor the know-how",
+          "either the means nor the know-how"
+        ],
+        "answer": 2,
+        "explanation": "對應連詞考點：「既沒有...也沒有...」固定結構為 neither A nor B。"
+      }
+    ];
+
+    // 選項釋義通用對照表（補全未包含在題目單一解析中的選項）
+    const dictFallback = {
+      'between': '在...之間',
+      'with': '和...一起/隨著',
+      'on': '在...之上/關於',
+      'obstructing': '阻礙/妨礙',
+      'moving': '移動的/感人的',
+      'putting': '放置/擺放',
+      'enhanced': '增強/提升 (enhance之過去分詞)',
+      'ridiculed': '嘲弄/嘲笑 (ridicule之過去分詞)',
+      'undermined': '逐漸削弱/破壞 (undermine之過去分詞)',
+      'damages': '損害/賠償金',
+      'condenses': '濃縮/凝結',
+      'permeates': '滲透/瀰漫',
+      'sensitized': '使敏感/提高警覺',
+      'sensualized': '感覺化/肉感化',
+      'induced': '引發/誘導 (induce之過去分詞)',
+      'evolved': '演化/進化 (evolve之過去分詞)',
+      'deduced': '推論/演繹 (deduce之過去分詞)',
+      'revolved': '旋轉/圍繞 (revolve之過去分詞)',
+      'suggestive': '暗示性的/啟發性的',
+      'fractured': '斷裂的/破碎的',
+      'followed': '隨後的/跟隨的',
+      'generality': '普遍性/概括',
+      'phenomenon': '現象',
+      'sensation': '知覺/轟動',
+      'to get a second opinion': '尋求第二種意見/諮詢其他專家',
+      'to prove to be false or incorrect': '證明其為錯誤或不真實',
+      'to support with examples': '舉例印證/支持',
+      'to humiliate publicly': '公開羞辱/使出醜',
+      'an organization of resources': '資源的組織/配置',
+      'a reminder to complete a task on time': '準時完成任務的提醒',
+      'a recap of important points': '要點回顧與總結',
+      'a cue to begin something': '開始某事的提示/信號',
+      'deterred': '威懾/嚇阻 (deter之過去分詞)',
+      'permeated': '瀰漫/滲透 (permeate之過去分詞)',
+      'discriminated': '歧視/區別 (discriminate之過去分詞)',
+      'ratified': '批准/認可 (ratify之過去分詞)',
+      'major': '主要的/重大的',
+      'personal': '個人的/私人的',
+      'pebbles': '鵝卵石/小圓石',
+      'bright': '明亮的/聰穎的',
+      'queer': '古怪的/奇異的',
+      'deep': '深奧的/深度的',
+      'repetition': '重複/重述',
+      'vessel': '船舶/血管/容器',
+      'auction': '拍賣/拍賣會',
+      'competition': '競爭/競賽',
+      'violation': '違背/侵犯',
+      'reverting': '恢復/重返 (revert之現在分詞)',
+      'adhering': '堅持/黏附 (adhere之現在分詞)',
+      'contributing': '貢獻/導致 (contribute之現在分詞)',
+      'subscribing': '贊同/訂閱 (subscribe之現在分詞)',
+      'analogous': '類似的/可類比的',
+      'derive': '起源於/導出',
+      'a rigorously tested evidentiary base': '經嚴格驗證的證據基礎',
+      'a coherent explanatory structure': '具連貫性的解釋架構',
+      'loosely connected suppositions': '關聯鬆散的假設/推測',
+      'a comprehensive analytical design': '全方位的分析設計',
+      'selectively integrates': '選擇性地整合',
+      'openly challenges': '公開挑戰/提出質疑',
+      'deliberately disregards': '刻意忽視/不加理會',
+      'superficiality summarizes': '膚淺/流於表面地概述',
+      'carefully noncommittal': '審慎保留/不輕易表態',
+      'overtly confrontational': '公然對立/具對抗性的',
+      'unusually transparent': '異常透明/坦率公開的',
+      'explicitly prescriptive': '明確規定/指示性的'
+    };
+
+    // 全域變數
+    let fullBank = [];
+    let currentAppTab = 'quiz'; // 'quiz' 或 'flashcard'
+
+    // --- 刷題模式狀態 ---
+    let currentQuizList = [];
+    let currentIndex = 0;
+    let correctCount = 0;
+    let answered = false;
+    let lastActiveQuizMode = 'all';
+    let filterSchool = 'all';
+    let filterLength = 15;
+    let sessionMistakes = [];
+
+    // --- 單字卡模式狀態 ---
+    let allWordCards = [];
+    let currentFlashList = [];
+    let currentFlashIndex = 0;
+    let flashFlipped = false;
+    let lastActiveFlashMode = 'all';
+    let flashLength = 20;
+    let flashSchool = 'all';
+    let sessionFlashUnfamiliar = []; // 本輪標記不會的單字
+    let sessionFlashKnownCount = 0;
+
+    // LocalStorage 金鑰
+    const STORAGE_KEY_MISTAKES = 'nccu_ntu_english_mistakes';
+    const STORAGE_KEY_STARRED = 'nccu_ntu_english_starred';
+    const STORAGE_KEY_FLASH_UNFAMILIAR = 'nccu_ntu_flash_unfamiliar';
+    const STORAGE_KEY_FLASH_STARRED = 'nccu_ntu_flash_starred';
+    const STORAGE_KEY_FLASH_KNOWN = 'nccu_ntu_flash_known';
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function getStoredList(key) {
+      try {
+        const val = localStorage.getItem(key);
+        return val ? JSON.parse(val) : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveStoredList(key, list) {
+      try {
+        localStorage.setItem(key, JSON.stringify(list));
+      } catch (e) {}
+    }
+
+    function addToStorage(key, id) {
+      let list = getStoredList(key);
+      if (!list.includes(id)) {
+        list.push(id);
+        saveStoredList(key, list);
+      }
+    }
+
+    function removeFromStorage(key, id) {
+      let list = getStoredList(key);
+      list = list.filter(item => item !== id);
+      saveStoredList(key, list);
+    }
+
+    // 格式化考題出處標籤
+    function formatExamSource(id) {
+      if (!id) return '歷屆考古精選';
+      const parts = id.split('_');
+      if (parts.length >= 4) {
+        const school = parts[0] === 'NTU' ? '台大' : parts[0] === 'NCCU' ? '政大' : parts[0];
+        const year = parts[1];
+        const paper = parts[2];
+        const num = parseInt(parts[3], 10) || parts[3];
+        return `🏛️ ${school} ${year}年 英文(${paper}) 第 ${num} 題`;
+      }
+      return `🏛️ ${id}`;
+    }
+
+    function extractWordCards(bank) {
+      const cards = [];
+      const wordMap = new Map();
+
+      bank.filter(q => q.type === 'vocabulary').forEach(q => {
+        const matches = q.explanation.matchAll(/([a-zA-Z\s\-']+)\s*[（(]([^）)]+)[）)]/g);
+        for (const m of matches) {
+          const w = m[1].trim().toLowerCase();
+          const def = m[2].trim();
+          if (w.length > 1 && !wordMap.has(w)) {
+            wordMap.set(w, def);
+          }
+        }
+      });
+
+      bank.filter(q => q.type === 'vocabulary').forEach(q => {
+        q.options.forEach((optText, optIdx) => {
+          const rawWord = optText.trim();
+          const lower = rawWord.toLowerCase();
+          const root = lower.replace(/(?:ed|ing|ly|es|s|d)$/, '');
+
+          let zh = wordMap.get(lower) || wordMap.get(root) || dictFallback[lower];
+          if (!zh && optIdx === q.answer) {
+            const firstParen = q.explanation.match(/[（(]([^）)]+)[）)]/);
+            if (firstParen) zh = firstParen[1].trim();
+          }
+          if (!zh) zh = '歷屆核心字彙';
+
+          cards.push({
+            id: `${q.id}_opt_${optIdx}`,
+            word: rawWord,
+            zh: zh,
+            sentence: q.question,
+            source: formatExamSource(q.id) + ` (選項 ${['A','B','C','D'][optIdx]})`,
+            school: q.id.split('_')[0],
+            qId: q.id
+          });
+        });
+      });
+
+      // 建立完成後先洗牌一次，打亂原先 A,B,C,D 選項的相連順序
+      return shuffleArray(cards);
+    }
+
+    // 載入資料
+    async function loadData() {
+      try {
+        const res = await fetch('data.json');
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        let text = await res.text();
+        text = text.replace(/\]\s*\[/g, ',');
+        text = text.replace(/\s*\[cite:[^\]]+\]/g, '');
+        const data = JSON.parse(text);
+        if (!Array.isArray(data) || data.length === 0) throw new Error("題庫格式不合");
+
+        fullBank = data;
+        allWordCards = extractWordCards(fullBank);
+              } catch (err) {
+        console.warn("無法載入外部 data.json，啟用備用題庫：", err);
+        fullBank = mockData;
+        allWordCards = extractWordCards(fullBank);
+        showToast(`💡 目前使用內建精選真題（共 ${fullBank.length} 題）。部署至 GitHub Pages 即啟用全題庫！`, 'warning');
+      }
+      updateMenuBadges();
+    }
+
+    function showToast(msg, type = 'success') {
+      const banner = document.getElementById('toast-banner');
+      const text = document.getElementById('toast-msg');
+      banner.className = `toast-banner ${type}`;
+      text.textContent = msg;
+      banner.style.display = 'flex';
+      setTimeout(() => {
+        banner.style.display = 'none';
+      }, 7000);
+    }
+
+    function updateMenuBadges() {
+      // 刷題統計
+      const mistakes = getStoredList(STORAGE_KEY_MISTAKES);
+      const starred = getStoredList(STORAGE_KEY_STARRED);
+      document.getElementById('mistake-count-badge').textContent = `${mistakes.length} 題`;
+      document.getElementById('starred-count-badge').textContent = `${starred.length} 題`;
+
+      // 單字卡統計
+      const flashUnfamiliar = getStoredList(STORAGE_KEY_FLASH_UNFAMILIAR);
+      const flashStarred = getStoredList(STORAGE_KEY_FLASH_STARRED);
+      document.getElementById('flash-unfamiliar-badge').textContent = `${flashUnfamiliar.length} 個`;
+      document.getElementById('flash-starred-badge').textContent = `${flashStarred.length} 個`;
+    }
+
+    // 主標籤切換：刷題模式 vs 單字卡模式
+    function switchAppTab(tab) {
+      currentAppTab = tab;
+      document.getElementById('tab-quiz').classList.toggle('active', tab === 'quiz');
+      document.getElementById('tab-flashcard').classList.toggle('active', tab === 'flashcard');
+
+      hideAllViews();
+      if (tab === 'quiz') {
+        document.getElementById('menu-view').style.display = 'flex';
+      } else {
+        document.getElementById('flashcard-menu-view').style.display = 'flex';
+      }
+      updateMenuBadges();
+    }
+
+    function hideAllViews() {
+      document.getElementById('menu-view').style.display = 'none';
+      document.getElementById('quiz-view').style.display = 'none';
+      document.getElementById('result-view').style.display = 'none';
+      document.getElementById('flashcard-menu-view').style.display = 'none';
+      document.getElementById('flashcard-view').style.display = 'none';
+      document.getElementById('flashcard-result-view').style.display = 'none';
+    }
+
+    function showMenu() {
+      hideAllViews();
+      if (currentAppTab === 'quiz') {
+        document.getElementById('menu-view').style.display = 'flex';
+      } else {
+        document.getElementById('flashcard-menu-view').style.display = 'flex';
+      }
+      updateMenuBadges();
+    }
+
+    // 重置進度選單
+    function confirmResetProgress() {
+      const qMistakes = getStoredList(STORAGE_KEY_MISTAKES).length;
+      const qStarred = getStoredList(STORAGE_KEY_STARRED).length;
+      const fUnfamiliar = getStoredList(STORAGE_KEY_FLASH_UNFAMILIAR).length;
+      const fStarred = getStoredList(STORAGE_KEY_FLASH_STARRED).length;
+
+      const choice = prompt(`目前累積紀錄：\n• 刷題錯題本：${qMistakes} 題 | 收藏題目：${qStarred} 題\n• 單字卡不熟：${fUnfamiliar} 個 | 星號單字：${fStarred} 個\n\n請輸入欲執行的重置選項代碼：\n[1] 清空刷題錯題本\n[2] 清空題目收藏\n[3] 清空單字卡不熟紀錄\n[4] 清空單字卡星號\n[5] 一鍵清空全部進度 (恢復出廠狀態)\n\n(輸入其他或取消則放棄)`);
+
+      if (choice === '1') {
+        saveStoredList(STORAGE_KEY_MISTAKES, []);
+        showToast("🧹 已清空刷題錯題本！", "success");
+      } else if (choice === '2') {
+        saveStoredList(STORAGE_KEY_STARRED, []);
+        showToast("🧹 已清空收藏題目！", "success");
+      } else if (choice === '3') {
+        saveStoredList(STORAGE_KEY_FLASH_UNFAMILIAR, []);
+        showToast("🧹 已清空單字卡不熟紀錄！", "success");
+      } else if (choice === '4') {
+        saveStoredList(STORAGE_KEY_FLASH_STARRED, []);
+        showToast("🧹 已清空單字卡星號！", "success");
+      } else if (choice === '5') {
+        saveStoredList(STORAGE_KEY_MISTAKES, []);
+        saveStoredList(STORAGE_KEY_STARRED, []);
+        saveStoredList(STORAGE_KEY_FLASH_UNFAMILIAR, []);
+        saveStoredList(STORAGE_KEY_FLASH_STARRED, []);
+        saveStoredList(STORAGE_KEY_FLASH_KNOWN, []);
+        showToast("🧹 已成功重置全部紀錄與進度！", "success");
+      }
+      updateMenuBadges();
+    }
+
+    // =========================================================
+    // ⚡ 刷題模式核心邏輯
+    // =========================================================
+    function setSchoolFilter(school, btn) {
+      filterSchool = school;
+      document.querySelectorAll('#school-filters .chip-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function setLengthFilter(len, btn) {
+      filterLength = len;
+      document.querySelectorAll('#length-filters .chip-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function startQuiz(mode) {
+      lastActiveQuizMode = mode;
+      sessionMistakes = [];
+
+      let pool = [...fullBank];
+      if (mode !== 'all') pool = pool.filter(q => q.type === mode);
+      if (filterSchool !== 'all') pool = pool.filter(q => q.id && q.id.startsWith(filterSchool));
+
+      if (pool.length === 0) {
+        alert("此條件下目前無題目，請嘗試放寬篩選條件！");
+        return;
+      }
+
+      // 替換為 Fisher-Yates 洗牌
+      shuffleArray(pool);
+
+      if (filterLength > 0 && pool.length > filterLength) {
+        currentQuizList = pool.slice(0, filterLength);
+      } else {
+        currentQuizList = pool;
+      }
+
+      currentIndex = 0;
+      correctCount = 0;
+
+      hideAllViews();
+      document.getElementById('quiz-view').style.display = 'flex';
+      renderQuestion();
+    }
+
+    function startMistakesQuiz() {
+      const mistakeIds = getStoredList(STORAGE_KEY_MISTAKES);
+      if (mistakeIds.length === 0) {
+        alert("太棒了！目前錯題本空空如也，沒有待複習的錯題！");
+        return;
+      }
+      const pool = fullBank.filter(q => mistakeIds.includes(q.id));
+      if (pool.length === 0) {
+        alert("錯題庫中的題目未在當前題庫中找到。");
+        return;
+      }
+      lastActiveQuizMode = 'mistakes';
+      sessionMistakes = [];
+      
+      // 修改這裡：改用 Fisher-Yates 洗牌
+      shuffleArray(pool);
+      
+      currentQuizList = pool;
+      currentIndex = 0;
+      correctCount = 0;
+
+      hideAllViews();
+      document.getElementById('quiz-view').style.display = 'flex';
+      renderQuestion();
+    }
+
+    function startStarredQuiz() {
+      const starredIds = getStoredList(STORAGE_KEY_STARRED);
+      if (starredIds.length === 0) {
+        alert("目前尚未收藏任何題目！做題時點擊右上角「☆」即可收藏。");
+        return;
+      }
+      const pool = fullBank.filter(q => starredIds.includes(q.id));
+      if (pool.length === 0) {
+        alert("收藏庫中的題目未在當前題庫中找到。");
+        return;
+      }
+      lastActiveQuizMode = 'starred';
+      sessionMistakes = [];
+      
+      // 修改這裡：改用 Fisher-Yates 洗牌
+      shuffleArray(pool);
+      
+      currentQuizList = pool;
+      currentIndex = 0;
+      correctCount = 0;
+
+      hideAllViews();
+      document.getElementById('quiz-view').style.display = 'flex';
+      renderQuestion();
+    }
+
+    function renderQuestion() {
+      answered = false;
+      const q = currentQuizList[currentIndex];
+      const total = currentQuizList.length;
+
+      const progressPercent = Math.round(((currentIndex) / total) * 100);
+      document.getElementById('progress-bar').style.width = `${progressPercent}%`;
+
+      const badge = document.getElementById('type-badge');
+      badge.textContent = q.type.toUpperCase();
+      badge.className = `badge ${q.type === 'grammar' ? 'grammar' : 'vocab'}`;
+
+      document.getElementById('quiz-source').textContent = formatExamSource(q.id);
+
+      const rate = currentIndex > 0 ? Math.round((correctCount / currentIndex) * 100) : 0;
+      document.getElementById('quiz-stats').textContent = `${currentIndex + 1} / ${total} | 正確率: ${rate}%`;
+
+      const starredList = getStoredList(STORAGE_KEY_STARRED);
+      const starBtn = document.getElementById('star-current-btn');
+      if (starredList.includes(q.id)) {
+        starBtn.classList.add('starred');
+        starBtn.textContent = '★';
+      } else {
+        starBtn.classList.remove('starred');
+        starBtn.textContent = '☆';
+      }
+
+      const qContainer = document.getElementById('question-text');
+      let displayQuestion = q.question.replace(/_{2,}/g, '<span class="blank-pill">______</span>');
+      qContainer.innerHTML = `${currentIndex + 1}. ${displayQuestion}`;
+
+      document.getElementById('explanation-box').style.display = 'none';
+      document.getElementById('next-btn').style.display = 'none';
+
+      const container = document.getElementById('options-container');
+      container.innerHTML = '';
+
+      const labels = ['A', 'B', 'C', 'D', 'E'];
+      q.options.forEach((optText, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'opt-btn';
+        btn.id = `opt-btn-${i}`;
+        btn.innerHTML = `
+          <div class="opt-content">
+            <span class="opt-letter">${labels[i]}</span>
+            <span class="opt-text">${optText}</span>
+          </div>
+          <span class="opt-status-icon"></span>
+        `;
+        btn.onclick = () => checkAnswer(i);
+        container.appendChild(btn);
+      });
+    }
+
+    function checkAnswer(selectedIndex) {
+      if (answered) return;
+      answered = true;
+
+      const q = currentQuizList[currentIndex];
+      const optButtons = document.querySelectorAll('.opt-btn');
+      optButtons.forEach(btn => btn.disabled = true);
+
+      const isCorrect = (selectedIndex === q.answer);
+
+      if (isCorrect) {
+        correctCount++;
+        optButtons[selectedIndex].classList.add('correct');
+        optButtons[selectedIndex].querySelector('.opt-status-icon').innerHTML = '✓';
+        if (lastActiveQuizMode === 'mistakes') {
+          removeFromStorage(STORAGE_KEY_MISTAKES, q.id);
+        }
+      } else {
+        optButtons[selectedIndex].classList.add('wrong');
+        optButtons[selectedIndex].querySelector('.opt-status-icon').innerHTML = '✗';
+        if (optButtons[q.answer]) {
+          optButtons[q.answer].classList.add('correct');
+          optButtons[q.answer].querySelector('.opt-status-icon').innerHTML = '✓';
+        }
+        addToStorage(STORAGE_KEY_MISTAKES, q.id);
+        sessionMistakes.push(q);
+      }
+
+      const total = currentQuizList.length;
+      const progressPercent = Math.round(((currentIndex + 1) / total) * 100);
+      document.getElementById('progress-bar').style.width = `${progressPercent}%`;
+
+      const expBox = document.getElementById('explanation-box');
+      const expText = document.getElementById('explanation-text');
+      expText.innerHTML = formatExplanation(q.explanation);
+      expBox.style.display = 'block';
+
+      const nextBtn = document.getElementById('next-btn');
+      if (currentIndex === currentQuizList.length - 1) {
+        nextBtn.innerHTML = `查看結算成果 🏆`;
+      } else {
+        nextBtn.innerHTML = `下一題 <span class="kbd-hint">[Enter]</span> ➔`;
+      }
+      nextBtn.style.display = 'inline-flex';
+    }
+
+    function formatExplanation(text) {
+      if (!text) return '暫無詳細解析';
+      let formatted = text.replace(/【(.*?)】/g, '<span class="point-badge">🎯 $1</span><br/>');
+
+      if (formatted.includes('；')) {
+        const parts = formatted.split('。');
+        const vocabSection = parts[0];
+        const notesSection = parts.slice(1).join('。');
+
+        const vocabItems = vocabSection.split('；').map(item => {
+          item = item.trim();
+          if (!item) return '';
+          return `<div class="vocab-row"><span style="color:var(--primary);font-weight:700;">•</span> ${item}</div>`;
+        }).filter(Boolean).join('');
+
+        return `
+          ${vocabItems}
+          ${notesSection.trim() ? `<div class="note-row">💡 <strong>核心考點叮嚀：</strong>${notesSection}</div>` : ''}
+        `;
+      }
+
+      return `<div class="note-row">${formatted}</div>`;
+    }
+
+    function nextQuestion() {
+      if (currentIndex < currentQuizList.length - 1) {
+        currentIndex++;
+        renderQuestion();
+      } else {
+        showResults();
+      }
+    }
+
+    function showResults() {
+      hideAllViews();
+      document.getElementById('result-view').style.display = 'flex';
+
+      const total = currentQuizList.length;
+      const rate = Math.round((correctCount / total) * 100);
+
+      document.getElementById('result-score-val').textContent = `${rate}%`;
+      document.getElementById('res-total-count').textContent = total;
+      document.getElementById('res-correct-count').textContent = correctCount;
+      document.getElementById('res-wrong-count').textContent = sessionMistakes.length;
+
+      const gradeText = document.getElementById('result-grade-text');
+      const feedbackText = document.getElementById('result-feedback-text');
+      if (rate >= 90) {
+        gradeText.textContent = "🏆 頂尖實力！台大財金正取等級";
+        feedbackText.textContent = "詞彙精準度與文法敏銳度極高！持續保持每日 15-20 題速刷手感！";
+      } else if (rate >= 75) {
+        gradeText.textContent = "📈 表現優良！政大金管前段班實力";
+        feedbackText.textContent = "整體語感穩健，偶有陷阱題失分，建議將錯題進行深入訂正！";
+      } else if (rate >= 60) {
+        gradeText.textContent = "💪 穩紮穩打！漸入佳境";
+        feedbackText.textContent = "具備基礎敏銳度，面對高頻單字與長難句型仍需加強，建議搭配「單字翻卡模式」特訓！";
+      } else {
+        gradeText.textContent = "🔥 加油！每日持續累積語感";
+        feedbackText.textContent = "台政大考古題難度媲美 GRE / GMAT，善用錯題庫與單字卡反覆溫習，分數一定能大幅提升！";
+      }
+
+      const retryMistakesBtn = document.getElementById('retry-mistakes-btn');
+      const mistakeCountSpan = document.getElementById('session-mistakes-count');
+      mistakeCountSpan.textContent = sessionMistakes.length;
+      retryMistakesBtn.style.display = sessionMistakes.length > 0 ? 'inline-flex' : 'none';
+
+      // 一鍵將本次錯題加入收藏按鈕
+      const quizStarBtn = document.getElementById('quiz-star-all-btn');
+      if (sessionMistakes.length > 0) {
+        quizStarBtn.style.display = 'inline-flex';
+        quizStarBtn.disabled = false;
+        quizStarBtn.style.background = '#d97706';
+        quizStarBtn.innerHTML = `⭐ 一鍵將本次錯題加入收藏 (<span id="quiz-star-all-count">${sessionMistakes.length}</span>)`;
+      } else {
+        quizStarBtn.style.display = 'none';
+      }
+
+      updateMenuBadges();
+    }
+
+    function starAllQuizSessionMistakes() {
+      if (!sessionMistakes || sessionMistakes.length === 0) return;
+      const count = sessionMistakes.length;
+      sessionMistakes.forEach(q => {
+        addToStorage(STORAGE_KEY_STARRED, q.id);
+      });
+      updateMenuBadges();
+      const quizStarBtn = document.getElementById('quiz-star-all-btn');
+      quizStarBtn.innerHTML = `✅ 已成功加入收藏 (${count})`;
+      quizStarBtn.style.background = '#059669';
+      quizStarBtn.disabled = true;
+      showToast(`⭐ 已成功將本次 ${count} 題錯題全數加入星號收藏庫！`, 'success');
+    }
+
+    function startSessionMistakes() {
+      if (sessionMistakes.length === 0) return;
+      currentQuizList = [...sessionMistakes];
+      sessionMistakes = [];
+      currentIndex = 0;
+      correctCount = 0;
+
+      hideAllViews();
+      document.getElementById('quiz-view').style.display = 'flex';
+      renderQuestion();
+    }
+
+    function restartCurrentQuiz() {
+      startQuiz(lastActiveQuizMode);
+    }
+
+    function confirmExit() {
+      if (confirm("確定要中止當前練習並返回主選單嗎？")) {
+        showMenu();
+      }
+    }
+
+    function toggleCurrentStar() {
+      const q = currentQuizList[currentIndex];
+      if (!q) return;
+      const btn = document.getElementById('star-current-btn');
+      const starred = getStoredList(STORAGE_KEY_STARRED);
+
+      if (starred.includes(q.id)) {
+        removeFromStorage(STORAGE_KEY_STARRED, q.id);
+        btn.classList.remove('starred');
+        btn.textContent = '☆';
+      } else {
+        addToStorage(STORAGE_KEY_STARRED, q.id);
+        btn.classList.add('starred');
+        btn.textContent = '★';
+      }
+      updateMenuBadges();
+    }
+
+    // =========================================================
+    // 📇 單字卡翻卡記憶模式 (Flashcard Mode) 核心邏輯
+    // =========================================================
+    function setFlashLengthFilter(len, btn) {
+      flashLength = len;
+      document.querySelectorAll('#flash-length-filters .chip-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function setFlashSchoolFilter(school, btn) {
+      flashSchool = school;
+      document.querySelectorAll('#flash-school-filters .chip-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function startFlashcardSession(mode) {
+      lastActiveFlashMode = mode;
+      sessionFlashUnfamiliar = [];
+      sessionFlashKnownCount = 0;
+
+      let pool = [...allWordCards];
+
+      if (mode === 'unfamiliar') {
+        const unfamIds = getStoredList(STORAGE_KEY_FLASH_UNFAMILIAR);
+        if (unfamIds.length === 0) {
+          alert("太棒了！目前沒有標記為「不熟」的單字！");
+          return;
+        }
+        pool = pool.filter(c => unfamIds.includes(c.id));
+      } else if (mode === 'starred') {
+        const starIds = getStoredList(STORAGE_KEY_FLASH_STARRED);
+        if (starIds.length === 0) {
+          alert("目前尚未收藏任何星號單字！翻卡時點擊右上角「☆」即可收藏。");
+          return;
+        }
+        pool = pool.filter(c => starIds.includes(c.id));
+      }
+
+      if (flashSchool !== 'all') {
+        pool = pool.filter(c => c.school === flashSchool);
+      }
+
+      if (pool.length === 0) {
+        alert("此條件下目前無單字，請嘗試放寬篩選條件！");
+        return;
+      }
+
+      // 替換為 Fisher-Yates 洗牌
+      shuffleArray(pool);
+
+      if (flashLength > 0 && pool.length > flashLength) {
+        currentFlashList = pool.slice(0, flashLength);
+      } else {
+        currentFlashList = pool;
+      }
+
+      currentFlashIndex = 0;
+      hideAllViews();
+      document.getElementById('flashcard-view').style.display = 'flex';
+      renderFlashcard();
+    }
+
+    function renderFlashcard() {
+      flashFlipped = false;
+      const card = currentFlashList[currentFlashIndex];
+      const total = currentFlashList.length;
+
+      // 翻轉狀態歸位正面
+      document.getElementById('flashcard-inner').classList.remove('is-flipped');
+
+      // 更新進度
+      const progressPercent = Math.round((currentFlashIndex / total) * 100);
+      document.getElementById('flash-progress-bar').style.width = `${progressPercent}%`;
+      document.getElementById('flash-stats').textContent = `${currentFlashIndex + 1} / ${total}`;
+      document.getElementById('flash-source').textContent = card.source;
+
+      // 正面文字
+      document.getElementById('card-front-word').textContent = card.word;
+
+      // 背面文字與真題例句
+      document.getElementById('card-back-word').textContent = card.word;
+      document.getElementById('card-back-zh').textContent = card.zh;
+
+      // 高亮真題例句中的該單字
+      const reg = new RegExp(`(${card.word.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')})`, 'gi');
+      const highlightedSentence = card.sentence.replace(reg, '<mark>$1</mark>');
+      document.getElementById('card-back-sentence').innerHTML = highlightedSentence;
+
+      // 星號狀態
+      const starredList = getStoredList(STORAGE_KEY_FLASH_STARRED);
+      const starBtn = document.getElementById('flash-star-btn');
+      if (starredList.includes(card.id)) {
+        starBtn.classList.add('starred');
+        starBtn.textContent = '★';
+      } else {
+        starBtn.classList.remove('starred');
+        starBtn.textContent = '☆';
+      }
+    }
+
+    function flipFlashcard() {
+      flashFlipped = !flashFlipped;
+      document.getElementById('flashcard-inner').classList.toggle('is-flipped', flashFlipped);
+    }
+
+    function assessWord(isKnown) {
+      const card = currentFlashList[currentFlashIndex];
+      if (!card) return;
+
+      if (isKnown) {
+        sessionFlashKnownCount++;
+        addToStorage(STORAGE_KEY_FLASH_KNOWN, card.id);
+        removeFromStorage(STORAGE_KEY_FLASH_UNFAMILIAR, card.id);
+      } else {
+        addToStorage(STORAGE_KEY_FLASH_UNFAMILIAR, card.id);
+        sessionFlashUnfamiliar.push(card);
+      }
+
+      if (currentFlashIndex < currentFlashList.length - 1) {
+        const cardInner = document.getElementById('flashcard-inner');
+        
+        if (flashFlipped) {
+          // 補上這行：讓程式狀態同步紀錄為「正面」
+          flashFlipped = false;
+          cardInner.classList.remove('is-flipped');
+          
+          setTimeout(() => {
+            currentFlashIndex++;
+            renderFlashcard();
+          }, 200);
+        } else {
+          currentFlashIndex++;
+          renderFlashcard();
+        }
+      } else {
+        showFlashcardResults();
+      }
+    }
+
+    function toggleFlashStar() {
+      const card = currentFlashList[currentFlashIndex];
+      if (!card) return;
+      const btn = document.getElementById('flash-star-btn');
+      const starredList = getStoredList(STORAGE_KEY_FLASH_STARRED);
+
+      if (starredList.includes(card.id)) {
+        removeFromStorage(STORAGE_KEY_FLASH_STARRED, card.id);
+        btn.classList.remove('starred');
+        btn.textContent = '☆';
+      } else {
+        addToStorage(STORAGE_KEY_FLASH_STARRED, card.id);
+        btn.classList.add('starred');
+        btn.textContent = '★';
+      }
+      updateMenuBadges();
+    }
+
+    // 瀏覽器發音支援 (Web Speech API)
+    function pronounceCurrentWord() {
+      const card = currentFlashList[currentFlashIndex];
+      if (!card || !('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(card.word);
+      utter.lang = 'en-US';
+      utter.rate = 0.9;
+      window.speechSynthesis.speak(utter);
+    }
+
+    // 單字卡輪次結算頁面
+    function showFlashcardResults() {
+      hideAllViews();
+      document.getElementById('flashcard-result-view').style.display = 'flex';
+
+      const total = currentFlashList.length;
+      const masteryRate = Math.round((sessionFlashKnownCount / total) * 100);
+
+      document.getElementById('flash-result-score').textContent = `${masteryRate}%`;
+      document.getElementById('flash-res-total').textContent = total;
+      document.getElementById('flash-res-know').textContent = sessionFlashKnownCount;
+      document.getElementById('flash-res-dont-know').textContent = sessionFlashUnfamiliar.length;
+
+      const titleEl = document.getElementById('flash-result-title');
+      const descEl = document.getElementById('flash-result-desc');
+
+      if (sessionFlashUnfamiliar.length === 0) {
+        titleEl.textContent = "🎉 太神了！本輪單字全數掌握！";
+        descEl.textContent = "你已經完全掌握本輪所有單字！建議直接解鎖開啟下一輪，保持極致單字庫擴充速度！";
+      } else {
+        titleEl.textContent = "💪 穩紮穩打！本輪單字複習完畢";
+        descEl.textContent = `本輪有 ${sessionFlashUnfamiliar.length} 個標記為「不熟」的單字，點擊下方按鈕即可立即將這些單字再練一遍，直到全部熟記！`;
+      }
+
+      // 重練本輪不會單字按鈕
+      const repeatBtn = document.getElementById('flash-repeat-unfamiliar-btn');
+      const unfamCountSpan = document.getElementById('flash-unfamiliar-round-count');
+      unfamCountSpan.textContent = sessionFlashUnfamiliar.length;
+      repeatBtn.style.display = sessionFlashUnfamiliar.length > 0 ? 'inline-flex' : 'none';
+
+      // 一鍵將本輪不熟單字加入星號按鈕
+      const starAllBtn = document.getElementById('flash-star-all-btn');
+      const starAllCountSpan = document.getElementById('flash-star-all-count');
+      if (sessionFlashUnfamiliar.length > 0) {
+        starAllBtn.style.display = 'inline-flex';
+        starAllBtn.disabled = false;
+        starAllBtn.style.background = '#d97706';
+        starAllCountSpan.textContent = sessionFlashUnfamiliar.length;
+        starAllBtn.innerHTML = `⭐ 一鍵將本輪不熟單字加入星號 (<span id="flash-star-all-count">${sessionFlashUnfamiliar.length}</span>)`;
+      } else {
+        starAllBtn.style.display = 'none';
+      }
+
+      updateMenuBadges();
+    }
+
+    // 一鍵將本輪所有不熟單字加入星號
+    function starAllSessionFlashcardUnfamiliar() {
+      if (!sessionFlashUnfamiliar || sessionFlashUnfamiliar.length === 0) return;
+      const count = sessionFlashUnfamiliar.length;
+      sessionFlashUnfamiliar.forEach(card => {
+        addToStorage(STORAGE_KEY_FLASH_STARRED, card.id);
+      });
+      updateMenuBadges();
+      const starAllBtn = document.getElementById('flash-star-all-btn');
+      starAllBtn.innerHTML = `✅ 已全數加入星號 (${count})`;
+      starAllBtn.style.background = '#059669';
+      starAllBtn.disabled = true;
+      showToast(`⭐ 已成功將本輪 ${count} 個不熟單字全數加入星號收藏庫！`, 'success');
+    }
+
+    // 將本輪確定不會的單字再練一遍
+    function startFlashcardRepeatUnfamiliar() {
+      if (sessionFlashUnfamiliar.length === 0) return;
+      currentFlashList = [...sessionFlashUnfamiliar];
+      sessionFlashUnfamiliar = [];
+      sessionFlashKnownCount = 0;
+      currentFlashIndex = 0;
+
+      hideAllViews();
+      document.getElementById('flashcard-view').style.display = 'flex';
+      renderFlashcard();
+    }
+
+    // 開啟下一輪單字
+    function startFlashcardNextRound() {
+      startFlashcardSession(lastActiveFlashMode);
+    }
+
+    // =========================================================
+    // 全域鍵盤快捷鍵支援
+    // =========================================================
+    document.addEventListener('keydown', (e) => {
+      // 刷題模式快捷鍵
+      const quizView = document.getElementById('quiz-view');
+      if (quizView.style.display === 'flex') {
+        const key = e.key.toUpperCase();
+        if (!answered) {
+          if (key === 'A' || key === '1') selectOptionByKey(0);
+          else if (key === 'B' || key === '2') selectOptionByKey(1);
+          else if (key === 'C' || key === '3') selectOptionByKey(2);
+          else if (key === 'D' || key === '4') selectOptionByKey(3);
+        } else {
+          if (key === 'ENTER' || key === ' ' || key === 'ARROW_RIGHT') {
+            e.preventDefault();
+            nextQuestion();
+          }
+        }
+        return;
+      }
+
+      // 單字卡模式快捷鍵
+      const flashView = document.getElementById('flashcard-view');
+      if (flashView.style.display === 'flex') {
+        if (e.key === ' ' || e.code === 'Space') {
+          e.preventDefault();
+          flipFlashcard();
+        } else if (e.key === 'ArrowLeft' || e.key === '1' || e.key.toUpperCase() === 'A') {
+          e.preventDefault();
+          assessWord(true); // 左邊：認識
+        } else if (e.key === 'ArrowRight' || e.key === '2' || e.key.toUpperCase() === 'D') {
+          e.preventDefault();
+          assessWord(false); // 右邊：不熟
+        } else if (e.key.toUpperCase() === 'S') {
+          e.preventDefault();
+          toggleFlashStar();
+        }
+      }
+    });
+
+    function selectOptionByKey(index) {
+      const btn = document.getElementById(`opt-btn-${index}`);
+      if (btn && !btn.disabled) {
+        checkAnswer(index);
+      }
+    }
+
+    // 初始化
+    loadData();
+  </script>
+</body>
+</html>
