@@ -261,6 +261,56 @@
       color: var(--accent);
     }
 
+    /* 全題庫進度卡片 */
+    .bank-progress-card {
+      background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+      border: 1.5px solid #bfdbfe;
+      border-radius: 16px;
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bank-progress-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9em;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .bank-progress-substats {
+      display: flex;
+      gap: 14px;
+      font-size: 0.8em;
+      color: var(--slate-500);
+      font-weight: 600;
+      flex-wrap: wrap;
+    }
+
+    .bank-progress-substats span strong {
+      color: var(--slate-900);
+    }
+
+    .bank-progress-track {
+      width: 100%;
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bank-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #3b82f6, var(--primary));
+      border-radius: 6px;
+      transition: width 0.4s ease;
+      width: 0%;
+    }
+
     /* 篩選自訂面板 */
     .filter-panel {
       background: var(--slate-50);
@@ -609,6 +659,221 @@
       border-radius: 6px;
       margin-bottom: 6px;
       border: 1px solid #bfdbfe;
+    }
+
+    /* 收藏清單檢視模式專屬樣式 */
+    .starred-list-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1.5px solid var(--slate-100);
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .starred-list-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .starred-items-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-height: 65vh;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .starred-item-card {
+      background: var(--slate-50);
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+    }
+
+    .starred-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .starred-item-q {
+      font-size: 1.05em;
+      font-weight: 700;
+      color: var(--slate-900);
+      line-height: 1.6;
+    }
+
+    .starred-item-answer {
+      font-size: 0.95em;
+      font-weight: 700;
+      color: var(--success);
+      background: var(--success-light);
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid #a7f3d0;
+      display: inline-block;
+    }
+
+    .starred-item-exp {
+      font-size: 0.9em;
+      line-height: 1.6;
+      color: var(--slate-700);
+      background: #ffffff;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--slate-200);
+    }
+
+    /* =========================================================
+       📚 單字表 (Word Table View) 專屬樣式
+       ========================================================= */
+    .wordlist-search-bar {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    .wordlist-input-wrap {
+      flex: 1;
+      min-width: 200px;
+      position: relative;
+    }
+
+    .wordlist-search-input {
+      width: 100%;
+      padding: 11px 16px;
+      border: 1.5px solid var(--slate-300);
+      border-radius: var(--radius-sm);
+      font-size: 1.05em;
+      color: var(--slate-900);
+      outline: none;
+      transition: all 0.2s ease;
+      background: #ffffff;
+    }
+
+    .wordlist-search-input:focus {
+      border-color: #0284c7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    .wordlist-select {
+      padding: 11px 14px;
+      border: 1.5px solid var(--slate-300);
+      border-radius: var(--radius-sm);
+      font-size: 0.95em;
+      font-weight: 600;
+      color: var(--slate-700);
+      background: #ffffff;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .wordlist-select:focus {
+      border-color: #0284c7;
+    }
+
+    .wordlist-csv-btn {
+      padding: 10px 18px;
+      border: 1.5px solid #0284c7;
+      border-radius: var(--radius-sm);
+      background: #ffffff;
+      color: #0284c7;
+      font-size: 0.92em;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    .wordlist-csv-btn:hover {
+      background: #f0f9ff;
+      border-color: #0369a1;
+      color: #0369a1;
+    }
+
+    .wordlist-hint {
+      font-size: 0.86em;
+      color: var(--slate-500);
+      line-height: 1.5;
+      margin-top: -6px;
+      margin-bottom: 4px;
+    }
+
+    .wordtable-wrap {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--slate-200);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    }
+
+    .wordtable {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.96em;
+    }
+
+    .wordtable thead {
+      background: #0284c7;
+      color: #ffffff;
+    }
+
+    .wordtable th {
+      padding: 13px 18px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      font-size: 1.02em;
+    }
+
+    .wordtable td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .wordtable tbody tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .wordtable tbody tr:hover {
+      background: #f0f9ff;
+    }
+
+    .wordtable .col-word {
+      font-weight: 800;
+      color: var(--slate-900);
+      width: 32%;
+      font-size: 1.05em;
+    }
+
+    .wordtable .col-zh {
+      color: var(--slate-700);
+      width: 68%;
+    }
+
+    .wordtable-pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      font-size: 0.9em;
+      color: var(--slate-600);
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     /* =========================================================
@@ -972,13 +1237,16 @@
       <div class="brand-tag">🏛️ FINANCE </div>
       <h1>研究所英文歷屆刷題</h1>
 
-      <!-- 頂部核心模式分流：刷題 vs 單字卡 -->
+      <!-- 頂部核心模式分流：刷題 vs 單字卡 vs 單字表 -->
       <nav class="main-tab-nav">
         <button id="tab-quiz" class="main-tab-btn active" onclick="switchAppTab('quiz')">
           ⚡ 歷屆真題
         </button>
         <button id="tab-flashcard" class="main-tab-btn" onclick="switchAppTab('flashcard')">
           📇 單字 Flashcard
+        </button>
+        <button id="tab-wordlist" class="main-tab-btn" onclick="switchAppTab('wordlist')">
+          📖 歷屆單字表
         </button>
       </nav>
     </header>
@@ -993,6 +1261,22 @@
          視圖 1：【刷題首頁選單】(#menu-view)
          ========================================== -->
     <div id="menu-view" class="view-card">
+      <!-- 全題庫刷題進度條 -->
+      <div class="bank-progress-card">
+        <div class="bank-progress-head">
+          <span>📊 歷屆真題庫掌握度進度條</span>
+          <span id="bank-progress-percent">0%</span>
+        </div>
+        <div class="bank-progress-track">
+          <div id="bank-progress-fill" class="bank-progress-fill"></div>
+        </div>
+        <div class="bank-progress-substats">
+          <span>總進度：<strong id="bank-progress-total-stat">0 / 240 題</strong></span>
+          <span>📖 單字題：<strong id="bank-progress-vocab-stat">0 / 0 題</strong></span>
+          <span>⚖️ 文法題：<strong id="bank-progress-grammar-stat">0 / 0 題</strong></span>
+        </div>
+      </div>
+
       <div class="menu-grid">
         <button class="menu-btn" onclick="startQuiz('all')">
           <div class="btn-icon">⚡</div>
@@ -1016,9 +1300,9 @@
           <span>🎯 錯題訂正</span>
           <span id="mistake-count-badge" class="badge-count">0 題</span>
         </button>
-        <button class="sub-menu-btn starred" onclick="startStarredQuiz()">
-          <span>⭐ 我的收藏</span>
-          <span id="starred-count-badge" class="badge-count">0 題</span>
+        <button class="sub-menu-btn starred" onclick="openStarredMenu()">
+          <span>⭐ 我的收藏 (<span id="starred-count-badge">0 題</span>)</span>
+          <span class="badge-count" style="background: #fef08a; color: #854d0e;">📋 查看 / 測驗</span>
         </button>
       </div>
 
@@ -1101,8 +1385,7 @@
           <div class="score-label">Accuracy</div>
         </div>
 
-        <div id="result-grade-text" class="result-grade">🎉 表現優異！台大正取生實力</div>
-        <div id="result-feedback-text" class="result-feedback">在極具挑戰的台政大財金所純粹單字與文法試題中維持高正確率，持續保持每日做題的手感！</div>
+        <div id="result-grade-text" class="result-grade">--</div>
 
         <div class="result-stats-grid">
           <div class="stat-box">
@@ -1274,8 +1557,7 @@
           <div class="score-label">Mastery</div>
         </div>
 
-        <div id="flash-result-title" class="result-grade">🎉 太神了！本輪單字全數掌握！</div>
-        <div id="flash-result-desc" class="result-feedback">真題選項中的高頻難字是決定台政大能否通過英文門檻的勝負手，請保持每日翻卡手感！</div>
+        <div id="flash-result-title" class="result-grade">--</div>
 
         <div class="result-stats-grid">
           <div class="stat-box">
@@ -1308,9 +1590,98 @@
         </div>
       </div>
     </div>
+
+    <!-- ==========================================
+          視圖 7：【星號收藏速讀清單】(#starred-list-view)
+          ========================================== -->
+     <div id="starred-list-view" class="view-card" style="display: none;">
+       <div class="starred-list-header">
+         <div>
+           <h2 style="font-size: 1.4em; font-weight: 800; color: var(--slate-900);">⭐ 我的收藏難題清單</h2>
+           <div style="font-size: 0.85em; color: var(--slate-500); margin-top: 2px;">
+             共收藏 <strong id="starred-list-total-count" style="color: var(--accent);">0</strong> 題難題
+           </div>
+         </div>
+         <div class="starred-list-actions">
+           <button class="action-btn" style="padding: 9px 16px; font-size: 0.9em;" onclick="startStarredQuiz()">
+             ⚡ 測驗這些收藏題
+           </button>
+           <button class="secondary-btn" style="padding: 9px 16px; font-size: 0.9em;" onclick="syncStarredWordsToFlashcards()">
+             🔄 單字同步至單字卡
+           </button>
+           <button class="secondary-btn" style="padding: 9px 14px; font-size: 0.9em;" onclick="showMenu()">
+             ✕ 關閉
+           </button>
+         </div>
+       </div>
+
+       <!-- 收藏題目卡片容器 -->
+       <div id="starred-items-list" class="starred-items-container"></div>
+
+       <div class="controls" style="margin-top: 14px;">
+         <button class="secondary-btn" onclick="showMenu()">回首頁選單</button>
+         <button class="action-btn" onclick="startStarredQuiz()">開始抽題測驗 ➔</button>
+       </div>
+     </div>
+
+    <!-- ==========================================
+         視圖 8：【單字表清單與搜尋】(#wordlist-view)
+         ========================================== -->
+    <div id="wordlist-view" class="view-card" style="display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+        <h2 style="font-size: 1.5em; font-weight: 800; color: var(--slate-900);">📖 歷屆核心單字表</h2>
+        <span id="wordlist-count-badge" style="font-size: 0.88em; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 4px 12px; border-radius: 20px;">共 0 個單字</span>
+      </div>
+
+      <!-- 搜尋與篩選列（完全比照截圖設計） -->
+      <div class="wordlist-search-bar">
+        <div class="wordlist-input-wrap">
+          <input 
+            type="text" 
+            id="wordlist-search-input" 
+            class="wordlist-search-input" 
+            placeholder="搜尋單字開頭字母 (例如 ac)..."
+            oninput="handleWordSearchInput(this.value)"
+          />
+        </div>
+        <select id="wordlist-school-filter" class="wordlist-select" onchange="renderWordTable()">
+          <option value="all">全部 ▾</option>
+          <option value="NTU">台灣大學 (NTU)</option>
+          <option value="NCCU">政治大學 (NCCU)</option>
+          <option value="starred">⭐ 已加星號單字</option>
+        </select>
+        <button class="wordlist-csv-btn" onclick="exportWordListCSV()">
+          下載搜尋結果<br/>(CSV)
+        </button>
+      </div>
+
+      <div class="wordlist-hint">
+        搜尋說明：輸入單字開頭字母，例如輸入 "ac" 會顯示 accept 等以 ac 開頭的單字，但不會顯示 contract。亦可輸入中文關鍵字查詢。
+      </div>
+
+      <!-- 現代單字表格 (完全比照截圖設計) -->
+      <div class="wordtable-wrap">
+        <table class="wordtable">
+          <thead>
+            <tr>
+              <th style="width: 32%;">單字</th>
+              <th style="width: 68%;">中文 / 詞性</th>
+            </tr>
+          </thead>
+          <tbody id="wordtable-body">
+            <!-- 動態生成行 -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="wordtable-pagination">
+        <span id="wordtable-stat-text">顯示 0 筆結果</span>
+        <button class="secondary-btn" style="padding: 7px 16px; font-size: 0.9em;" onclick="showMenu()">回首頁選單</button>
+      </div>
+    </div>
   </div>
 
-  <footer>
+   <footer>
     <div>鍵盤支援：[A-D] 或 [1-4] 選答案 • [Space] 翻卡 • [←] 認識 • [→] 不會</div>
   </footer>
 
@@ -1483,13 +1854,13 @@
     let sessionFlashKnownCount = 0;
 
     // LocalStorage 金鑰
+    const STORAGE_KEY_SOLVED = 'nccu_ntu_english_solved';
     const STORAGE_KEY_MISTAKES = 'nccu_ntu_english_mistakes';
     const STORAGE_KEY_STARRED = 'nccu_ntu_english_starred';
     const STORAGE_KEY_FLASH_UNFAMILIAR = 'nccu_ntu_flash_unfamiliar';
     const STORAGE_KEY_FLASH_STARRED = 'nccu_ntu_flash_starred';
     const STORAGE_KEY_FLASH_KNOWN = 'nccu_ntu_flash_known';
-    const STORAGE_KEY_ANSWERED_QUIZ = 'nccu_ntu_quiz_answered';
-    
+
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -1556,10 +1927,25 @@
         }
       });
 
+      // 保留的正統英文片語白名單（動詞片語、固定搭配）
+      const validIdiomWhitelist = new Set([
+        'broken down', 'phased out', 'turned down', 'worn out',
+        'as follows', 'on purpose', 'pros and cons', 'at odds',
+        'take sides', 'keep the peace', 'start a quarrel', 'burn bridges',
+        'kick back', 'stress out', 'hit it off', 'push through'
+      ]);
+
       bank.filter(q => q.type === 'vocabulary').forEach(q => {
         q.options.forEach((optText, optIdx) => {
           const rawWord = optText.trim();
           const lower = rawWord.toLowerCase();
+          const words = rawWord.split(/\s+/);
+
+          // 若選項由多個字組成且不是正統片語（例如長句、名詞子句定義或句構），則排除在單字表與單字卡外
+          if (words.length > 1 && !validIdiomWhitelist.has(lower)) {
+            return;
+          }
+
           const root = lower.replace(/(?:ed|ing|ly|es|s|d)$/, '');
 
           let zh = wordMap.get(lower) || wordMap.get(root) || dictFallback[lower];
@@ -1598,12 +1984,11 @@
 
         fullBank = data;
         allWordCards = extractWordCards(fullBank);
-        showToast(` 成功載入題庫（共 ${fullBank.length} 題，單字卡共 ${allWordCards.length} 個）`, 'success');
               } catch (err) {
         console.warn("無法載入外部 data.json，啟用備用題庫：", err);
         fullBank = mockData;
         allWordCards = extractWordCards(fullBank);
-        showToast(` 目前使用內建精選真題（共 ${fullBank.length} 題）`, 'warning');
+        showToast(`已載入內建精選真題 (${fullBank.length} 題)。`, 'warning');
       }
       updateMenuBadges();
     }
@@ -1620,6 +2005,41 @@
     }
 
     function updateMenuBadges() {
+      // 全題庫刷題進度統計
+      const solvedList = getStoredList(STORAGE_KEY_SOLVED);
+      const totalBankCount = fullBank.length || 240;
+      const solvedSet = new Set(solvedList);
+
+      let solvedVocabCount = 0;
+      let totalVocabCount = 0;
+      let solvedGrammarCount = 0;
+      let totalGrammarCount = 0;
+
+      fullBank.forEach(q => {
+        if (q.type === 'vocabulary') {
+          totalVocabCount++;
+          if (solvedSet.has(q.id)) solvedVocabCount++;
+        } else if (q.type === 'grammar') {
+          totalGrammarCount++;
+          if (solvedSet.has(q.id)) solvedGrammarCount++;
+        }
+      });
+
+      const totalSolvedCount = solvedList.filter(id => fullBank.some(q => q.id === id)).length;
+      const totalPercent = totalBankCount > 0 ? Math.round((totalSolvedCount / totalBankCount) * 100) : 0;
+
+      const fillEl = document.getElementById('bank-progress-fill');
+      const percentEl = document.getElementById('bank-progress-percent');
+      const totalStatEl = document.getElementById('bank-progress-total-stat');
+      const vocabStatEl = document.getElementById('bank-progress-vocab-stat');
+      const grammarStatEl = document.getElementById('bank-progress-grammar-stat');
+
+      if (fillEl) fillEl.style.width = `${totalPercent}%`;
+      if (percentEl) percentEl.textContent = `${totalPercent}%`;
+      if (totalStatEl) totalStatEl.textContent = `${totalSolvedCount} / ${totalBankCount} 題`;
+      if (vocabStatEl) vocabStatEl.textContent = `${solvedVocabCount} / ${totalVocabCount} 題`;
+      if (grammarStatEl) grammarStatEl.textContent = `${solvedGrammarCount} / ${totalGrammarCount} 題`;
+
       // 刷題統計
       const mistakes = getStoredList(STORAGE_KEY_MISTAKES);
       const starred = getStoredList(STORAGE_KEY_STARRED);
@@ -1633,17 +2053,25 @@
       document.getElementById('flash-starred-badge').textContent = `${flashStarred.length} 個`;
     }
 
-    // 主標籤切換：刷題模式 vs 單字卡模式
+    // --- 單字表狀態 ---
+    let wordSearchQuery = '';
+
+    // 主標籤切換：刷題模式 vs 單字卡模式 vs 單字表
     function switchAppTab(tab) {
       currentAppTab = tab;
       document.getElementById('tab-quiz').classList.toggle('active', tab === 'quiz');
       document.getElementById('tab-flashcard').classList.toggle('active', tab === 'flashcard');
+      const tabWordlist = document.getElementById('tab-wordlist');
+      if (tabWordlist) tabWordlist.classList.toggle('active', tab === 'wordlist');
 
       hideAllViews();
       if (tab === 'quiz') {
         document.getElementById('menu-view').style.display = 'flex';
-      } else {
+      } else if (tab === 'flashcard') {
         document.getElementById('flashcard-menu-view').style.display = 'flex';
+      } else if (tab === 'wordlist') {
+        document.getElementById('wordlist-view').style.display = 'flex';
+        renderWordTable();
       }
       updateMenuBadges();
     }
@@ -1655,6 +2083,222 @@
       document.getElementById('flashcard-menu-view').style.display = 'none';
       document.getElementById('flashcard-view').style.display = 'none';
       document.getElementById('flashcard-result-view').style.display = 'none';
+      const starredListView = document.getElementById('starred-list-view');
+      if (starredListView) starredListView.style.display = 'none';
+      const wordlistView = document.getElementById('wordlist-view');
+      if (wordlistView) wordlistView.style.display = 'none';
+    }
+
+    // 取得去重後並照字母 A-Z 排序的單字列表
+    function getUniqueWordList() {
+      const map = new Map();
+      const starredIds = new Set(getStoredList(STORAGE_KEY_FLASH_STARRED));
+
+      allWordCards.forEach(c => {
+        const key = c.word.trim().toLowerCase();
+        if (!map.has(key)) {
+          map.set(key, {
+            word: c.word.trim(),
+            zh: c.zh,
+            school: c.school,
+            isStarred: starredIds.has(c.id)
+          });
+        }
+      });
+
+      return Array.from(map.values()).sort((a, b) => a.word.localeCompare(b.word));
+    }
+
+    // 處理搜尋框輸入
+    function handleWordSearchInput(val) {
+      wordSearchQuery = val.trim();
+      renderWordTable();
+    }
+
+    // 渲染單字表（比照截圖設計）
+    function renderWordTable() {
+      const schoolFilter = document.getElementById('wordlist-school-filter').value;
+      const allWords = getUniqueWordList();
+      const query = wordSearchQuery.toLowerCase();
+
+      let filtered = allWords.filter(item => {
+        // 學校篩選
+        if (schoolFilter === 'NTU' && item.school !== 'NTU') return false;
+        if (schoolFilter === 'NCCU' && item.school !== 'NCCU') return false;
+        if (schoolFilter === 'starred' && !item.isStarred) return false;
+
+        // 搜尋邏輯：比照截圖「輸入開頭字母，如 ac 顯示 accept 等開頭單字」
+        if (query) {
+          const lowerWord = item.word.toLowerCase();
+          const startsWithQuery = lowerWord.startsWith(query);
+          const containsZh = item.zh.toLowerCase().includes(query);
+          return startsWithQuery || containsZh;
+        }
+
+        return true;
+      });
+
+      const tbody = document.getElementById('wordtable-body');
+      tbody.innerHTML = '';
+
+      filtered.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td class="col-word">${item.word}</td>
+          <td class="col-zh">${item.zh}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // 更新統計與徽章
+      const countBadge = document.getElementById('wordlist-count-badge');
+      if (countBadge) countBadge.textContent = `共 ${allWords.length} 個單字`;
+
+      const statText = document.getElementById('wordtable-stat-text');
+      if (statText) statText.textContent = `顯示 ${filtered.length} / ${allWords.length} 筆結果`;
+    }
+
+    // 下載搜尋結果 (CSV) 功能（比照截圖設計）
+    function exportWordListCSV() {
+      const schoolFilter = document.getElementById('wordlist-school-filter').value;
+      const allWords = getUniqueWordList();
+      const query = wordSearchQuery.toLowerCase();
+
+      let filtered = allWords.filter(item => {
+        if (schoolFilter === 'NTU' && item.school !== 'NTU') return false;
+        if (schoolFilter === 'NCCU' && item.school !== 'NCCU') return false;
+        if (schoolFilter === 'starred' && !item.isStarred) return false;
+
+        if (query) {
+          const lowerWord = item.word.toLowerCase();
+          const startsWithQuery = lowerWord.startsWith(query);
+          const containsZh = item.zh.toLowerCase().includes(query);
+          return startsWithQuery || containsZh;
+        }
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        alert("目前搜尋結果為空，無法匯出 CSV！");
+        return;
+      }
+
+      // 產生 CSV 內容（加上 UTF-8 BOM 防止 Excel 亂碼）
+      let csvContent = "\uFEFF單字,中文 / 詞性\n";
+      filtered.forEach(row => {
+        const cleanWord = `"${row.word.replace(/"/g, '""')}"`;
+        const cleanZh = `"${row.zh.replace(/"/g, '""')}"`;
+        csvContent += `${cleanWord},${cleanZh}\n`;
+      });
+
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', `台政財金_歷屆單字表_${new Date().toISOString().slice(0,10)}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast(`📥 成功下載 ${filtered.length} 個單字之 CSV 檔案！`, 'success');
+    }
+
+    // 點擊「⭐ 我的收藏」彈出選單（直接做題或檢視清單）
+    function openStarredMenu() {
+      const starredIds = getStoredList(STORAGE_KEY_STARRED);
+      if (starredIds.length === 0) {
+        alert("目前尚未收藏任何題目！做題時點擊右上角「☆」即可收藏。");
+        return;
+      }
+      showStarredListView();
+    }
+
+    // 顯示收藏題目速讀清單模式
+    function showStarredListView() {
+      hideAllViews();
+      const view = document.getElementById('starred-list-view');
+      view.style.display = 'flex';
+
+      const starredIds = getStoredList(STORAGE_KEY_STARRED);
+      const starredQuestions = fullBank.filter(q => starredIds.includes(q.id));
+      document.getElementById('starred-list-total-count').textContent = starredQuestions.length;
+
+      const container = document.getElementById('starred-items-list');
+      container.innerHTML = '';
+
+      if (starredQuestions.length === 0) {
+        container.innerHTML = `<div style="text-align: center; color: var(--slate-400); padding: 40px 0;">目前收藏清單為空。</div>`;
+        return;
+      }
+
+      const labels = ['A', 'B', 'C', 'D', 'E'];
+
+      starredQuestions.forEach((q, idx) => {
+        const card = document.createElement('div');
+        card.className = 'starred-item-card';
+
+        let displayQ = q.question.replace(/_{2,}/g, '<span class="blank-pill">______</span>');
+        const correctOptText = q.options[q.answer] || '';
+
+        card.innerHTML = `
+          <div class="starred-item-top">
+            <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+              <span class="quiz-source-tag">${formatExamSource(q.id)}</span>
+              <span class="badge ${q.type === 'grammar' ? 'grammar' : 'vocab'}">${q.type.toUpperCase()}</span>
+            </div>
+            <button class="icon-action-btn starred" title="移除此收藏" onclick="removeSingleStarred('${q.id}')">★</button>
+          </div>
+          <div class="starred-item-q">${idx + 1}. ${displayQ}</div>
+          <div>
+            <span class="starred-item-answer">✓ 正確答案：(${labels[q.answer]}) ${correctOptText}</span>
+          </div>
+          <div class="starred-item-exp">
+            <strong>💡 名師解析：</strong><br/>
+            ${formatExplanation(q.explanation)}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // 從收藏清單中移除單題
+    function removeSingleStarred(id) {
+      removeFromStorage(STORAGE_KEY_STARRED, id);
+      updateMenuBadges();
+      showStarredListView();
+      showToast("已從星號收藏庫移除此題！", "success");
+    }
+
+    // 第 4 點：將星號題目中的單字選項「一鍵同步」至單字卡星號收藏庫
+    function syncStarredWordsToFlashcards() {
+      const starredIds = getStoredList(STORAGE_KEY_STARRED);
+      if (starredIds.length === 0) {
+        alert("目前尚未收藏任何題目！");
+        return;
+      }
+
+      // 找出所有屬於這些收藏題目的單字卡 (q.type === 'vocabulary')
+      const targetCards = allWordCards.filter(c => starredIds.includes(c.qId));
+      if (targetCards.length === 0) {
+        alert("目前收藏的題目中皆為文法題，無單字選項卡可同步。");
+        return;
+      }
+
+      const existingFlashStars = new Set(getStoredList(STORAGE_KEY_FLASH_STARRED));
+      let newlyAdded = 0;
+
+      targetCards.forEach(c => {
+        if (!existingFlashStars.has(c.id)) {
+          addToStorage(STORAGE_KEY_FLASH_STARRED, c.id);
+          newlyAdded++;
+        }
+      });
+
+      updateMenuBadges();
+      if (newlyAdded > 0) {
+        showToast(`🔄 已成功將收藏題目中的 ${newlyAdded} 個重點單字同步至單字卡星號庫！`, "success");
+      } else {
+        showToast(`ℹ️ 收藏題目中的所有單字本來就已全數在單字卡星號庫中！`, "warning");
+      }
     }
 
     function showMenu() {
@@ -1669,14 +2313,18 @@
 
     // 重置進度選單
     function confirmResetProgress() {
+      const qSolved = getStoredList(STORAGE_KEY_SOLVED).length;
       const qMistakes = getStoredList(STORAGE_KEY_MISTAKES).length;
       const qStarred = getStoredList(STORAGE_KEY_STARRED).length;
       const fUnfamiliar = getStoredList(STORAGE_KEY_FLASH_UNFAMILIAR).length;
       const fStarred = getStoredList(STORAGE_KEY_FLASH_STARRED).length;
 
-      const choice = prompt(`目前累積紀錄：\n• 刷題錯題本：${qMistakes} 題 | 收藏題目：${qStarred} 題\n• 單字卡不熟：${fUnfamiliar} 個 | 星號單字：${fStarred} 個\n\n請輸入欲執行的重置選項代碼：\n[1] 清空刷題錯題本\n[2] 清空題目收藏\n[3] 清空單字卡不熟紀錄\n[4] 清空單字卡星號\n[5] 一鍵清空全部進度 (恢復出廠狀態)\n\n(輸入其他或取消則放棄)`);
+      const choice = prompt(`目前累積紀錄：\n• 題庫已刷過：${qSolved} 題\n• 刷題錯題本：${qMistakes} 題 | 收藏題目：${qStarred} 題\n• 單字卡不熟：${fUnfamiliar} 個 | 星號單字：${fStarred} 個\n\n請輸入欲執行的重置選項代碼：\n[0] 重置「全題庫刷題進度條」\n[1] 清空刷題錯題本\n[2] 清空題目收藏\n[3] 清空單字卡不熟紀錄\n[4] 清空單字卡星號\n[5] 一鍵清空全部進度 (恢復出廠狀態)\n\n(輸入其他或取消則放棄)`);
 
-      if (choice === '1') {
+      if (choice === '0') {
+        saveStoredList(STORAGE_KEY_SOLVED, []);
+        showToast("🧹 已重置題庫刷題進度條！", "success");
+      } else if (choice === '1') {
         saveStoredList(STORAGE_KEY_MISTAKES, []);
         showToast("🧹 已清空刷題錯題本！", "success");
       } else if (choice === '2') {
@@ -1689,6 +2337,7 @@
         saveStoredList(STORAGE_KEY_FLASH_STARRED, []);
         showToast("🧹 已清空單字卡星號！", "success");
       } else if (choice === '5') {
+        saveStoredList(STORAGE_KEY_SOLVED, []);
         saveStoredList(STORAGE_KEY_MISTAKES, []);
         saveStoredList(STORAGE_KEY_STARRED, []);
         saveStoredList(STORAGE_KEY_FLASH_UNFAMILIAR, []);
@@ -1717,42 +2366,38 @@
     function startQuiz(mode) {
       lastActiveQuizMode = mode;
       sessionMistakes = [];
-    
-      // 1. 取得過往已做過的題目 ID 清單
-      const doneIds = getStoredList(STORAGE_KEY_ANSWERED_QUIZ);
-    
-      // 2. 優先過濾掉已經做過的題目
-      let pool = fullBank.filter(q => !doneIds.includes(q.id));
-    
-      // 3. 全數做完時的自動重置與提示
-      if (pool.length === 0 && fullBank.length > 0) {
-        if (confirm("🎉 恭喜你！題庫中的所有題目你已經全部刷完一遍了！\n是否要自動重置進度，開啟新一輪刷題？")) {
-          saveStoredList(STORAGE_KEY_ANSWERED_QUIZ, []);
-          pool = [...fullBank];
-        } else {
-          return;
-        }
-      }
-    
+
+      let pool = [...fullBank];
       if (mode !== 'all') pool = pool.filter(q => q.type === mode);
       if (filterSchool !== 'all') pool = pool.filter(q => q.id && q.id.startsWith(filterSchool));
-    
+
       if (pool.length === 0) {
-        alert("此條件下目前已無未做過的題目，請嘗試放寬篩選條件或重置紀錄！");
+        alert("此條件下目前無題目，請嘗試放寬篩選條件！");
         return;
       }
-    
-      shuffleArray(pool);
-    
-      if (filterLength > 0 && pool.length > filterLength) {
-        currentQuizList = pool.slice(0, filterLength);
+
+      // 智慧抽題：優先抽「尚未刷過」的題目
+      const solvedList = getStoredList(STORAGE_KEY_SOLVED);
+      const solvedSet = new Set(solvedList);
+
+      const unpracticed = pool.filter(q => !solvedSet.has(q.id));
+      const practiced = pool.filter(q => solvedSet.has(q.id));
+
+      shuffleArray(unpracticed);
+      shuffleArray(practiced);
+
+      // 優先放入未刷過的題目，若不夠再由已刷過題目補齊
+      const prioritizedPool = [...unpracticed, ...practiced];
+
+      if (filterLength > 0 && prioritizedPool.length > filterLength) {
+        currentQuizList = prioritizedPool.slice(0, filterLength);
       } else {
-        currentQuizList = pool;
+        currentQuizList = prioritizedPool;
       }
-    
+
       currentIndex = 0;
       correctCount = 0;
-    
+
       hideAllViews();
       document.getElementById('quiz-view').style.display = 'flex';
       renderQuestion();
@@ -1872,10 +2517,10 @@
       const optButtons = document.querySelectorAll('.opt-btn');
       optButtons.forEach(btn => btn.disabled = true);
 
-      // 紀錄該題已做過（不論對錯均記錄，確保跨輪次不重複）
-      addToStorage(STORAGE_KEY_ANSWERED_QUIZ, q.id);
-
       const isCorrect = (selectedIndex === q.answer);
+
+      // 紀錄為已刷過的題目
+      addToStorage(STORAGE_KEY_SOLVED, q.id);
 
       if (isCorrect) {
         correctCount++;
@@ -1912,7 +2557,7 @@
       }
       nextBtn.style.display = 'inline-flex';
     }
-    
+
     function formatExplanation(text) {
       if (!text) return '暫無詳細解析';
       let formatted = text.replace(/【(.*?)】/g, '<span class="point-badge">🎯 $1</span><br/>');
@@ -1961,17 +2606,17 @@
       const gradeText = document.getElementById('result-grade-text');
       const feedbackText = document.getElementById('result-feedback-text');
       if (rate >= 90) {
-        gradeText.textContent = "🏆 頂尖實力！台大財金正取等級";
-        feedbackText.textContent = "詞彙精準度與文法敏銳度極高！持續保持每日 15-20 題速刷手感！";
+        gradeText.textContent = "【優良】失分率 < 10%";
+  	feedbackText.textContent = "單字與語法掌握度高，請保持答題節奏。";
       } else if (rate >= 75) {
-        gradeText.textContent = "📈 表現優良！政大金管前段班實力";
-        feedbackText.textContent = "整體語感穩健，偶有陷阱題失分，建議將錯題進行深入訂正！";
+        gradeText.textContent = "【平穩】失分率 10% - 25%";
+  	feedbackText.textContent = "主要失分於高階字彙或陷阱句型，請訂正錯題。";
       } else if (rate >= 60) {
-        gradeText.textContent = "💪 穩紮穩打！漸入佳境";
-        feedbackText.textContent = "具備基礎敏銳度，面對高頻單字與長難句型仍需加強，建議搭配「單字翻卡模式」特訓！";
+        gradeText.textContent = "【待加強】失分率 25% - 40%";
+  	feedbackText.textContent = "高頻選項字彙量不足，建議搭配 Flashcard 累積字彙。";
       } else {
-        gradeText.textContent = "🔥 加油！每日持續累積語感";
-        feedbackText.textContent = "台政大考古題難度媲美 GRE / GMAT，善用錯題庫與單字卡反覆溫習，分數一定能大幅提升！";
+	gradeText.textContent = "【需重練】失分率 > 40%";
+  	feedbackText.textContent = "建議先進行單字卡特訓後再重新測驗。";        
       }
 
       const retryMistakesBtn = document.getElementById('retry-mistakes-btn');
@@ -1995,16 +2640,34 @@
 
     function starAllQuizSessionMistakes() {
       if (!sessionMistakes || sessionMistakes.length === 0) return;
-      const count = sessionMistakes.length;
+      const existingStarred = new Set(getStoredList(STORAGE_KEY_STARRED));
+      let newlyAdded = 0;
+      let alreadyStarred = 0;
+
       sessionMistakes.forEach(q => {
-        addToStorage(STORAGE_KEY_STARRED, q.id);
+        if (!existingStarred.has(q.id)) {
+          addToStorage(STORAGE_KEY_STARRED, q.id);
+          newlyAdded++;
+        } else {
+          alreadyStarred++;
+        }
       });
+
       updateMenuBadges();
       const quizStarBtn = document.getElementById('quiz-star-all-btn');
-      quizStarBtn.innerHTML = `✅ 已成功加入收藏 (${count})`;
-      quizStarBtn.style.background = '#059669';
       quizStarBtn.disabled = true;
-      showToast(`⭐ 已成功將本次 ${count} 題錯題全數加入星號收藏庫！`, 'success');
+      quizStarBtn.style.background = '#059669';
+
+      if (alreadyStarred > 0 && newlyAdded > 0) {
+        quizStarBtn.innerHTML = `✅ 已新增 ${newlyAdded} 題 (${alreadyStarred} 題先前已在收藏中)`;
+        showToast(`⭐ 已將本次 ${newlyAdded} 題錯題加入收藏（另有 ${alreadyStarred} 題先前已在收藏庫中）！`, 'success');
+      } else if (newlyAdded > 0) {
+        quizStarBtn.innerHTML = `✅ 已新增 ${newlyAdded} 題收藏`;
+        showToast(`⭐ 已成功將本次 ${newlyAdded} 題錯題全數加入星號收藏庫！`, 'success');
+      } else {
+        quizStarBtn.innerHTML = `ℹ️ 本次所有錯題皆已在收藏庫中`;
+        showToast(`ℹ️ 本次 ${alreadyStarred} 題錯題先前都已經加入過星號收藏庫囉！`, 'warning');
+      }
     }
 
     function startSessionMistakes() {
@@ -2167,20 +2830,18 @@
 
       if (currentFlashIndex < currentFlashList.length - 1) {
         const cardInner = document.getElementById('flashcard-inner');
-        
+
         if (flashFlipped) {
-          // 補上這行：讓程式狀態同步紀錄為「正面」
-          flashFlipped = false;
+          // 直接瞬切到正面，不播放翻回動畫
+          cardInner.style.transition = 'none';
           cardInner.classList.remove('is-flipped');
-          
-          setTimeout(() => {
-            currentFlashIndex++;
-            renderFlashcard();
-          }, 200);
-        } else {
-          currentFlashIndex++;
-          renderFlashcard();
+          flashFlipped = false;
+          void cardInner.offsetWidth; // force reflow
+          cardInner.style.transition = ''; // 恢復原本 CSS transition
         }
+
+        currentFlashIndex++;
+        renderFlashcard();
       } else {
         showFlashcardResults();
       }
@@ -2232,27 +2893,23 @@
       const descEl = document.getElementById('flash-result-desc');
 
       if (sessionFlashUnfamiliar.length === 0) {
-        titleEl.textContent = "🎉 太神了！本輪單字全數掌握！";
-        descEl.textContent = "你已經完全掌握本輪所有單字！建議直接解鎖開啟下一輪，保持極致單字庫擴充速度！";
+        titleEl.textContent = "本輪掌握率 100%";
+        descEl.textContent = "本輪單字已全數標記為認識。";
       } else {
-        titleEl.textContent = "💪 穩紮穩打！本輪單字複習完畢";
-        descEl.textContent = `本輪有 ${sessionFlashUnfamiliar.length} 個標記為「不熟」的單字，點擊下方按鈕即可立即將這些單字再練一遍，直到全部熟記！`;
+        titleEl.textContent = `待複習單字：${sessionFlashUnfamiliar.length} 個`;
+        descEl.textContent = "可點擊下方按鈕針對不熟單字進行針對性重練。";
       }
 
-      // 重練本輪不會單字按鈕
       const repeatBtn = document.getElementById('flash-repeat-unfamiliar-btn');
       const unfamCountSpan = document.getElementById('flash-unfamiliar-round-count');
       unfamCountSpan.textContent = sessionFlashUnfamiliar.length;
       repeatBtn.style.display = sessionFlashUnfamiliar.length > 0 ? 'inline-flex' : 'none';
 
-      // 一鍵將本輪不熟單字加入星號按鈕
       const starAllBtn = document.getElementById('flash-star-all-btn');
-      const starAllCountSpan = document.getElementById('flash-star-all-count');
       if (sessionFlashUnfamiliar.length > 0) {
         starAllBtn.style.display = 'inline-flex';
         starAllBtn.disabled = false;
         starAllBtn.style.background = '#d97706';
-        starAllCountSpan.textContent = sessionFlashUnfamiliar.length;
         starAllBtn.innerHTML = `⭐ 一鍵將本輪不熟單字加入星號 (<span id="flash-star-all-count">${sessionFlashUnfamiliar.length}</span>)`;
       } else {
         starAllBtn.style.display = 'none';
@@ -2264,16 +2921,34 @@
     // 一鍵將本輪所有不熟單字加入星號
     function starAllSessionFlashcardUnfamiliar() {
       if (!sessionFlashUnfamiliar || sessionFlashUnfamiliar.length === 0) return;
-      const count = sessionFlashUnfamiliar.length;
+      const existingStarred = new Set(getStoredList(STORAGE_KEY_FLASH_STARRED));
+      let newlyAdded = 0;
+      let alreadyStarred = 0;
+
       sessionFlashUnfamiliar.forEach(card => {
-        addToStorage(STORAGE_KEY_FLASH_STARRED, card.id);
+        if (!existingStarred.has(card.id)) {
+          addToStorage(STORAGE_KEY_FLASH_STARRED, card.id);
+          newlyAdded++;
+        } else {
+          alreadyStarred++;
+        }
       });
+
       updateMenuBadges();
       const starAllBtn = document.getElementById('flash-star-all-btn');
-      starAllBtn.innerHTML = `✅ 已全數加入星號 (${count})`;
-      starAllBtn.style.background = '#059669';
       starAllBtn.disabled = true;
-      showToast(`⭐ 已成功將本輪 ${count} 個不熟單字全數加入星號收藏庫！`, 'success');
+      starAllBtn.style.background = '#059669';
+
+      if (alreadyStarred > 0 && newlyAdded > 0) {
+        starAllBtn.innerHTML = `✅ 已新增 ${newlyAdded} 個 (${alreadyStarred} 個已在收藏中)`;
+        showToast(`⭐ 已將本輪 ${newlyAdded} 個不熟單字加入星號（另有 ${alreadyStarred} 個先前已在星號庫中）！`, 'success');
+      } else if (newlyAdded > 0) {
+        starAllBtn.innerHTML = `✅ 已新增 ${newlyAdded} 個星號`;
+        showToast(`⭐ 已成功將本輪 ${newlyAdded} 個不熟單字全數加入星號收藏庫！`, 'success');
+      } else {
+        starAllBtn.innerHTML = `ℹ️ 本輪所有不熟單字皆已在星號庫中`;
+        showToast(`ℹ️ 本輪 ${alreadyStarred} 個單字先前都已經在星號收藏庫囉！`, 'warning');
+      }
     }
 
     // 將本輪確定不會的單字再練一遍
