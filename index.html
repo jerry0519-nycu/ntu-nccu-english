@@ -1386,7 +1386,8 @@
         </div>
 
         <div id="result-grade-text" class="result-grade">--</div>
-
+		<div id="result-feedback-text" class="result-feedback">--</div>
+		  
         <div class="result-stats-grid">
           <div class="stat-box">
             <div id="res-total-count" class="stat-val">15</div>
@@ -1913,63 +1914,69 @@
     }
 
     function extractWordCards(bank) {
-      const cards = [];
-      const wordMap = new Map();
-
-      bank.filter(q => q.type === 'vocabulary').forEach(q => {
-        const matches = q.explanation.matchAll(/([a-zA-Z\s\-']+)\s*[（(]([^）)]+)[）)]/g);
-        for (const m of matches) {
-          const w = m[1].trim().toLowerCase();
-          const def = m[2].trim();
-          if (w.length > 1 && !wordMap.has(w)) {
-            wordMap.set(w, def);
-          }
-        }
-      });
-
-      // 保留的正統英文片語白名單（動詞片語、固定搭配）
-      const validIdiomWhitelist = new Set([
-        'broken down', 'phased out', 'turned down', 'worn out',
-        'as follows', 'on purpose', 'pros and cons', 'at odds',
-        'take sides', 'keep the peace', 'start a quarrel', 'burn bridges',
-        'kick back', 'stress out', 'hit it off', 'push through'
-      ]);
-
-      bank.filter(q => q.type === 'vocabulary').forEach(q => {
-        q.options.forEach((optText, optIdx) => {
-          const rawWord = optText.trim();
-          const lower = rawWord.toLowerCase();
-          const words = rawWord.split(/\s+/);
-
-          // 若選項由多個字組成且不是正統片語（例如長句、名詞子句定義或句構），則排除在單字表與單字卡外
-          if (words.length > 1 && !validIdiomWhitelist.has(lower)) {
-            return;
-          }
-
-          const root = lower.replace(/(?:ed|ing|ly|es|s|d)$/, '');
-
-          let zh = wordMap.get(lower) || wordMap.get(root) || dictFallback[lower];
-          if (!zh && optIdx === q.answer) {
-            const firstParen = q.explanation.match(/[（(]([^）)]+)[）)]/);
-            if (firstParen) zh = firstParen[1].trim();
-          }
-          if (!zh) zh = '歷屆核心字彙';
-
-          cards.push({
-            id: `${q.id}_opt_${optIdx}`,
-            word: rawWord,
-            zh: zh,
-            sentence: q.question,
-            source: formatExamSource(q.id) + ` (選項 ${['A','B','C','D'][optIdx]})`,
-            school: q.id.split('_')[0],
-            qId: q.id
-          });
-        });
-      });
-
-      // 建立完成後先洗牌一次，打亂原先 A,B,C,D 選項的相連順序
-      return shuffleArray(cards);
-    }
+	  const wordMap = new Map();
+	
+	  // 1. 建立單字釋義地圖
+	  bank.filter(q => q.type === 'vocabulary').forEach(q => {
+	    const matches = q.explanation.matchAll(/([a-zA-Z\s\-']+)\s*[（(]([^）)]+)[）)]/g);
+	    for (const m of matches) {
+	      const w = m[1].trim().toLowerCase();
+	      const def = m[2].trim();
+	      if (w.length > 1 && !wordMap.has(w)) {
+	        wordMap.set(w, def);
+	      }
+	    }
+	  });
+	
+	  const validIdiomWhitelist = new Set([
+	    'broken down', 'phased out', 'turned down', 'worn out',
+	    'as follows', 'on purpose', 'pros and cons', 'at odds',
+	    'take sides', 'keep the peace', 'start a quarrel', 'burn bridges',
+	    'kick back', 'stress out', 'hit it off', 'push through'
+	  ]);
+	
+	  // 2. 使用 uniqueCardsMap 確保單字不重複
+	  const uniqueCardsMap = new Map();
+	
+	  bank.filter(q => q.type === 'vocabulary').forEach(q => {
+	    q.options.forEach((optText, optIdx) => {
+	      const rawWord = optText.trim();
+	      const lower = rawWord.toLowerCase();
+	      const words = rawWord.split(/\s+/);
+	
+	      // 過濾掉非正統片語的長句選項
+	      if (words.length > 1 && !validIdiomWhitelist.has(lower)) {
+	        return;
+	      }
+	
+	      // 【去重關鍵】：如果 Map 裡已經有這個單字，直接跳過
+	      if (uniqueCardsMap.has(lower)) {
+	        return;
+	      }
+	
+	      const root = lower.replace(/(?:ed|ing|ly|es|s|d)$/, '');
+	      let zh = wordMap.get(lower) || wordMap.get(root) || dictFallback[lower];
+	      if (!zh && optIdx === q.answer) {
+	        const firstParen = q.explanation.match(/[（(]([^）)]+)[）)]/);
+	        if (firstParen) zh = firstParen[1].trim();
+	      }
+	      if (!zh) zh = '歷屆核心字彙';
+	
+	      uniqueCardsMap.set(lower, {
+	        id: `word_${lower}`,
+	        word: rawWord,
+	        zh: zh,
+	        sentence: q.question,
+	        source: formatExamSource(q.id) + ` (選項 ${['A','B','C','D'][optIdx]})`,
+	        school: q.id.split('_')[0],
+	        qId: q.id
+	      });
+	    });
+	  });
+	
+	  // 3. 轉為陣列並洗牌回傳
+	  return shuffleArray(Array.from(uniqueCardsMap.values()));
+	}
 
     // 載入資料
     async function loadData() {
