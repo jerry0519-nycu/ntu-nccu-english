@@ -2900,12 +2900,12 @@
       const descEl = document.getElementById('flash-result-desc');
 
       if (sessionFlashUnfamiliar.length === 0) {
-        titleEl.textContent = "本輪掌握率 100%";
-        descEl.textContent = "本輪單字已全數標記為認識。";
-      } else {
-        titleEl.textContent = `待複習單字：${sessionFlashUnfamiliar.length} 個`;
-        descEl.textContent = "可點擊下方按鈕針對不熟單字進行針對性重練。";
-      }
+		  titleEl.textContent = "本輪掌握率 100%";
+		  if (descEl) descEl.textContent = "本輪單字已全數標記為認識。";
+		} else {
+		  titleEl.textContent = `待複習單字：${sessionFlashUnfamiliar.length} 個`;
+		  if (descEl) descEl.textContent = "可點擊下方按鈕針對不熟單字進行針對性重練。";
+		}
 
       const repeatBtn = document.getElementById('flash-repeat-unfamiliar-btn');
       const unfamCountSpan = document.getElementById('flash-unfamiliar-round-count');
