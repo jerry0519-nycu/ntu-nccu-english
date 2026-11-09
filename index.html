@@ -1941,7 +1941,12 @@
         'kick back', 'stress out', 'hit it off', 'push through'
       ]);
 
-      // 2. 使用 uniqueCardsMap 確保單字絕不重複，且不產生空白卡片
+      // 🛑 加入極簡易國中基礎字黑名單，防止 random 等字混進來
+      const basicWordBlacklist = new Set([
+        'random', 'simple', 'basic', 'common', 'different', 'general',
+        'major', 'personal', 'deep', 'bright', 'queer', 'moving', 'putting'
+      ]);
+
       const uniqueCardsMap = new Map();
 
       bank.filter(q => q.type === 'vocabulary').forEach(q => {
@@ -1951,20 +1956,17 @@
           const lower = rawWord.toLowerCase();
           const words = rawWord.split(/\s+/);
 
-          // 防護 1：若清理後為空字串，直接跳过
-          if (!rawWord || rawWord.length === 0) {
-            return;
-          }
+          // 1. 若清理後為空字串，直接跳過
+          if (!rawWord || rawWord.length === 0) return;
 
-          // 防護 2：過濾非白名單的長句選項
-          if (words.length > 1 && !validIdiomWhitelist.has(lower)) {
-            return;
-          }
+          // 2. 過濾非白名單的片語長句
+          if (words.length > 1 && !validIdiomWhitelist.has(lower)) return;
 
-          // 防護 3：若 Map 中已有該單字，直接跳過（去重）
-          if (uniqueCardsMap.has(lower)) {
-            return;
-          }
+          // 🛑 3. 核心關鍵：過濾長度少於 5 個字母的字 或 存在於黑名單的基礎字
+          if (lower.length < 5 || basicWordBlacklist.has(lower)) return;
+
+          // 4. 重複單字直接跳過
+          if (uniqueCardsMap.has(lower)) return;
 
           const root = lower.replace(/(?:ed|ing|ly|es|s|d)$/, '');
           let zh = wordMap.get(lower) || wordMap.get(root) || dictFallback[lower];
@@ -1986,12 +1988,10 @@
         });
       });
 
-      // 3. 轉為陣列並洗牌回傳
       return shuffleArray(Array.from(uniqueCardsMap.values()));
-		}
+    }
 	  
-
-	    
+  
 
     // 載入資料
     async function loadData() {
