@@ -1935,20 +1935,27 @@
         'kick back', 'stress out', 'hit it off', 'push through'
       ]);
 
-      // ✅ 使用 Map 防止單字重複
+      // 2. 使用 uniqueCardsMap 確保單字絕不重複，且不產生空白卡片
       const uniqueCardsMap = new Map();
 
       bank.filter(q => q.type === 'vocabulary').forEach(q => {
         q.options.forEach((optText, optIdx) => {
-          const rawWord = optText.trim();
+          // 清理標點符號與前後空白
+          const rawWord = optText.replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, "").trim();
           const lower = rawWord.toLowerCase();
           const words = rawWord.split(/\s+/);
 
+          // 防護 1：若清理後為空字串，直接跳过
+          if (!rawWord || rawWord.length === 0) {
+            return;
+          }
+
+          // 防護 2：過濾非白名單的長句選項
           if (words.length > 1 && !validIdiomWhitelist.has(lower)) {
             return;
           }
 
-          // ✅ 核心關鍵：如果這個單字已經在單字庫裡，直接跳過，絕不重複新增！
+          // 防護 3：若 Map 中已有該單字，直接跳過（去重）
           if (uniqueCardsMap.has(lower)) {
             return;
           }
@@ -1973,9 +1980,10 @@
         });
       });
 
-      // ✅ 轉回陣列並洗牌回傳
+      // 3. 轉為陣列並洗牌回傳
       return shuffleArray(Array.from(uniqueCardsMap.values()));
-    }
+		}
+	  
 
 	    
 
