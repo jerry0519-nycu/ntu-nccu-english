@@ -918,17 +918,18 @@
       user-select: none;
     }
 
-    /* 新增此兩行：確保手機上未翻轉時正面一定在上層，翻轉後背面在上層 */
-    .flashcard-face.front { z-index: 2; transform: rotateY(0deg); }
-    .flashcard-inner.is-flipped .flashcard-face.front { z-index: 1; }
-    .flashcard-face.back { z-index: 1; transform: rotateY(180deg); background: var(--slate-50); border-color: #93c5fd; }
-    .flashcard-inner.is-flipped .flashcard-face.back { z-index: 2; }
-
-    /* 修正後的程式碼：明確指定正面與背面的 z-index 層級關係 */
-    .flashcard-face.front { z-index: 2; transform: rotateY(0deg); }
-    .flashcard-inner.is-flipped .flashcard-face.front { z-index: 1; }
-    .flashcard-face.back { z-index: 1; transform: rotateY(180deg); background: var(--slate-50); border-color: #93c5fd; }
-    .flashcard-inner.is-flipped .flashcard-face.back { z-index: 2; }
+    /* 明確指定正面與背面的 3D 狀態，解決手機版空白破圖 */
+    .flashcard-face.front { 
+      transform: rotateY(0deg) translateZ(0); 
+      -webkit-transform: rotateY(0deg) translateZ(0); 
+    }
+    
+    .flashcard-face.back {
+      transform: rotateY(180deg) translateZ(0);
+      -webkit-transform: rotateY(180deg) translateZ(0);
+      background: var(--slate-50);
+      border-color: #93c5fd;
+    }
 
     .card-word-title {
       font-size: 2.3em;
