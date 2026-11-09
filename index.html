@@ -2794,16 +2794,15 @@
       document.getElementById('flash-source').textContent = card.source;
 
       // 正面文字
-      document.getElementById('card-front-word').textContent = card.word;
+      document.getElementById('card-front-word').textContent = card.w
 
-      // 背面文字與真題例句
+	  // 背面文字與真題例句
       document.getElementById('card-back-word').textContent = card.word;
       document.getElementById('card-back-zh').textContent = card.zh;
 
-      // 高亮真題例句中的該單字
-      const reg = new RegExp(`(${card.word.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')})`, 'gi');
-      const highlightedSentence = card.sentence.replace(reg, '<mark>$1</mark>');
-      document.getElementById('card-back-sentence').innerHTML = highlightedSentence;
+      // 隱藏背面例句框（純中文模式）
+      const sentenceBox = document.querySelector('.card-sentence-box');
+      if (sentenceBox) sentenceBox.style.display = 'none';
 
       // 星號狀態
       const starredList = getStoredList(STORAGE_KEY_FLASH_STARRED);
