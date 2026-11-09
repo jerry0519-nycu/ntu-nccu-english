@@ -2799,27 +2799,28 @@
       const card = currentFlashList[currentFlashIndex];
       const total = currentFlashList.length;
 
-      // 翻轉狀態歸位正面
-      document.getElementById('flashcard-inner').classList.remove('is-flipped');
+      // 1. 強制重置翻轉狀態回到正面
+      const cardInner = document.getElementById('flashcard-inner');
+      cardInner.classList.remove('is-flipped');
 
-      // 更新進度
+      // 2. 更新進度條與出處
       const progressPercent = Math.round((currentFlashIndex / total) * 100);
       document.getElementById('flash-progress-bar').style.width = `${progressPercent}%`;
       document.getElementById('flash-stats').textContent = `${currentFlashIndex + 1} / ${total}`;
       document.getElementById('flash-source').textContent = card.source;
 
-      // 正面文字
-      document.getElementById('card-front-word').textContent = card.w
+      // 3. 渲染正面單字與背面釋義
+      document.getElementById('card-front-word').textContent = card.word || '';
+      document.getElementById('card-back-word').textContent = card.word || '';
+      document.getElementById('card-back-zh').textContent = card.zh || '歷屆核心字彙';
 
-	  // 背面文字與真題例句
-      document.getElementById('card-back-word').textContent = card.word;
-      document.getElementById('card-back-zh').textContent = card.zh;
-
-      // 隱藏背面例句框（純中文模式）
+      // 4. 隱藏背面例句框（純中文模式）
       const sentenceBox = document.querySelector('.card-sentence-box');
-      if (sentenceBox) sentenceBox.style.display = 'none';
+      if (sentenceBox) {
+        sentenceBox.style.display = 'none';
+      }
 
-      // 星號狀態
+      // 5. 更新星號按鈕狀態
       const starredList = getStoredList(STORAGE_KEY_FLASH_STARRED);
       const starBtn = document.getElementById('flash-star-btn');
       if (starredList.includes(card.id)) {
@@ -2829,7 +2830,8 @@
         starBtn.classList.remove('starred');
         starBtn.textContent = '☆';
       }
-    }
+		}
+	  
 
     function flipFlashcard() {
       flashFlipped = !flashFlipped;
