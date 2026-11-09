@@ -918,6 +918,12 @@
       user-select: none;
     }
 
+    /* 新增此兩行：確保手機上未翻轉時正面一定在上層，翻轉後背面在上層 */
+    .flashcard-face.front { z-index: 2; transform: rotateY(0deg); }
+    .flashcard-inner.is-flipped .flashcard-face.front { z-index: 1; }
+    .flashcard-face.back { z-index: 1; transform: rotateY(180deg); background: var(--slate-50); border-color: #93c5fd; }
+    .flashcard-inner.is-flipped .flashcard-face.back { z-index: 2; }
+
     .flashcard-face.back {
       transform: rotateY(180deg);
       background: var(--slate-50);
