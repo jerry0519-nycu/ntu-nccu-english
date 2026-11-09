@@ -1942,31 +1942,18 @@
         'kick back', 'stress out', 'hit it off', 'push through'
       ]);
 
-      // 🛑 加入極簡易國中基礎字黑名單，防止 random 等字混進來
-      const basicWordBlacklist = new Set([
-        'random', 'simple', 'basic', 'common', 'different', 'general',
-        'major', 'personal', 'deep', 'bright', 'queer', 'moving', 'putting'
-      ]);
-
       const uniqueCardsMap = new Map();
 
       bank.filter(q => q.type === 'vocabulary').forEach(q => {
         q.options.forEach((optText, optIdx) => {
-          // 清理標點符號與前後空白
           const rawWord = optText.replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, "").trim();
           const lower = rawWord.toLowerCase();
           const words = rawWord.split(/\s+/);
 
-          // 1. 若清理後為空字串，直接跳過
           if (!rawWord || rawWord.length === 0) return;
-
-          // 2. 過濾非白名單的片語長句
           if (words.length > 1 && !validIdiomWhitelist.has(lower)) return;
 
-          // 🛑 3. 核心關鍵：過濾長度少於 5 個字母的字 或 存在於黑名單的基礎字
-          if (lower.length < 5 || basicWordBlacklist.has(lower)) return;
-
-          // 4. 重複單字直接跳過
+          // 完全移除自作主張的黑名單與長度限制
           if (uniqueCardsMap.has(lower)) return;
 
           const root = lower.replace(/(?:ed|ing|ly|es|s|d)$/, '');
